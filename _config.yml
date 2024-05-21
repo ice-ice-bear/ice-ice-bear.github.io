@@ -1,20 +1,20 @@
 # Configurations
-title:            Jekyll Gitbook
-longtitle:        Jekyll Gitbook
-author:           HE Tao
-email:            sighingnow@gmail.com
+title:            ICE-ICE-BEAR TECH BLOG
+longtitle:        ICE-ICE-BEAR TECH BLOG
+author:           SEUNGRYUL LEE
+email:            3balbi7@gmail.com
 description: >
-  Build Jekyll site with the GitBook style.
+  TECH INFO LIKE COLD ICY COLA IN HOT SUMMER
 
 version:          1.0
 gitbook_version:  3.2.3
 
-url:              'https://sighingnow.github.io'
+url:              'https://ice-ice-bear.github.io'
 baseurl:          '/jekyll-gitbook'
 rss:              RSS
 
 # bootstrap: use the remote theme for the site itself
-remote_theme: sighingnow/jekyll-gitbook
+remote_theme: ice-ice-bear/jekyll-gitbook
 
 toc:
   enabled: true
