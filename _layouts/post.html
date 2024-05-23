@@ -1,152 +1,92 @@
 ---
-layout: default
-refactor: true
-panel_includes:
-  - toc
-tail_includes:
-  - related-posts
-  - post-nav
-  - comments
+layout: framework
+banner:
+banner_html: post-header.html
+hidden: []
+sidebar:
+  - article-menu
 ---
 
-{% include lang.html %}
+<div class="post">
+  <section>
 
-<article class="px-1">
-  <header>
-    <h1 data-toc-skip>{{ page.title }}</h1>
-    {% if page.description %}
-      <p class="post-desc fw-light mb-4">{{ page.description }}</p>
-    {% endif %}
+    {%- assign name = 'banner' -%}
+    {%- include functions.html func='get_value' -%}
+    {%- assign banner = return -%}
 
-    <div class="post-meta text-muted">
-      <!-- published date -->
-      <span>
-        {{ site.data.locales[lang].post.posted }}
-        {% include datetime.html date=page.date tooltip=true lang=lang %}
-      </span>
+    {%- assign name = 'hidden' -%}
+    {%- include functions.html func='get_value' -%}
+    {%- assign hidden = return -%}
 
-      <!-- lastmod date -->
-      {% if page.last_modified_at and page.last_modified_at != page.date %}
-        <span>
-          {{ site.data.locales[lang].post.updated }}
-          {% include datetime.html date=page.last_modified_at tooltip=true lang=lang %}
-        </span>
-      {% endif %}
+    {%- assign result = hidden | where_exp: "item", "item == 'header'" -%}
+    {%- if banner == nil and result.size == 0 -%}
+    {%- include views/post-header.html -%}
+    {%- endif -%}
 
-      {% if page.image %}
-        {% capture src %}src="{{ page.image.path | default: page.image }}"{% endcapture %}
-        {% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}
-        {% capture alt %}alt="{{ page.image.alt | xml_escape | default: "Preview Image" }}"{% endcapture %}
+    {%- include views/article.html -%}
 
-        {% if page.image.lqip %}
-          {%- capture lqip -%}lqip="{{ page.image.lqip }}"{%- endcapture -%}
-        {% endif %}
+    {%- assign result = hidden | where_exp: "item", "item == 'navigator'" -%}
+    {%- if result.size == 0 -%}
+    <div class="post-nav">
+      {%- if page.previous -%}
+        <a class="previous" href="{{ page.previous.url | relative_url }}" title="{{
+          page.previous.title | escape }}">{{ page.previous.title | escape | truncatewords: 6 }}</a>
+      {%- else -%}
+      <span></span>
+      {%- endif -%}
 
-        <div class="mt-3 mb-3">
-          <img {{ src }} {{ class }} {{ alt }} w="1200" h="630" {{ lqip }}>
-          {%- if page.image.alt -%}
-            <figcaption class="text-center pt-2 pb-2">{{ page.image.alt }}</figcaption>
+      {%- if page.next -%}
+        <a class="next" href="{{ page.next.url | relative_url }}" title="{{ page.next.title | escape }}">{{ page.next.title | escape | truncatewords: 6 }}</a>
+      {%- else -%}
+      <span></span>
+      {%- endif -%}
+    </div>
+    {%- endif -%}
+
+    {%- assign result = hidden | where_exp: "item", "item == 'related_posts'" -%}
+    {%- if result.size == 0 -%}
+    <div class="post-related">
+      <div>Related Articles</div>
+      <ul>
+        {% assign posts = site[page.collection] | sample:4 %}
+        {%- for post in posts -%}
+          {%- assign post_item_class = "" -%}
+          {%- if post.top -%}
+            {%- assign post_item_class = "top-post" -%}
           {%- endif -%}
-        </div>
-      {% endif %}
-
-      <div class="d-flex justify-content-between">
-        <!-- author(s) -->
-        <span>
-          {% if page.author %}
-            {% assign authors = page.author %}
-          {% elsif page.authors %}
-            {% assign authors = page.authors %}
-          {% endif %}
-
-          {{ site.data.locales[lang].post.written_by }}
-
-          <em>
-            {% if authors %}
-              {% for author in authors %}
-                {% if site.data.authors[author].url -%}
-                  <a href="{{ site.data.authors[author].url }}">{{ site.data.authors[author].name }}</a>
-                {%- else -%}
-                  {{ site.data.authors[author].name }}
-                {%- endif %}
-                {% unless forloop.last %}{{ '</em>, <em>' }}{% endunless %}
-              {% endfor %}
-            {% else %}
-              <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>
-            {% endif %}
-          </em>
-        </span>
-
-        <div>
-          <!-- pageviews -->
-          {% if site.pageviews.provider and site.analytics[site.pageviews.provider].id %}
-            <span>
-              <em id="pageviews">
-                <i class="fas fa-spinner fa-spin small"></i>
-              </em>
-              {{ site.data.locales[lang].post.pageview_measure }}
-            </span>
-          {% endif %}
-
-          <!-- read time -->
-          {% include read-time.html content=content prompt=true lang=lang %}
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <div class="content">
-    {{ content }}
-  </div>
-
-  <div class="post-tail-wrapper text-muted">
-    <!-- categories -->
-    {% if page.categories.size > 0 %}
-      <div class="post-meta mb-3">
-        <i class="far fa-folder-open fa-fw me-1"></i>
-        {% for category in page.categories %}
-          <a href="{{ site.baseurl }}/categories/{{ category | slugify | url_encode }}/">{{ category }}</a>
-          {%- unless forloop.last -%},{%- endunless -%}
-        {% endfor %}
-      </div>
-    {% endif %}
-
-    <!-- tags -->
-    {% if page.tags.size > 0 %}
-      <div class="post-tags">
-        <i class="fa fa-tags fa-fw me-1"></i>
-        {% for tag in page.tags %}
-          <a
-            href="{{ site.baseurl }}/tags/{{ tag | slugify | url_encode }}/"
-            class="post-tag no-text-decoration"
-          >
-            {{- tag -}}
+        <li class="{{ post_item_class }}">
+          <a class="post-link"
+            href="{{ post.url | relative_url }}"
+            title="{{ post.title | escape }}">
+            {{ post.title | escape | truncatewords: 12 }}
+            {%- include views/post-badges.html -%}
           </a>
-        {% endfor %}
-      </div>
-    {% endif %}
-
-    <div
-      class="
-        post-tail-bottom
-        d-flex justify-content-between align-items-center mt-5 pb-2
-      "
-    >
-      <div class="license-wrapper">
-        {% if site.data.locales[lang].copyright.license.template %}
-          {% capture _replacement %}
-        <a href="{{ site.data.locales[lang].copyright.license.link }}">
-          {{ site.data.locales[lang].copyright.license.name }}
-        </a>
-        {% endcapture %}
-
-          {{ site.data.locales[lang].copyright.license.template | replace: ':LICENSE_NAME', _replacement }}
-        {% endif %}
-      </div>
-
-      {% include post-sharing.html lang=lang %}
+        </li>
+        {%- endfor -%}
+      </ul>
     </div>
-    <!-- .post-tail-bottom -->
-  </div>
-  <!-- div.post-tail-wrapper -->
-</article>
+    {%- endif -%}
+
+    {%- assign result = hidden | where_exp: "item", "item == 'comments'" -%}
+    {%- if result.size == 0 -%}
+    <div class="post-comments">
+      {%- if page.comments != false -%}
+
+      {%- if site.disqus.shortname -%}
+      {%- include extensions/comments/disqus.html -%}
+      {%- endif -%}
+
+      {%- if site.gitment.username -%}
+      {%- include extensions/comments/gitment.html -%}
+      {%- endif -%}
+
+      {%- if site.utterances.repo -%}
+      {%- include extensions/comments/utterances.html -%}
+      {%- endif -%}
+
+      {%- endif -%}
+    </div>
+    {%- endif -%}
+
+  </section>
+</div>
