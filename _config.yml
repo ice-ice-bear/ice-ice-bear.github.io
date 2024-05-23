@@ -71,7 +71,7 @@ yat:
 # sitemap: false
 
 # If you want to change site language, you can set lang option
-# lang: "en"  # default lang is en
+lang: "ko"  # default lang is en
 
 # Translate languges
 # langs refer to https://cloud.google.com/translate/docs/languages
@@ -139,6 +139,7 @@ yat:
 # the browser is closed or not)
 #
 # night_mode: "auto"
+night_mode: "off"
 
 # Code badge setting
 # You can enable or disable the code badge and so on
@@ -157,12 +158,12 @@ yat:
 #   - tags.html
 #   - about.md
 
-# Page default value
-# defaults:
-#   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
-#     banner: "Your image url"
+#Page default value
+defaults:
+  home:
+    heading: "This is ICE-ICE-BEAR blog"
+    subheading: "Where you can see ICY cold information"
+    banner: "./assets/images/banners/artic_home.jpg"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
