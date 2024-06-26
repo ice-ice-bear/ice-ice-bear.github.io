@@ -15,10 +15,10 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Site Title"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+locale                   : "ko-KR"
+title                    : "ICE-ICE-BEAR-BLOG"
+title_separator          : "|"
+subtitle                 : "where you can see ICY information"
 name                     : "ICE-ICE-BEAR"
 description              : "Blog with ICY-COLD IT info"
 url                      : "https://ice-ice-bear.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
