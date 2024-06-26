@@ -311,7 +311,7 @@ compress_html:
 
 # Defaults
 defaults:
-  _posts
+  # _posts
   - scope:
       path: ""
       type: posts
@@ -323,5 +323,4 @@ defaults:
       share: true
       related: true
       show_date : true # add data to the post
-  
-  date_format: "%Y-%m-%d" # format of the date
+      date_format: "%Y-%m-%d" # format of the date
