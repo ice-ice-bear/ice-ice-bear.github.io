@@ -148,10 +148,10 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/ice-ice-bear"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
-      # url:
+      # url: 
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:
@@ -226,7 +226,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Pagination with jekyll-paginate
