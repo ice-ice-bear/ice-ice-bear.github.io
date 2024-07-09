@@ -23,7 +23,7 @@
         {% include_cached search/search_form.html %}
       </div>
     {% endif %}
-
+  
     <div id="footer" class="page__footer">
       <footer>
         {% include footer/custom.html %}
@@ -34,3 +34,7 @@
     {% include scripts.html %}
   </body>
 </html>
+
+{% if page.use_math %}
+  {% include mathjax_support.html %}
+{% endif %}
