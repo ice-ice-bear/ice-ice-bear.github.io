@@ -18,6 +18,10 @@
       {% include after-content.html %}
     </div>
 
+    {% if page.use_math %}
+      {% include mathjax_support.html %}
+    {% endif %}
+
     {% if site.search == true %}
       <div class="search-content">
         {% include_cached search/search_form.html %}
@@ -32,9 +36,7 @@
     </div>
 
     {% include scripts.html %}
+    
   </body>
 </html>
 
-{% if page.use_math %}
-  {% include mathjax_support.html %}
-{% endif %}
