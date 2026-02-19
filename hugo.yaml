@@ -2,23 +2,13 @@ baseURL: "https://ice-ice-bear.github.io/"
 title: "ICE-ICE-BEAR-BLOG"
 theme: "PaperMod"
 paginate: 10
+languageCode: ko
 defaultContentLanguage: ko
-
-languages:
-  ko:
-    languageName: "한국어"
-    weight: 1
-    params:
-      subtitle: "ICY한 정보를 만나보세요"
-  en:
-    languageName: "English"
-    weight: 2
-    params:
-      subtitle: "where you can see ICY information"
 
 params:
   env: production
   description: "Blog with ICY-COLD IT info"
+  subtitle: "ICY한 정보를 만나보세요"
   author: "ICE ICE BEAR"
   DateFormat: "2006-01-02"
   ShowReadingTime: true
