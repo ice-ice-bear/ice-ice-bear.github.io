@@ -31,7 +31,7 @@ params:
       url: "mailto:3balbi7@gmail.com"
 
   assets:
-    favicon: "/assets/images/profile.png"
+    favicon: "/images/profile.png"
 
 menu:
   main:
