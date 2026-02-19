@@ -24,9 +24,14 @@ codekit-config.json
 # macOS
 .DS_Store
 
-# Jekyll generated files
+# Jekyll generated files (legacy)
 .jekyll-cache
 .jekyll-metadata
 .sass-cache
 _asset_bundler_cache
 _site
+
+# Hugo generated files
+/public/
+/resources/_gen/
+.hugo_build.lock
