@@ -1,5 +1,8 @@
 ---
 title: "Search"
-layout: "search"
-placeholder: "검색..."
+layout: search
+type: page
+outputs:
+  - html
+  - json
 ---

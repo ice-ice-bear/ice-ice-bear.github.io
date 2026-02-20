@@ -1,37 +1,55 @@
 baseURL: "https://ice-ice-bear.github.io/"
 title: "ICE-ICE-BEAR-BLOG"
-theme: "PaperMod"
+theme: stack
 paginate: 10
 languageCode: ko
 defaultContentLanguage: ko
+timezone: "Asia/Seoul"
 
 params:
-  env: production
-  description: "Blog with ICY-COLD IT info"
-  subtitle: "ICY한 정보를 만나보세요"
-  author: "ICE ICE BEAR"
-  DateFormat: "2006-01-02"
-  ShowReadingTime: true
-  ShowShareButtons: true
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: true
-  ShowToc: true
-  TocOpen: false
-  math: true
+  mainSections:
+    - posts
+  featuredImageField: image
+  rssFullContent: true
+  favicon: /images/profile.png
 
-  homeInfoParams:
-    Title: "ICE-ICE-BEAR-BLOG"
-    Content: "Achieve with GRIT"
+  footer:
+    since: 2024
 
-  socialIcons:
-    - name: github
-      url: "https://github.com/ice-ice-bear"
-    - name: email
-      url: "mailto:3balbi7@gmail.com"
+  dateFormat:
+    published: "2006-01-02"
+    lastUpdated: "2006-01-02 15:04"
 
-  assets:
-    favicon: "/images/profile.png"
+  colorScheme:
+    toggle: true
+    default: auto
+
+  article:
+    math: true
+    toc: true
+    readingTime: true
+    license:
+      enabled: false
+
+  sidebar:
+    compact: false
+    subtitle: "Achieve with GRIT"
+    avatar: img/avatar.png
+
+  widgets:
+    homepage:
+      - type: search
+      - type: archives
+        params:
+          limit: 5
+      - type: categories
+        params:
+          limit: 10
+      - type: tag-cloud
+        params:
+          limit: 15
+    page:
+      - type: toc
 
 menu:
   main:
@@ -39,24 +57,45 @@ menu:
       name: Posts
       url: /posts/
       weight: 10
+      params:
+        icon: archives
     - identifier: categories
       name: Categories
       url: /categories/
       weight: 20
+      params:
+        icon: categories
     - identifier: tags
       name: Tags
       url: /tags/
       weight: 30
+      params:
+        icon: tag
     - identifier: search
       name: Search
       url: /search/
       weight: 40
+      params:
+        icon: search
+
+  social:
+    - identifier: github
+      name: GitHub
+      url: "https://github.com/ice-ice-bear"
+      weight: 10
+      params:
+        icon: brand-github
+    - identifier: email
+      name: Email
+      url: "mailto:3balbi7@gmail.com"
+      weight: 20
+      params:
+        icon: mail
 
 outputs:
   home:
     - HTML
     - RSS
-    - JSON
 
 markup:
   goldmark:
@@ -64,5 +103,7 @@ markup:
       unsafe: true
   highlight:
     noClasses: false
-
-timezone: "Asia/Seoul"
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    style: monokai
