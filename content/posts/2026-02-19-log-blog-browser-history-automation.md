@@ -1,4 +1,5 @@
 ---
+image: "/images/posts/2026-02-19-log-blog-browser-history-automation/cover.jpg"
 title: "log-blog — 브라우저 히스토리를 블로그 포스트로 자동 변환하기"
 date: 2026-02-19
 categories: ["tech-log"]

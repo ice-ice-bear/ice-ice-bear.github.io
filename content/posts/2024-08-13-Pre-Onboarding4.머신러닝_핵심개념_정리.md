@@ -1,4 +1,5 @@
 ---
+image: "/images/posts/2024-08-13-Pre-Onboarding4/cover.jpg"
 categories:
 - machine-learning
 date: '2024-08-13'

@@ -1,4 +1,5 @@
 ---
+image: "/images/posts/2026-02-19-archon-ai-coding-command-center/cover.jpg"
 title: "Archon — AI 코딩 어시스턴트의 지휘본부"
 date: 2026-02-19
 categories: ["tech-log"]

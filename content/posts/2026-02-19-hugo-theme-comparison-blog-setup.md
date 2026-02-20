@@ -1,4 +1,5 @@
 ---
+image: "/images/posts/2026-02-19-hugo-theme-comparison-blog-setup/cover.jpg"
 title: "Hugo 블로그 테마 비교 분석 & GitHub Pages 구축 가이드"
 date: 2026-02-19
 categories: ["tech-log"]
