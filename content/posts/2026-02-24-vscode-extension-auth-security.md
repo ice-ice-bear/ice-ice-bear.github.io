@@ -1,4 +1,5 @@
 ---
+image: "/images/posts/2026-02-24-vscode-extension-auth-security/cover.jpg"
 title: "VS Code 확장 개발 — Remote Extension 아키텍처부터 시크릿 보안까지"
 date: 2026-02-24
 categories: ["tech-log"]
