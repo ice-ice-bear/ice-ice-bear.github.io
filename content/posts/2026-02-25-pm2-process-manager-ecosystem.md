@@ -1,6 +1,7 @@
 ---
 title: "PM2로 Python + Node.js 멀티 서비스 운영하기 — ecosystem.config.js 완전 가이드"
 date: 2026-02-25
+image: "/images/posts/2026-02-25-pm2-process-manager-ecosystem/cover.jpg"
 categories: ["tech-log"]
 tags: ["pm2", "devops", "process-management", "ecosystem", "fastapi", "vite", "python", "node", "deployment", "aws-ec2"]
 toc: true

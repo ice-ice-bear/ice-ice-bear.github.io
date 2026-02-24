@@ -1,6 +1,7 @@
 ---
 title: "VS Code 확장 개발: URI Handler로 OAuth 인증 구현하기"
 date: 2026-02-25
+image: "/images/posts/2026-02-25-vscode-extension-uri-handler-oauth/cover.jpg"
 categories: ["tech-log"]
 tags: ["vscode", "vscode-extension", "oauth", "uri-handler", "authentication", "code-server", "remote-tunnels", "typescript"]
 toc: true
