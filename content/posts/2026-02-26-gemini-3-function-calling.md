@@ -1,5 +1,6 @@
 ---
 title: "Gemini 3 — Function Calling, Structured Outputs, Code Execution 새 기능 정리"
+description: "Gemini 3의 Function Calling strict validation, Structured Outputs, Code Execution with images, Multimodal function responses, OpenAI 호환 API 등 새 기능을 정리한다."
 date: 2026-02-26
 image: "/images/posts/2026-02-26-gemini-3-function-calling/cover.jpg"
 categories: ["tech-log"]

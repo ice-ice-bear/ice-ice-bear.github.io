@@ -1,5 +1,6 @@
 ---
 title: "AWS ECS 서비스 운영과 CLI 자격 증명 설정"
+description: "ECS 서비스 업데이트, EC2 인스턴스 확인, ElastiCache Valkey 모니터링, IAM 액세스 키 생성과 AWS CLI 자격 증명 설정까지의 DevOps 작업 기록."
 date: 2026-02-26
 image: "/images/posts/2026-02-26-aws-ecs-cli-setup/cover.jpg"
 categories: ["tech-log"]

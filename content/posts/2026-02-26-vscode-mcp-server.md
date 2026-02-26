@@ -1,5 +1,6 @@
 ---
 title: "vscode-mcp-server — VS Code 편집 기능을 LLM에 노출하는 MCP 서버"
+description: "VS Code의 내장 편집 기능을 MCP 프로토콜로 노출하는 vscode-mcp-server 확장의 아키텍처, 도구 목록, Claude Code와의 차이점을 분석한다."
 date: 2026-02-26
 image: "/images/posts/2026-02-26-vscode-mcp-server/cover.jpg"
 categories: ["tech-log"]
