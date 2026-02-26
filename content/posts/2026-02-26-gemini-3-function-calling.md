@@ -1,6 +1,7 @@
 ---
 title: "Gemini 3 — Function Calling, Structured Outputs, Code Execution 새 기능 정리"
 date: 2026-02-26
+image: "/images/posts/2026-02-26-gemini-3-function-calling/cover.jpg"
 categories: ["tech-log"]
 tags: ["gemini-3", "google-ai", "function-calling", "structured-output", "code-execution", "llm", "api"]
 toc: true

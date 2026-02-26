@@ -1,6 +1,7 @@
 ---
 title: "Claude Code Hooks — 에이전트 동작의 결정론적 제어"
 date: 2026-02-26
+image: "/images/posts/2026-02-26-claude-code-hooks/cover.jpg"
 categories: ["tech-log"]
 tags: ["claude-code", "hooks", "automation", "developer-tools", "shell"]
 toc: true

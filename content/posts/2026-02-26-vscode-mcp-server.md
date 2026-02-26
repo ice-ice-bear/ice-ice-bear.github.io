@@ -1,6 +1,7 @@
 ---
 title: "vscode-mcp-server — VS Code 편집 기능을 LLM에 노출하는 MCP 서버"
 date: 2026-02-26
+image: "/images/posts/2026-02-26-vscode-mcp-server/cover.jpg"
 categories: ["tech-log"]
 tags: ["mcp", "vscode", "extension", "claude-desktop", "llm", "web-components"]
 toc: true

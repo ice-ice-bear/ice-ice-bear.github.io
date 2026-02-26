@@ -1,6 +1,7 @@
 ---
 title: "KIS Trading Agent — MCP 기반 LLM 주식 트레이딩 아키텍처"
 date: 2026-02-26
+image: "/images/posts/2026-02-26-kis-trading-agent-mcp/cover.jpg"
 categories: ["tech-log"]
 tags: ["mcp", "claude", "fastapi", "react", "trading", "kis-api", "llm", "fastmcp"]
 toc: true
