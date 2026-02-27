@@ -1,6 +1,7 @@
 ---
 title: "Kintsugi — SonarSource가 만든 Claude Code 전용 ADE"
 date: 2026-02-27
+image: "/images/posts/2026-02-27-kintsugi-ade/cover.jpg"
 categories: ["tech-log"]
 tags: ["kintsugi", "sonarqube", "claude-code", "sonarcloud", "agentic-development"]
 toc: true
