@@ -1,4 +1,4 @@
 ---
 title: "Security"
-image: "/images/taxonomy/cat-security.jpg"
+image: "/images/taxonomy/cat-security.svg"
 ---

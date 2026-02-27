@@ -1,4 +1,4 @@
 ---
 title: "Data Engineering"
-image: "/images/taxonomy/cat-data-engineering.jpg"
+image: "/images/taxonomy/cat-data-engineering.svg"
 ---

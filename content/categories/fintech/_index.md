@@ -1,4 +1,4 @@
 ---
 title: "Fintech"
-image: "/images/taxonomy/cat-fintech.jpg"
+image: "/images/taxonomy/cat-fintech.svg"
 ---

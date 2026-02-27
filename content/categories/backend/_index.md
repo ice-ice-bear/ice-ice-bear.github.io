@@ -1,4 +1,4 @@
 ---
 title: "Backend"
-image: "/images/taxonomy/cat-backend.jpg"
+image: "/images/taxonomy/cat-backend.svg"
 ---

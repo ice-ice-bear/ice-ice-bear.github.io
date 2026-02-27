@@ -1,4 +1,4 @@
 ---
 title: "Coding"
-image: "/images/taxonomy/cat-coding.jpg"
+image: "/images/taxonomy/cat-coding.svg"
 ---

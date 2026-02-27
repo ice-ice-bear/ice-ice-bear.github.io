@@ -1,4 +1,4 @@
 ---
 title: "Tech Log"
-image: "/images/taxonomy/cat-tech-log.jpg"
+image: "/images/taxonomy/cat-tech-log.svg"
 ---
