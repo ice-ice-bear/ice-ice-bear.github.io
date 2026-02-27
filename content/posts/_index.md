@@ -1,4 +1,4 @@
 ---
 title: "Posts"
-image: "/images/taxonomy/posts-banner.jpg"
+image: "/images/taxonomy/posts-banner.svg"
 ---
