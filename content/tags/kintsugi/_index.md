@@ -1,4 +1,4 @@
 ---
 title: "Kintsugi"
-image: "/images/taxonomy/tag-kintsugi.jpg"
+image: "/images/taxonomy/tag-kintsugi.svg"
 ---

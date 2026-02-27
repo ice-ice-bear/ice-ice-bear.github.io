@@ -1,4 +1,4 @@
 ---
 title: "Sonarqube"
-image: "/images/taxonomy/tag-sonarqube.jpg"
+image: "/images/taxonomy/tag-sonarqube.svg"
 ---

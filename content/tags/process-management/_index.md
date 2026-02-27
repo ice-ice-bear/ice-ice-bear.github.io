@@ -1,4 +1,4 @@
 ---
 title: "Process Management"
-image: "/images/taxonomy/tag-process-management.jpg"
+image: "/images/taxonomy/tag-process-management.svg"
 ---

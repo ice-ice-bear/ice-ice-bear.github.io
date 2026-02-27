@@ -1,4 +1,4 @@
 ---
 title: "Slo"
-image: "/images/taxonomy/tag-slo.jpg"
+image: "/images/taxonomy/tag-slo.svg"
 ---

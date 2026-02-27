@@ -1,4 +1,4 @@
 ---
 title: "Ecosystem"
-image: "/images/taxonomy/tag-ecosystem.jpg"
+image: "/images/taxonomy/tag-ecosystem.svg"
 ---

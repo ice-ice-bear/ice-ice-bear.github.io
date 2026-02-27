@@ -1,4 +1,4 @@
 ---
 title: "Architecture"
-image: "/images/taxonomy/tag-architecture.jpg"
+image: "/images/taxonomy/tag-architecture.svg"
 ---

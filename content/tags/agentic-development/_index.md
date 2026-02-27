@@ -1,4 +1,4 @@
 ---
 title: "Agentic Development"
-image: "/images/taxonomy/tag-agentic-development.jpg"
+image: "/images/taxonomy/tag-agentic-development.svg"
 ---

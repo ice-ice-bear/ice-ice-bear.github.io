@@ -1,4 +1,4 @@
 ---
 title: "Trading"
-image: "/images/taxonomy/tag-trading.jpg"
+image: "/images/taxonomy/tag-trading.svg"
 ---

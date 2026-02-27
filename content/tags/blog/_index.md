@@ -1,4 +1,4 @@
 ---
 title: "Blog"
-image: "/images/taxonomy/tag-blog.jpg"
+image: "/images/taxonomy/tag-blog.svg"
 ---

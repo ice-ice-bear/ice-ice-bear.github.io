@@ -1,4 +1,4 @@
 ---
 title: "Honeycomb"
-image: "/images/taxonomy/tag-honeycomb.jpg"
+image: "/images/taxonomy/tag-honeycomb.svg"
 ---

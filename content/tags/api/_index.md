@@ -1,4 +1,4 @@
 ---
 title: "Api"
-image: "/images/taxonomy/tag-api.jpg"
+image: "/images/taxonomy/tag-api.svg"
 ---

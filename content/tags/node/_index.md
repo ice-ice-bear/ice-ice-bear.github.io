@@ -1,4 +1,4 @@
 ---
 title: "Node"
-image: "/images/taxonomy/tag-node.jpg"
+image: "/images/taxonomy/tag-node.svg"
 ---

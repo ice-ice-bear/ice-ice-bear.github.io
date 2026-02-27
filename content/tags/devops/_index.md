@@ -1,4 +1,4 @@
 ---
 title: "Devops"
-image: "/images/taxonomy/tag-devops.jpg"
+image: "/images/taxonomy/tag-devops.svg"
 ---

@@ -1,4 +1,4 @@
 ---
 title: "Monitoring"
-image: "/images/taxonomy/tag-monitoring.jpg"
+image: "/images/taxonomy/tag-monitoring.svg"
 ---

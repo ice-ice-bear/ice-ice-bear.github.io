@@ -1,4 +1,4 @@
 ---
 title: "Github Pages"
-image: "/images/taxonomy/tag-github-pages.jpg"
+image: "/images/taxonomy/tag-github-pages.svg"
 ---

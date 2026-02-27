@@ -1,4 +1,4 @@
 ---
 title: "Papermod"
-image: "/images/taxonomy/tag-papermod.jpg"
+image: "/images/taxonomy/tag-papermod.svg"
 ---

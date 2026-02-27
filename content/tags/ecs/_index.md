@@ -1,4 +1,4 @@
 ---
 title: "Ecs"
-image: "/images/taxonomy/tag-ecs.jpg"
+image: "/images/taxonomy/tag-ecs.svg"
 ---

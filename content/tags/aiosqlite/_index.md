@@ -1,4 +1,4 @@
 ---
 title: "Aiosqlite"
-image: "/images/taxonomy/tag-aiosqlite.jpg"
+image: "/images/taxonomy/tag-aiosqlite.svg"
 ---

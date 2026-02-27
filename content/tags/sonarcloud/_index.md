@@ -1,4 +1,4 @@
 ---
 title: "Sonarcloud"
-image: "/images/taxonomy/tag-sonarcloud.jpg"
+image: "/images/taxonomy/tag-sonarcloud.svg"
 ---

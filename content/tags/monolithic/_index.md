@@ -1,4 +1,4 @@
 ---
 title: "Monolithic"
-image: "/images/taxonomy/tag-monolithic.jpg"
+image: "/images/taxonomy/tag-monolithic.svg"
 ---

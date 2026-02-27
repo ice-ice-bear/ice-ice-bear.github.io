@@ -1,4 +1,4 @@
 ---
 title: "Fast"
-image: "/images/taxonomy/tag-fast.jpg"
+image: "/images/taxonomy/tag-fast.svg"
 ---

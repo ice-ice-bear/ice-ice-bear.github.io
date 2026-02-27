@@ -1,4 +1,4 @@
 ---
 title: "Claude"
-image: "/images/taxonomy/tag-claude.jpg"
+image: "/images/taxonomy/tag-claude.svg"
 ---

@@ -1,4 +1,4 @@
 ---
 title: "Machine Learning"
-image: "/images/taxonomy/tag-machine-learning.jpg"
+image: "/images/taxonomy/tag-machine-learning.svg"
 ---

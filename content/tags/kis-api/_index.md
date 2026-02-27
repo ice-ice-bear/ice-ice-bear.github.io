@@ -1,4 +1,4 @@
 ---
 title: "Kis Api"
-image: "/images/taxonomy/tag-kis-api.jpg"
+image: "/images/taxonomy/tag-kis-api.svg"
 ---

@@ -1,4 +1,4 @@
 ---
 title: "Distributed Tracing"
-image: "/images/taxonomy/tag-distributed-tracing.jpg"
+image: "/images/taxonomy/tag-distributed-tracing.svg"
 ---

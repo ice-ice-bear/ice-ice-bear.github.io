@@ -1,4 +1,4 @@
 ---
 title: "Elasticache"
-image: "/images/taxonomy/tag-elasticache.jpg"
+image: "/images/taxonomy/tag-elasticache.svg"
 ---

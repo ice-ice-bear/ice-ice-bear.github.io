@@ -1,4 +1,4 @@
 ---
 title: "Group Study"
-image: "/images/taxonomy/tag-group-study.jpg"
+image: "/images/taxonomy/tag-group-study.svg"
 ---

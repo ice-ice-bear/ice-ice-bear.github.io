@@ -1,4 +1,4 @@
 ---
 title: "Token"
-image: "/images/taxonomy/tag-token.jpg"
+image: "/images/taxonomy/tag-token.svg"
 ---

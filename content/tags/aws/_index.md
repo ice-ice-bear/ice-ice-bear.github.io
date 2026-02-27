@@ -1,4 +1,4 @@
 ---
 title: "Aws"
-image: "/images/taxonomy/tag-aws.jpg"
+image: "/images/taxonomy/tag-aws.svg"
 ---

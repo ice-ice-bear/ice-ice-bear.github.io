@@ -1,4 +1,4 @@
 ---
 title: "Websocket"
-image: "/images/taxonomy/tag-websocket.jpg"
+image: "/images/taxonomy/tag-websocket.svg"
 ---

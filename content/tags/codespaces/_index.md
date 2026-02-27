@@ -1,4 +1,4 @@
 ---
 title: "Codespaces"
-image: "/images/taxonomy/tag-codespaces.jpg"
+image: "/images/taxonomy/tag-codespaces.svg"
 ---

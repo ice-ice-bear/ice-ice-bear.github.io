@@ -1,4 +1,4 @@
 ---
 title: "Grafana"
-image: "/images/taxonomy/tag-grafana.jpg"
+image: "/images/taxonomy/tag-grafana.svg"
 ---

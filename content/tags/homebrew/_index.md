@@ -1,4 +1,4 @@
 ---
 title: "Homebrew"
-image: "/images/taxonomy/tag-homebrew.jpg"
+image: "/images/taxonomy/tag-homebrew.svg"
 ---

@@ -1,4 +1,4 @@
 ---
 title: "Diagram"
-image: "/images/taxonomy/tag-diagram.jpg"
+image: "/images/taxonomy/tag-diagram.svg"
 ---

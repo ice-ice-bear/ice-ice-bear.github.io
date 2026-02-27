@@ -1,4 +1,4 @@
 ---
 title: "System Design"
-image: "/images/taxonomy/tag-system-design.jpg"
+image: "/images/taxonomy/tag-system-design.svg"
 ---

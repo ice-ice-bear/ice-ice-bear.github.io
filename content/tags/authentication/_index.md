@@ -1,4 +1,4 @@
 ---
 title: "Authentication"
-image: "/images/taxonomy/tag-authentication.jpg"
+image: "/images/taxonomy/tag-authentication.svg"
 ---

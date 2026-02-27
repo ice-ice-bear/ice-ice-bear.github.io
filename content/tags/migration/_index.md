@@ -1,4 +1,4 @@
 ---
 title: "Migration"
-image: "/images/taxonomy/tag-migration.jpg"
+image: "/images/taxonomy/tag-migration.svg"
 ---

@@ -1,4 +1,4 @@
 ---
 title: "Docker"
-image: "/images/taxonomy/tag-docker.jpg"
+image: "/images/taxonomy/tag-docker.svg"
 ---

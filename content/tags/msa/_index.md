@@ -1,4 +1,4 @@
 ---
 title: "Msa"
-image: "/images/taxonomy/tag-msa.jpg"
+image: "/images/taxonomy/tag-msa.svg"
 ---

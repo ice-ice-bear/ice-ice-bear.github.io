@@ -1,4 +1,4 @@
 ---
 title: "Supabase"
-image: "/images/taxonomy/tag-supabase.jpg"
+image: "/images/taxonomy/tag-supabase.svg"
 ---
