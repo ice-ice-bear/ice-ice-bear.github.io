@@ -2,7 +2,7 @@
 image: "/images/posts/2026-02-24-alembic-database-migration/cover.jpg"
 title: "Alembic — SQLAlchemy 데이터베이스 마이그레이션 가이드"
 date: 2026-02-24
-categories: ["tech-log"]
+categories: ["backend"]
 tags: ["alembic", "sqlalchemy", "database", "migration", "python", "postgresql"]
 toc: true
 math: false

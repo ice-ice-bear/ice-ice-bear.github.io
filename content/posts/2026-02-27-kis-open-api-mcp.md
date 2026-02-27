@@ -2,7 +2,7 @@
 title: "KIS Developers — 한국투자증권 Open API와 MCP 트레이딩"
 date: 2026-02-27
 image: "/images/posts/2026-02-27-kis-open-api-mcp/cover.jpg"
-categories: ["tech-log"]
+categories: ["fintech"]
 tags: ["kis-api", "open-api", "mcp", "trading", "websocket", "rest-api"]
 toc: true
 math: false

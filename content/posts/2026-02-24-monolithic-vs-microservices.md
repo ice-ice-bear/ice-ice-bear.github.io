@@ -2,7 +2,7 @@
 image: "/images/posts/2026-02-24-monolithic-vs-microservices/cover.jpg"
 title: "모놀리식 vs 마이크로서비스 — 아키텍처 선택의 기준"
 date: 2026-02-24
-categories: ["tech-log"]
+categories: ["architecture"]
 tags: ["architecture", "monolithic", "microservices", "msa", "system-design"]
 toc: true
 math: false

@@ -3,7 +3,7 @@ title: "Claude Code Hooks — 에이전트 동작의 결정론적 제어"
 description: "Claude Code Hooks의 네 가지 라이프사이클 이벤트와 설정 구조, 실전 활용 예시를 정리한다. 에이전트의 비결정적 동작에 결정론적 보장을 추가하는 메커니즘이다."
 date: 2026-02-26
 image: "/images/posts/2026-02-26-claude-code-hooks/cover.jpg"
-categories: ["tech-log"]
+categories: ["developer-tools"]
 tags: ["claude-code", "hooks", "automation", "developer-tools", "shell"]
 toc: true
 math: false

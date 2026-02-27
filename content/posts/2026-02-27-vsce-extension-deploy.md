@@ -2,7 +2,7 @@
 title: "VS Code Extension 배포 — vsce 워크플로우 정리"
 date: 2026-02-27
 image: "/images/posts/2026-02-27-vsce-extension-deploy/cover.jpg"
-categories: ["tech-log"]
+categories: ["developer-tools"]
 tags: ["vscode", "vsce", "azure-devops", "marketplace", "extension"]
 toc: true
 math: false

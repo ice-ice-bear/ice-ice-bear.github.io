@@ -2,7 +2,7 @@
 title: "Observability vs Monitoring: Honeycomb vs Grafana 비교 분석"
 date: 2026-02-25
 image: "/images/posts/2026-02-25-observability-honeycomb-vs-grafana/cover.jpg"
-categories: ["tech-log"]
+categories: ["devops"]
 tags: ["observability", "monitoring", "honeycomb", "grafana", "devops", "slo", "apm", "distributed-tracing"]
 toc: true
 math: false

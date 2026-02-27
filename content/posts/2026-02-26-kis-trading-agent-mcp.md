@@ -3,7 +3,7 @@ title: "KIS Trading Agent — MCP 기반 LLM 주식 트레이딩 아키텍처"
 description: "한국투자증권 API와 MCP를 결합한 LLM 기반 주식 트레이딩 에이전트의 아키텍처를 분석한다. FastMCP 서버, React 프론트엔드, Claude 연동 구조를 살펴본다."
 date: 2026-02-26
 image: "/images/posts/2026-02-26-kis-trading-agent-mcp/cover.jpg"
-categories: ["tech-log"]
+categories: ["fintech"]
 tags: ["mcp", "claude", "fastapi", "react", "trading", "kis-api", "llm", "fastmcp"]
 toc: true
 math: false

@@ -3,7 +3,7 @@ title: "VS Code 확장 생태계 2026: Webview UI Toolkit 종료부터 AI 확장
 description: "Webview UI Toolkit의 아카이브 원인과 대안, 2026년 추천 VS Code 확장, Claude Code의 IDE 통합까지 VS Code 확장 생태계의 전환기를 살펴본다."
 date: 2026-02-26
 image: "/images/posts/2026-02-26-vscode-ecosystem-2026/cover.jpg"
-categories: ["tech-log"]
+categories: ["developer-tools"]
 tags: ["vscode", "web-components", "fast", "claude-code", "extensions", "ai", "developer-tools"]
 toc: true
 math: false

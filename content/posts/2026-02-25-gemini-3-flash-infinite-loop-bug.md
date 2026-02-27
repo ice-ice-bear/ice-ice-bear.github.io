@@ -2,7 +2,7 @@
 title: "Gemini 3 Flash Preview 버그: 무한 추론 루프와 내부 로직 노출"
 date: 2026-02-25
 image: "/images/posts/2026-02-25-gemini-3-flash-infinite-loop-bug/cover.jpg"
-categories: ["tech-log"]
+categories: ["ai-ml"]
 tags: ["gemini", "llm", "bug", "google-ai", "thinking", "api", "production"]
 toc: true
 math: false
