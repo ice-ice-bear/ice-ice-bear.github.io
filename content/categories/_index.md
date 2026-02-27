@@ -1,4 +1,4 @@
 ---
 title: "Categories"
-image: "/images/taxonomy/categories-banner.jpg"
+image: "/images/taxonomy/categories-banner.svg"
 ---
