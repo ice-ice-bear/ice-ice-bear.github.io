@@ -1,4 +1,4 @@
 ---
 title: "Postgresql"
-image: "/images/taxonomy/tag-postgresql.svg"
+image: "/images/taxonomy/tag-postgresql.jpg"
 ---

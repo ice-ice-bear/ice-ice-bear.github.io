@@ -1,4 +1,4 @@
 ---
 title: "Image Generation"
-image: "/images/taxonomy/tag-image-generation.svg"
+image: "/images/taxonomy/tag-image-generation.jpg"
 ---

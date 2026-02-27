@@ -1,4 +1,4 @@
 ---
 title: "Frontend"
-image: "/images/taxonomy/cat-frontend.svg"
+image: "/images/taxonomy/cat-frontend.jpg"
 ---

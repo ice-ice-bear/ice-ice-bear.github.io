@@ -1,4 +1,4 @@
 ---
 title: "Google Ai"
-image: "/images/taxonomy/tag-google-ai.svg"
+image: "/images/taxonomy/tag-google-ai.jpg"
 ---

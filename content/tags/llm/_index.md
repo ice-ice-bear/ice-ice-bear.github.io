@@ -1,4 +1,4 @@
 ---
 title: "Llm"
-image: "/images/taxonomy/tag-llm.svg"
+image: "/images/taxonomy/tag-llm.jpg"
 ---

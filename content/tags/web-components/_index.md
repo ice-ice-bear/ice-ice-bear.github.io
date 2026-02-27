@@ -1,4 +1,4 @@
 ---
 title: "Web Components"
-image: "/images/taxonomy/tag-web-components.svg"
+image: "/images/taxonomy/tag-web-components.jpg"
 ---

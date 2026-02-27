@@ -1,4 +1,4 @@
 ---
 title: "Azure"
-image: "/images/taxonomy/tag-azure.svg"
+image: "/images/taxonomy/tag-azure.jpg"
 ---

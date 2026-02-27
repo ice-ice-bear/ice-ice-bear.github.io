@@ -1,4 +1,4 @@
 ---
 title: "Developer Tools"
-image: "/images/taxonomy/cat-developer-tools.svg"
+image: "/images/taxonomy/cat-developer-tools.jpg"
 ---

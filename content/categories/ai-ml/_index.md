@@ -1,4 +1,4 @@
 ---
 title: "Ai Ml"
-image: "/images/taxonomy/cat-ai-ml.svg"
+image: "/images/taxonomy/cat-ai-ml.jpg"
 ---

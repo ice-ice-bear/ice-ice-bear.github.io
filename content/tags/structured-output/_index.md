@@ -1,4 +1,4 @@
 ---
 title: "Structured Output"
-image: "/images/taxonomy/tag-structured-output.svg"
+image: "/images/taxonomy/tag-structured-output.jpg"
 ---

@@ -1,4 +1,4 @@
 ---
 title: "Vscode Extension"
-image: "/images/taxonomy/tag-vscode-extension.svg"
+image: "/images/taxonomy/tag-vscode-extension.jpg"
 ---

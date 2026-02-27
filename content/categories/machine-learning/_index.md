@@ -1,4 +1,4 @@
 ---
 title: "Machine Learning"
-image: "/images/taxonomy/cat-machine-learning.svg"
+image: "/images/taxonomy/cat-machine-learning.jpg"
 ---

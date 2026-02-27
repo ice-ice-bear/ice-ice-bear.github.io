@@ -1,4 +1,4 @@
 ---
 title: "Microservices"
-image: "/images/taxonomy/tag-microservices.svg"
+image: "/images/taxonomy/tag-microservices.jpg"
 ---

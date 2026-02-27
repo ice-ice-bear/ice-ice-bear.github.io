@@ -1,4 +1,4 @@
 ---
 title: "Mcp"
-image: "/images/taxonomy/tag-mcp.svg"
+image: "/images/taxonomy/tag-mcp.jpg"
 ---

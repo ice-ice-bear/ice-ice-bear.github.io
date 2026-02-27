@@ -1,4 +1,4 @@
 ---
 title: "Valkey"
-image: "/images/taxonomy/tag-valkey.svg"
+image: "/images/taxonomy/tag-valkey.jpg"
 ---

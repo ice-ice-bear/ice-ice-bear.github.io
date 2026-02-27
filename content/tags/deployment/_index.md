@@ -1,4 +1,4 @@
 ---
 title: "Deployment"
-image: "/images/taxonomy/tag-deployment.svg"
+image: "/images/taxonomy/tag-deployment.jpg"
 ---

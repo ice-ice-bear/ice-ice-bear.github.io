@@ -1,4 +1,4 @@
 ---
 title: "Playwright"
-image: "/images/taxonomy/tag-playwright.svg"
+image: "/images/taxonomy/tag-playwright.jpg"
 ---

@@ -1,4 +1,4 @@
 ---
 title: "Observability"
-image: "/images/taxonomy/tag-observability.svg"
+image: "/images/taxonomy/tag-observability.jpg"
 ---

@@ -1,4 +1,4 @@
 ---
 title: "Chrome"
-image: "/images/taxonomy/tag-chrome.svg"
+image: "/images/taxonomy/tag-chrome.jpg"
 ---

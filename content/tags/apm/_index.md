@@ -1,4 +1,4 @@
 ---
 title: "Apm"
-image: "/images/taxonomy/tag-apm.svg"
+image: "/images/taxonomy/tag-apm.jpg"
 ---

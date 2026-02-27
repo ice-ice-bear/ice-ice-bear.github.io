@@ -1,4 +1,4 @@
 ---
 title: "Hooks"
-image: "/images/taxonomy/tag-hooks.svg"
+image: "/images/taxonomy/tag-hooks.jpg"
 ---

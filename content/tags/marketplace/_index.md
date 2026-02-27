@@ -1,4 +1,4 @@
 ---
 title: "Marketplace"
-image: "/images/taxonomy/tag-marketplace.svg"
+image: "/images/taxonomy/tag-marketplace.jpg"
 ---

@@ -1,4 +1,4 @@
 ---
 title: "Vite"
-image: "/images/taxonomy/tag-vite.svg"
+image: "/images/taxonomy/tag-vite.jpg"
 ---

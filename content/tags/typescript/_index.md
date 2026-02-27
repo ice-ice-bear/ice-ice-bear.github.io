@@ -1,4 +1,4 @@
 ---
 title: "Typescript"
-image: "/images/taxonomy/tag-typescript.svg"
+image: "/images/taxonomy/tag-typescript.jpg"
 ---

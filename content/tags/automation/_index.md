@@ -1,4 +1,4 @@
 ---
 title: "Automation"
-image: "/images/taxonomy/tag-automation.svg"
+image: "/images/taxonomy/tag-automation.jpg"
 ---

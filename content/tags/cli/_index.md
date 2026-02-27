@@ -1,4 +1,4 @@
 ---
 title: "Cli"
-image: "/images/taxonomy/tag-cli.svg"
+image: "/images/taxonomy/tag-cli.jpg"
 ---

@@ -1,4 +1,4 @@
 ---
 title: "Hugo"
-image: "/images/taxonomy/tag-hugo.svg"
+image: "/images/taxonomy/tag-hugo.jpg"
 ---

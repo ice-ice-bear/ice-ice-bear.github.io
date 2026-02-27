@@ -1,4 +1,4 @@
 ---
 title: "Python"
-image: "/images/taxonomy/tag-python.svg"
+image: "/images/taxonomy/tag-python.jpg"
 ---

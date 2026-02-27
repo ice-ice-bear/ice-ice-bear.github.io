@@ -1,4 +1,4 @@
 ---
 title: "Production"
-image: "/images/taxonomy/tag-production.svg"
+image: "/images/taxonomy/tag-production.jpg"
 ---

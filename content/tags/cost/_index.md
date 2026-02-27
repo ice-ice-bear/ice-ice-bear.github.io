@@ -1,4 +1,4 @@
 ---
 title: "Cost"
-image: "/images/taxonomy/tag-cost.svg"
+image: "/images/taxonomy/tag-cost.jpg"
 ---

@@ -1,4 +1,4 @@
 ---
 title: "Debugging"
-image: "/images/taxonomy/tag-debugging.svg"
+image: "/images/taxonomy/tag-debugging.jpg"
 ---

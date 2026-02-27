@@ -1,4 +1,4 @@
 ---
 title: "Static Site Generator"
-image: "/images/taxonomy/tag-static-site-generator.svg"
+image: "/images/taxonomy/tag-static-site-generator.jpg"
 ---

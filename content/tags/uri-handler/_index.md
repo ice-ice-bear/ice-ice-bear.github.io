@@ -1,4 +1,4 @@
 ---
 title: "Uri Handler"
-image: "/images/taxonomy/tag-uri-handler.svg"
+image: "/images/taxonomy/tag-uri-handler.jpg"
 ---

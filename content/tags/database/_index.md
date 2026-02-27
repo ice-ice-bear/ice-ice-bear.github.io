@@ -1,4 +1,4 @@
 ---
 title: "Database"
-image: "/images/taxonomy/tag-database.svg"
+image: "/images/taxonomy/tag-database.jpg"
 ---

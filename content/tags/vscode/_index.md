@@ -1,4 +1,4 @@
 ---
 title: "Vscode"
-image: "/images/taxonomy/tag-vscode.svg"
+image: "/images/taxonomy/tag-vscode.jpg"
 ---

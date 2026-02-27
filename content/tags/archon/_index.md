@@ -1,4 +1,4 @@
 ---
 title: "Archon"
-image: "/images/taxonomy/tag-archon.svg"
+image: "/images/taxonomy/tag-archon.jpg"
 ---

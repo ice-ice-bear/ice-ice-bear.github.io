@@ -1,4 +1,4 @@
 ---
 title: "Extensions"
-image: "/images/taxonomy/tag-extensions.svg"
+image: "/images/taxonomy/tag-extensions.jpg"
 ---

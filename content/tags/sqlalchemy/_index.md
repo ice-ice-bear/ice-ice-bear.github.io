@@ -1,4 +1,4 @@
 ---
 title: "Sqlalchemy"
-image: "/images/taxonomy/tag-sqlalchemy.svg"
+image: "/images/taxonomy/tag-sqlalchemy.jpg"
 ---

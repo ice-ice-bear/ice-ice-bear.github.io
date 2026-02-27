@@ -1,4 +1,4 @@
 ---
 title: "Aws Ec2"
-image: "/images/taxonomy/tag-aws-ec2.svg"
+image: "/images/taxonomy/tag-aws-ec2.jpg"
 ---

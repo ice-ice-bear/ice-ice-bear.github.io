@@ -1,4 +1,4 @@
 ---
 title: "Fastapi"
-image: "/images/taxonomy/tag-fastapi.svg"
+image: "/images/taxonomy/tag-fastapi.jpg"
 ---

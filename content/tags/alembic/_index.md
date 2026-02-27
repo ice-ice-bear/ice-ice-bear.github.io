@@ -1,4 +1,4 @@
 ---
 title: "Alembic"
-image: "/images/taxonomy/tag-alembic.svg"
+image: "/images/taxonomy/tag-alembic.jpg"
 ---

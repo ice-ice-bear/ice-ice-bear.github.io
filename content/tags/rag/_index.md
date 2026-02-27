@@ -1,4 +1,4 @@
 ---
 title: "Rag"
-image: "/images/taxonomy/tag-rag.svg"
+image: "/images/taxonomy/tag-rag.jpg"
 ---

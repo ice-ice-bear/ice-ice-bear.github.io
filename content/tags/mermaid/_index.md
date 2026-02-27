@@ -1,4 +1,4 @@
 ---
 title: "Mermaid"
-image: "/images/taxonomy/tag-mermaid.svg"
+image: "/images/taxonomy/tag-mermaid.jpg"
 ---

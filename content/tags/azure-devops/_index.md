@@ -1,4 +1,4 @@
 ---
 title: "Azure Devops"
-image: "/images/taxonomy/tag-azure-devops.svg"
+image: "/images/taxonomy/tag-azure-devops.jpg"
 ---

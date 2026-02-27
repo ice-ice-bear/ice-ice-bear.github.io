@@ -1,4 +1,4 @@
 ---
 title: "Function Calling"
-image: "/images/taxonomy/tag-function-calling.svg"
+image: "/images/taxonomy/tag-function-calling.jpg"
 ---

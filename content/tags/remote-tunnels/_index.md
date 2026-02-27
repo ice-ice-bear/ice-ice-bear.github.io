@@ -1,4 +1,4 @@
 ---
 title: "Remote Tunnels"
-image: "/images/taxonomy/tag-remote-tunnels.svg"
+image: "/images/taxonomy/tag-remote-tunnels.jpg"
 ---
