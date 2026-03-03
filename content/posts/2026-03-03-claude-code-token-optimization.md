@@ -98,12 +98,12 @@ When you are using compact, please focus on test output and code changes
 
 ```mermaid
 graph LR
-    Task[작업 종류] -->|복잡한 설계| Opus["Opus 4.6<br/>💰💰💰"]
-    Task -->|일반 코딩| Sonnet["Sonnet 4.6<br/>💰💰"]
-    Task -->|탐색/테스트| Haiku["Haiku<br/>💰"]
+    Task[작업 종류] -->|복잡한 설계| Opus["Opus 4.6<br/>비용 높음"]
+    Task -->|일반 코딩| Sonnet["Sonnet 4.6<br/>비용 중간"]
+    Task -->|탐색/테스트| Haiku["Haiku<br/>비용 낮음"]
 
-    Opus -->|"/model sonnet"| Sonnet
-    Sonnet -->|"/model haiku"| Haiku
+    Opus -->|/model sonnet| Sonnet
+    Sonnet -->|/model haiku| Haiku
 ```
 
 ### Extended Thinking 조정
@@ -196,8 +196,8 @@ group_by[]=description" \
 
 ```mermaid
 graph TD
-    subgraph "Usage & Cost API 활용"
-        AdminKey["Admin API Key<br/>(sk-ant-admin...)"] --> UsageAPI["Usage API<br/>토큰 소비량"]
+    subgraph "Usage and Cost API 활용"
+        AdminKey["Admin API Key<br/>sk-ant-admin"] --> UsageAPI["Usage API<br/>토큰 소비량"]
         AdminKey --> CostAPI["Cost API<br/>USD 비용"]
 
         UsageAPI --> Dashboard["모니터링 대시보드"]
