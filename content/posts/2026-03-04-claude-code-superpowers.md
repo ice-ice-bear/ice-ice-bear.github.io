@@ -16,10 +16,10 @@ Claude Code는 강력하다. 그런데 이상하게 결과물이 찜찜하다. "
 
 ```mermaid
 graph TD
-    Request[사용자 요청\n'이거 만들어줘'] --> Brain[brainstorming\n요구사항 명확화]
-    Brain --> Plan[writing-plans\n구현 계획 수립]
-    Plan --> Exec[subagent-driven-development\n병렬 구현]
-    Exec --> Review[requesting-code-review\n품질 검증]
+    Request["사용자 요청<br/>'이거 만들어줘'"] --> Brain["brainstorming<br/>요구사항 명확화"]
+    Brain --> Plan["writing-plans<br/>구현 계획 수립"]
+    Plan --> Exec["subagent-driven-development<br/>병렬 구현"]
+    Exec --> Review["requesting-code-review<br/>품질 검증"]
     Review --> Done[완성된 코드베이스]
 
     style Brain fill:#4A90D9,color:#fff
@@ -99,9 +99,9 @@ git worktree add .claude/worktrees/feature-auth feature/auth
 
 ```mermaid
 graph TD
-    Lead[메인 에이전트\nPM 역할] -->|Task 1| S1[Subagent 1\n이메일 검증 로직]
-    Lead -->|Task 2| S2[Subagent 2\nDNS 검증 로직]
-    Lead -->|Task 3| S3[Subagent 3\n미들웨어 통합]
+    Lead["메인 에이전트<br/>PM 역할"] -->|Task 1| S1["Subagent 1<br/>이메일 검증 로직"]
+    Lead -->|Task 2| S2["Subagent 2<br/>DNS 검증 로직"]
+    Lead -->|Task 3| S3["Subagent 3<br/>미들웨어 통합"]
     S1 -->|결과 + 테스트| Lead
     S2 -->|결과 + 테스트| Lead
     S3 -->|결과 + 테스트| Lead
@@ -163,8 +163,8 @@ email_validator/
 
 ```mermaid
 graph LR
-    SP[Superpowers\n워크플로우 규율] -->|설치| Claude[Claude Code]
-    MC[mega-code\n지식 진화] -->|설치| Claude
+    SP["Superpowers<br/>워크플로우 규율"] -->|설치| Claude[Claude Code]
+    MC["mega-code<br/>지식 진화"] -->|설치| Claude
     SP -.->|보완| MC
     MC -.->|보완| SP
 ```

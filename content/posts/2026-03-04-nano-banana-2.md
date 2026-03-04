@@ -14,8 +14,8 @@ math: false
 
 ```mermaid
 graph LR
-    NB1[Nano Banana\n2025 8월\n'바이럴 센세이션'] --> NBP[Nano Banana Pro\n2025 11월\n'스튜디오 품질']
-    NBP --> NB2[Nano Banana 2\n2026 2월 26일\n'Pro 품질 + Flash 속도']
+    NB1["Nano Banana<br/>2025 8월<br/>'바이럴 센세이션'"] --> NBP["Nano Banana Pro<br/>2025 11월<br/>'스튜디오 품질'"]
+    NBP --> NB2["Nano Banana 2<br/>2026 2월 26일<br/>'Pro 품질 + Flash 속도'"]
     NB1 --> NB2
 
     style NB2 fill:#4285F4,color:#fff
@@ -41,12 +41,12 @@ graph LR
 
 ```mermaid
 graph TD
-    NB2[Nano Banana 2] --> WK[실세계 지식\n웹 검색 연동]
-    NB2 --> TR[텍스트 렌더링\n다국어 지원]
-    NB2 --> SC[피사체 일관성\n최대 5인 + 14객체]
+    NB2[Nano Banana 2] --> WK["실세계 지식<br/>웹 검색 연동"]
+    NB2 --> TR["텍스트 렌더링<br/>다국어 지원"]
+    NB2 --> SC["피사체 일관성<br/>최대 5인 + 14객체"]
     NB2 --> IF[정밀 명령 이행]
-    NB2 --> PS[프로덕션 스펙\n512px~4K]
-    NB2 --> VF[비주얼 피델리티\n생동감 있는 조명·텍스처]
+    NB2 --> PS["프로덕션 스펙<br/>512px~4K"]
+    NB2 --> VF["비주얼 피델리티<br/>생동감 있는 조명·텍스처"]
 ```
 
 ## API 접근법 3가지
