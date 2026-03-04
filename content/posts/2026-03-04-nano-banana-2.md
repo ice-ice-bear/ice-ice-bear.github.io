@@ -1,6 +1,7 @@
 ---
 title: "Nano Banana 2 완전 분석 — Pro급 품질을 Flash 속도로, Google 최신 이미지 생성 모델"
 date: 2026-03-04
+description: "Google의 최신 이미지 생성 모델 Nano Banana 2는 Pro급 품질을 Flash 속도로 제공한다. 피사체 일관성, 정밀 텍스트 렌더링, 실세계 지식 연동 등 핵심 기능과 API 활용법을 정리했다."
 image: "/images/posts/2026-03-04-nano-banana-2/cover.jpg"
 categories: ["ai-ml"]
 tags: ["nano-banana-2", "gemini", "image-generation", "google-deepmind", "generative-ai", "api"]

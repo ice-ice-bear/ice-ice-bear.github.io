@@ -1,6 +1,7 @@
 ---
 title: "Claude Code 3대 핵심 개념 — Skills, Subagents, Commands 완전 정복"
 date: 2026-03-04
+description: "Claude Code를 절반의 성능으로만 쓰고 있다면? Skills, Subagents, Commands 세 가지 핵심 레이어를 이해하면 Claude Code가 단순 채팅창에서 자동화된 에이전트 프레임워크로 바뀐다."
 image: "/images/posts/2026-03-04-claude-code-skills-subagents-commands/cover.jpg"
 categories: ["developer-tools"]
 tags: ["claude-code", "skills", "subagents", "commands", "vibe-coding", "ai-coding"]

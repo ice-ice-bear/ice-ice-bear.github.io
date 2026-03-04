@@ -1,6 +1,7 @@
 ---
 title: "Superpowers 완벽 가이드 — Claude Code에 '엔지니어링 규율'을 주입하는 법"
 date: 2026-03-04
+description: "Superpowers는 Claude Code에 브레인스토밍, 계획 수립, TDD, 코드 리뷰까지의 엔지니어링 규율을 강제 주입하는 Skills 프레임워크다. GitHub 스타 69k의 검증된 접근법을 분석했다."
 image: "/images/posts/2026-03-04-claude-code-superpowers/cover.jpg"
 categories: ["developer-tools"]
 tags: ["claude-code", "superpowers", "tdd", "subagent", "vibe-coding", "skills", "brainstorming"]
