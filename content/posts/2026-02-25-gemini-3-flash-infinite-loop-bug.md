@@ -76,7 +76,7 @@ flowchart TD
     B -->|버그 케이스 3-5%| F[특정 정수값 검증 시작]
     F --> G["n=67108863 검증... n=67108864 검증..."]
     G -->|토큰 한도 초과| H[MAX_TOKENS finishReason]
-    H --> I["버퍼 flush: 루프 텍스트 반환\n⚠️ thought: true 플래그 없음"]
+    H --> I["버퍼 flush: 루프 텍스트 반환<br/>⚠️ thought: true 플래그 없음"]
     I --> J["클라이언트: 쓸모없는 추론 텍스트를 최종 답으로 인식"]
 ```
 

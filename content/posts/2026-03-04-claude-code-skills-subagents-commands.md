@@ -144,7 +144,7 @@ Claude Code는 기본적으로 `/help`, `/clear`, `/compact` 같은 Commands를 
 graph LR
     User[/review 입력] --> Cmd["Commands 레이어<br/>명령어 파싱"]
     Cmd --> Skill["Skills 레이어<br/>워크플로우 실행"]
-    Skill --> Sub[Subagents 생성\n병렬 실행]
+    Skill --> Sub["Subagents 생성<br/>병렬 실행"]
     Sub --> Out[결과 통합]
 ```
 
