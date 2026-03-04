@@ -72,18 +72,18 @@ Observability의 핵심 개념은 **Wide Events**다. 요청 하나가 처리될
 ```mermaid
 graph LR
     subgraph "고카디널리티(High Cardinality) 처리"
-        A["Grafana<br/>필드당 column 생성 필요<br/>또는 비용 증가"]
-        B["Honeycomb<br/>모든 필드 무제한 쿼리 가능<br/>(비용 변화 없음)"]
+        A["Grafana &lt;br/&gt;필드당 column 생성 필요 &lt;br/&gt;또는 비용 증가"]
+        B["Honeycomb &lt;br/&gt;모든 필드 무제한 쿼리 가능 &lt;br/&gt;(비용 변화 없음)"]
     end
 
     subgraph "SLO 설계"
-        C["Grafana<br/>메트릭 기반 SLO<br/>컨텍스트 유실"]
-        D["Honeycomb<br/>이벤트 기반 SLO<br/>왜 위반됐는지 즉시 드릴다운"]
+        C["Grafana &lt;br/&gt;메트릭 기반 SLO &lt;br/&gt;컨텍스트 유실"]
+        D["Honeycomb &lt;br/&gt;이벤트 기반 SLO &lt;br/&gt;왜 위반됐는지 즉시 드릴다운"]
     end
 
     subgraph "쿼리 복잡도"
-        E["Grafana<br/>PromQL + LogQL 각각"]
-        F["Honeycomb<br/>통합 Query Builder"]
+        E["Grafana &lt;br/&gt;PromQL + LogQL 각각"]
+        F["Honeycomb &lt;br/&gt;통합 Query Builder"]
     end
 ```
 
