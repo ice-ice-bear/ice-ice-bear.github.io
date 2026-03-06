@@ -33,15 +33,16 @@ Gemini의 강점 중 하나는 구체적인 포매팅 지시를 잘 따른다는
 
 ## 실전 PPT 제작 워크플로우
 
-```flowchart LR
-    A[자료 수집<br/>PDF, 유튜브, 웹페이지] --> B[NotebookLM에<br/>소스 추가]
-    B --> C[NotebookLM 분석<br/>요약 / 마인드맵 / FAQ]
-    C --> D[핵심 인사이트<br/>텍스트로 추출]
-    D --> E[Gemini에 입력<br/>슬라이드 구조 생성]
-    E --> F[Gemini 출력<br/>슬라이드별 제목 + 내용]
-    F --> G[Google Slides/<br/>PowerPoint에 붙여넣기]
-    G --> H[디자인 편집<br/>이미지 추가 / 정렬]
-    H --> I[완성된 고퀄리티<br/>PPT]
+```mermaid
+flowchart LR
+    A[자료 수집 &lt;br/&gt; PDF, 유튜브, 웹페이지] --> B[NotebookLM에 &lt;br/&gt; 소스 추가]
+    B --> C[NotebookLM 분석 &lt;br/&gt; 요약 / 마인드맵 / FAQ]
+    C --> D[핵심 인사이트 &lt;br/&gt; 텍스트로 추출]
+    D --> E[Gemini에 입력 &lt;br/&gt; 슬라이드 구조 생성]
+    E --> F[Gemini 출력 &lt;br/&gt; 슬라이드별 제목 + 내용]
+    F --> G[Google Slides &lt;br/&gt; PowerPoint 붙여넣기]
+    G --> H[디자인 편집 &lt;br/&gt; 이미지 추가 / 정렬]
+    H --> I[완성된 고퀄리티 PPT]
 
     style A fill:#4285f4,color:#fff
     style B fill:#34a853,color:#fff
