@@ -1,6 +1,7 @@
 ---
 image: "/images/posts/2026-03-11-ai-agent-frameworks/cover.jpg"
 title: "AI 코딩 에이전트 확장 프레임워크 3종 비교 — bkit-codex, oh-my-codex, Superpowers"
+description: "OpenAI Codex와 Claude Code 위에 얹어서 에이전트의 행동을 제어하는 확장 프레임워크 3종(bkit-codex, oh-my-codex, Superpowers)을 비교 분석한다."
 date: 2026-03-11
 categories: ["ai-ml"]
 tags: ["ai-agent", "claude-code", "codex", "superpowers", "pdca", "developer-tools"]

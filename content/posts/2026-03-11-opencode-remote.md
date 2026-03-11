@@ -1,6 +1,7 @@
 ---
 image: "/images/posts/2026-03-11-opencode-remote/cover.jpg"
 title: "opencode serve/web — 폰으로 개발PC 원격 제어하기"
+description: "opencode의 serve/web 기능과 Tailscale VPN을 활용하여 모바일에서 개발 PC의 AI 코딩 세션에 원격 접속하는 방법을 정리한다."
 date: 2026-03-11
 categories: ["dev-tips"]
 tags: ["opencode", "remote-development", "tailscale", "mobile-dev"]

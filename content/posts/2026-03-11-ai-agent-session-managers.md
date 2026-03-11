@@ -1,6 +1,7 @@
 ---
 image: "/images/posts/2026-03-11-ai-agent-session-managers/cover.jpg"
 title: "AI 코딩 에이전트 세션 관리의 진화 — agentsview와 agf 비교"
+description: "AI 코딩 에이전트 세션을 관리하는 두 도구 agentsview(웹 대시보드)와 agf(TUI 세션 파인더)를 비교 분석한다."
 date: 2026-03-11
 categories: ["ai-ml"]
 tags: ["ai-agent", "claude-code", "codex", "tui", "developer-tools"]

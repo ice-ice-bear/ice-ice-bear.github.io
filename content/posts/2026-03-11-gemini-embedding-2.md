@@ -1,6 +1,7 @@
 ---
 image: "/images/posts/2026-03-11-gemini-embedding-2/cover.jpg"
 title: "Gemini Embedding 2 — Google의 최초 네이티브 멀티모달 임베딩 모델"
+description: "텍스트, 이미지, 비디오, 오디오를 단일 임베딩 공간에 매핑하는 Google의 최초 네이티브 멀티모달 임베딩 모델 Gemini Embedding 2를 분석한다."
 date: 2026-03-11
 categories: ["ai-ml"]
 tags: ["gemini", "embedding", "multimodal", "google", "rag", "vector-search"]

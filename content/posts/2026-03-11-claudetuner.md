@@ -1,6 +1,7 @@
 ---
 image: "/images/posts/2026-03-11-claudetuner/cover.jpg"
 title: "ClaudeTuner — Claude 사용량 실시간 추적과 플랜 최적화 도구"
+description: "Claude 사용량을 실시간으로 추적하고 플랜 최적화를 돕는 크롬 확장 프로그램 ClaudeTuner를 분석한다."
 date: 2026-03-11
 categories: ["ai-ml"]
 tags: ["claude", "chrome-extension", "usage-tracking", "ai-productivity"]
