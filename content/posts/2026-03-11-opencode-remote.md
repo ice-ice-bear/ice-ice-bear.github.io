@@ -13,6 +13,8 @@ math: false
 
 "집 PC에서 하던 OpenCode 작업을 밖에서 그대로 이어서 하고 싶다." SSH는 번거롭고 모바일로는 더 답답한 상황에서, [opencode serve/web](https://tilnote.io/pages/699fc2a3e2c6450408637dac)이 해결책이 될 수 있다.
 
+<!--more-->
+
 ```mermaid
 graph LR
     A["작업 머신 &lt;br/&gt; opencode serve/web"] -->|API + 웹 UI| B["Tailscale VPN"]

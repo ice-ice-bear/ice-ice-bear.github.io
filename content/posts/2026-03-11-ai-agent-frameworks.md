@@ -13,6 +13,8 @@ math: false
 
 AI 코딩 에이전트를 "그냥 쓰는" 시대에서 "구조화해서 쓰는" 시대로 넘어가고 있다. OpenAI Codex와 Claude Code 위에 얹어서 에이전트의 행동을 제어하고, 팀 워크플로우를 구성하고, 개발 방법론을 강제하는 확장 프레임워크 3종을 비교한다.
 
+<!--more-->
+
 ```mermaid
 graph TD
     A["AI 코딩 에이전트 &lt;br/&gt; (Codex, Claude Code)"] --> B["bkit-codex &lt;br/&gt; PDCA 방법론"]

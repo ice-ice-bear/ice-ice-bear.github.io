@@ -13,6 +13,8 @@ math: false
 
 Claude Opus 4.6의 품질 향상으로 업무에 Claude를 더 많이 사용하게 되면서, "내가 이 플랜을 제대로 활용하고 있나?", "리밋까지 얼마나 남았지?"라는 질문이 자연스럽게 생긴다. [ClaudeTuner](https://news.hada.io/topic?id=27171)는 이 문제를 해결하는 크롬 확장 + 웹 대시보드다.
 
+<!--more-->
+
 ```mermaid
 graph TD
     A["크롬 확장 프로그램"] -->|사용량 수집| B["ClaudeTuner 서버"]

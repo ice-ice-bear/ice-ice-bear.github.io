@@ -13,6 +13,8 @@ math: false
 
 Google DeepMind가 2026년 3월 10일 [Gemini Embedding 2](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-embedding-2/)를 공개했다. 텍스트, 이미지, 비디오, 오디오, 문서를 **단일 임베딩 공간**에 매핑하는 최초의 네이티브 멀티모달 임베딩 모델이다.
 
+<!--more-->
+
 ```mermaid
 graph TD
     A["Gemini Embedding 2"] --> B["텍스트"]
