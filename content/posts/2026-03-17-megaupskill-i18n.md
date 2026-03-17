@@ -3,6 +3,9 @@ image: "/images/posts/2026-03-17-megaupskill-i18n/cover.jpg"
 title: "MegaUpskill 개발기 — i18n 자동 감사와 번역 채움 커맨드 구현"
 description: "VS Code 확장에 i18n-audit와 i18n-fill 커맨드를 추가하고 ChatService PATH 문제와 Node.js 오버레이 버그를 수정한 과정"
 date: 2026-03-17
+series: "megaupskill"
+series_num: 1
+last_commit: "3164be3"
 categories: ["dev-log"]
 tags: ["megaupskill", "vscode-extension", "i18n", "typescript", "claude-code"]
 toc: true

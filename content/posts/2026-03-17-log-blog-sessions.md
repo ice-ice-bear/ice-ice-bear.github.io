@@ -3,6 +3,9 @@ image: "/images/posts/2026-03-17-log-blog-sessions/cover.jpg"
 title: "log-blog 개발기 — Claude Code 세션에서 개발 로그 자동 추출하기"
 description: "Claude Code 세션 데이터를 파싱해 개발 로그를 자동 생성하는 sessions 커맨드와 AI 채팅 추출 개선 과정"
 date: 2026-03-17
+series: "log-blog"
+series_num: 1
+last_commit: "75cbbe1"
 categories: ["dev-log"]
 tags: ["log-blog", "claude-code", "python", "cli", "automation"]
 toc: true

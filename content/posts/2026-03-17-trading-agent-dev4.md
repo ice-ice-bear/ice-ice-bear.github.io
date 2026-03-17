@@ -3,6 +3,9 @@ image: "/images/posts/2026-03-17-trading-agent-dev4/cover.jpg"
 title: "주식 트레이딩 에이전트 개발기 #4 — DART 연동, 신호 비평가, 실시간 대시보드"
 description: "DART 재무제표 연동과 SignalCriticAgent 도입으로 투자 신호 품질을 높이고 WebSocket 기반 실시간 대시보드와 ReportViewer를 구현한 과정"
 date: 2026-03-17
+series: "trading-agent"
+series_num: 4
+last_commit: "02fd47c"
 categories: ["dev-log"]
 tags: ["trading-agent", "dart-api", "websocket", "react", "python", "fastapi"]
 toc: true

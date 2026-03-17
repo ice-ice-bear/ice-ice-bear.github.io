@@ -3,6 +3,9 @@ image: "/images/posts/2026-03-17-hybrid-search-auth/cover.jpg"
 title: "하이브리드 이미지 검색 개발기 — Google OAuth 로그인 월 구현"
 description: "FastAPI와 React에 Google OAuth 로그인을 구현하고 JWT 쿠키 기반 인증으로 전체 API를 보호하는 과정"
 date: 2026-03-17
+series: "hybrid-image-search-demo"
+series_num: 1
+last_commit: "8ccefef"
 categories: ["dev-log"]
 tags: ["hybrid-search", "google-oauth", "jwt", "fastapi", "react", "python"]
 toc: true
