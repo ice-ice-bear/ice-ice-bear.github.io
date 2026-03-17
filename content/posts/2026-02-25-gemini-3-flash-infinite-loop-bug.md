@@ -2,6 +2,7 @@
 title: "Gemini 3 Flash Preview 버그: 무한 추론 루프와 내부 로직 노출"
 date: 2026-02-25
 image: "/images/posts/2026-02-25-gemini-3-flash-infinite-loop-bug/cover.jpg"
+description: "Gemini 3 Flash Preview에서 동시 요청 시 3-5% 확률로 발생하는 무한 추론 루프 버그와 내부 로직 노출 문제, 클라이언트 측 방어 코드를 정리한다"
 categories: ["ai-ml"]
 tags: ["gemini", "llm", "bug", "google-ai", "thinking", "api", "production"]
 toc: true
@@ -11,6 +12,8 @@ math: false
 ## 개요
 
 `gemini-3-flash-preview`를 프로덕션에서 사용 중이라면 지금 당장 방어 코드를 추가해야 할 버그가 보고됐다. 동시 요청 100개 이상을 보낼 때 3~5%의 확률로 모델이 무한 추론 루프에 빠져 maxOutputTokens를 전부 소진하고, 내부 추론 과정을 최종 응답으로 반환하는 두 가지 장애가 동시에 발생한다. 이전 포스트에서 Gemini 3의 Thought Signatures와 `thinking_level` 파라미터를 정리했는데, 이 버그는 정확히 그 Thinking 메커니즘의 stop condition 오류다.
+
+<!--more-->
 
 > 이전 포스트 참고: Gemini 3 이미지 생성 API, Thought Signatures, `thinking_level`, `media_resolution` 파라미터 → [2026-02-20 포스트](https://ice-ice-bear.github.io/posts/2026-02-20-tech-log/)
 

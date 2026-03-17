@@ -2,6 +2,7 @@
 title: "PM2로 Python + Node.js 멀티 서비스 운영하기 — ecosystem.config.js 완전 가이드"
 date: 2026-02-25
 image: "/images/posts/2026-02-25-pm2-process-manager-ecosystem/cover.jpg"
+description: "PM2로 Python FastAPI 백엔드와 Node.js Vite 프론트엔드를 ecosystem.config.js 하나로 관리하는 실전 패턴과 dotenv 충돌 해결까지 정리한다"
 categories: ["devops"]
 tags: ["pm2", "devops", "process-management", "ecosystem", "fastapi", "vite", "python", "node", "deployment", "aws-ec2"]
 toc: true
@@ -11,6 +12,8 @@ math: false
 ## 개요
 
 EC2에서 FastAPI 백엔드와 Vite 프론트엔드를 동시에 운영해야 할 때, `nohup python ... &` 같은 방법은 프로세스가 죽어도 모르고, 재부팅하면 날아가고, 로그 관리도 어렵다. PM2(Process Manager 2)는 Node.js 생태계에서 나왔지만 **어떤 언어로 만든 프로세스도 관리할 수 있는 프로덕션 프로세스 매니저**다. 오늘은 PM2 기본 명령어부터, Python(uvicorn) + Node.js(Vite)를 `ecosystem.config.js` 하나로 관리하는 실전 패턴, 그리고 dotenv 문제 해결까지 정리한다.
+
+<!--more-->
 
 ```mermaid
 graph TD

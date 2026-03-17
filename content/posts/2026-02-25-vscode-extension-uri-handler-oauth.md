@@ -2,6 +2,7 @@
 title: "VS Code 확장 개발: URI Handler로 OAuth 인증 구현하기"
 date: 2026-02-25
 image: "/images/posts/2026-02-25-vscode-extension-uri-handler-oauth/cover.jpg"
+description: "VS Code 확장에서 registerUriHandler와 AuthenticationProvider API를 조합해 OAuth 인증을 구현하는 방법, code-server 프로토콜 제약과 우회책, Remote Tunnels의 OAuth 메커니즘을 정리한다"
 categories: ["developer-tools"]
 tags: ["vscode", "vscode-extension", "oauth", "uri-handler", "authentication", "code-server", "remote-tunnels", "typescript"]
 toc: true
@@ -11,6 +12,8 @@ math: false
 ## 개요
 
 VS Code 확장에서 외부 OAuth 서비스(GitHub, Auth0 등)로 로그인하려면 브라우저를 열고 콜백을 받아야 한다. 일반 웹앱은 `http://localhost:3000/callback` 같은 로컬 서버가 콜백 URI지만, VS Code 확장은 로컬 포트 없이 `vscode://publisher.extension-name` 프로토콜로 직접 콜백을 받을 수 있다. 오늘은 `registerUriHandler`와 `AuthenticationProvider` API를 조합해 OAuth 흐름을 구현하는 방법, code-server(브라우저 기반 VS Code)에서의 프로토콜 제약, 그리고 Remote Tunnels의 OAuth 메커니즘을 살펴본다.
+
+<!--more-->
 
 ```mermaid
 graph TD

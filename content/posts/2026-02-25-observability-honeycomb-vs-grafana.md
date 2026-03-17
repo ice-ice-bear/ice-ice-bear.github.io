@@ -2,6 +2,7 @@
 title: "Observability vs Monitoring: Honeycomb vs Grafana 비교 분석"
 date: 2026-02-25
 image: "/images/posts/2026-02-25-observability-honeycomb-vs-grafana/cover.jpg"
+description: "Honeycomb과 Grafana 비교를 통해 모니터링과 Observability 패러다임의 차이를 데이터 모델, 쿼리 방식, SLO 설계, 가격 모델 측면에서 정리한다"
 categories: ["devops"]
 tags: ["observability", "monitoring", "honeycomb", "grafana", "devops", "slo", "apm", "distributed-tracing"]
 toc: true
@@ -11,6 +12,8 @@ math: false
 ## 개요
 
 DevOps 엔지니어 포지션을 탐색하면서 한국 APM 시장 리더인 와탭랩스(WhaTap Labs) 채용 공고를 보게 됐고, 자연스럽게 Observability 툴 생태계를 깊이 파보게 됐다. Honeycomb vs Grafana 비교를 보면 단순한 "어느 툴이 더 좋냐"를 넘어서 **모니터링(Monitoring)과 관측 가능성(Observability)이라는 두 가지 패러다임의 차이**가 드러난다. 오늘은 그 차이를 데이터 모델, 쿼리 방식, SLO 설계 측면에서 정리한다.
+
+<!--more-->
 
 ```mermaid
 graph TD
