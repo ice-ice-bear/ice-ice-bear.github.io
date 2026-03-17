@@ -82,6 +82,41 @@ Google DeepMind Research Director Edward Grefenstette, Dagster 창시자 Nick Sc
 
 무료이며, GitHub에서 소스 코드를 확인할 수 있다. macOS에서만 동작한다.
 
+## 공식 문서 탐색
+
+공식 문서는 [cmux.dev](https://www.cmux.dev/)에서 한국어를 포함한 다국어로 제공된다.
+
+### 개념 (Concepts)
+
+[개념 페이지](https://www.cmux.dev/ko/docs/concepts)는 cmux의 설계 철학과 핵심 구성 요소를 설명한다.
+
+- **탭(Tabs)**: cmux에서 탭은 독립적인 작업 컨텍스트 단위다. 각 탭은 수직 사이드바에 표시되며 git 브랜치, 현재 디렉토리, 실행 중인 포트, 알림 상태를 한눈에 보여준다.
+- **패인(Panes)**: 탭 내에서 수평/수직으로 화면을 분할하는 단위. 하나의 탭 안에서 Claude Code와 인앱 브라우저를 나란히 배치하는 것이 대표적인 패턴이다.
+- **알림(Notifications)**: OSC 이스케이프 시퀀스(OSC 9, 99, 777)를 통해 에이전트나 스크립트가 cmux에 알림을 보낼 수 있다. 별도의 플러그인 없이 표준 시퀀스만으로 동작한다.
+- **인앱 브라우저(In-App Browser)**: 터미널과 같은 창에 내장된 브라우저. 스크립터블 API를 통해 자동으로 URL을 열거나 페이지와 상호작용할 수 있다.
+
+### 시작하기 (Getting Started)
+
+[시작하기 페이지](https://www.cmux.dev/ko/docs/getting-started)는 설치부터 기본 사용까지 안내한다.
+
+Homebrew Cask로 설치할 수 있다:
+
+```bash
+brew install --cask cmux
+```
+
+설치 후 별도 설정 없이 바로 사용할 수 있다. 수직 탭 사이드바, 분할 패인, 인앱 브라우저는 모두 GUI에서 직접 조작 가능하다. Claude Code나 다른 AI 에이전트를 실행하면 알림 링이 자동으로 동작한다.
+
+## 빠른 링크
+
+- [cmux 공식 문서 — 개념](https://www.cmux.dev/ko/docs/concepts) — cmux의 핵심 개념 정리
+- [cmux 공식 문서 — 시작하기](https://www.cmux.dev/ko/docs/getting-started) — 설치부터 기본 사용법
+- [cmux GitHub](https://github.com/manaflow-ai/cmux) — 소스 코드 및 이슈 트래커
+- [cmux Homebrew](https://formulae.brew.sh/cask/cmux) — `brew install --cask cmux`
+- [AI 코딩 에이전트 전용 터미널 cmux 소개 영상](https://www.youtube.com/watch?v=jGj9yCqN08s) — 개발동생 채널
+
 ## 인사이트
 
 cmux의 포지션은 명확하다 — tmux의 기능성을 macOS 네이티브 UX로 포장하고, AI 에이전트 워크플로우에 최적화한 것이다. 특히 알림 시스템은 "에이전트가 입력을 기다리고 있다"는 사실을 놓치지 않게 해주는데, 이것은 동시에 여러 에이전트를 돌리는 워크플로우에서 가장 큰 마찰 포인트였다. Ghostty의 libghostty를 라이브러리로 활용한다는 아키텍처 결정도 흥미롭다 — 터미널 렌더링이라는 어려운 문제를 해결된 것으로 취급하고, 그 위의 UX 레이어에 집중할 수 있게 해준다.
+
+공식 문서와 에코시스템도 빠르게 성장하고 있다. 한국어를 포함한 다국어 문서, Homebrew Cask 등록, 활발한 커뮤니티 반응은 cmux가 단순한 실험적 프로젝트를 넘어 실용적인 도구로 자리잡고 있음을 보여준다. 아직 macOS 전용이라는 제약이 있지만, AI 에이전트 중심 개발 환경이 macOS 위에서 주로 이루어지는 현실을 감안하면 당장의 한계는 아니다.
