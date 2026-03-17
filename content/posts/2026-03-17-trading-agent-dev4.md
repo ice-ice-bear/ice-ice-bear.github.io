@@ -251,7 +251,7 @@ export function parseUTC(timestamp: string): Date {
 
 3세션에 걸친 37개 커밋 요약:
 
-| 단계 | 커밋 | 내용 |
+| 단계 | 커밋 수 | 내용 |
 |---|---|---|
 | 설계 | 3 | 스펙 문서 작성, 리뷰 반영, 구현 플랜 |
 | Phase A: DART | 4 | `DataConfidence` enum, `Scenario`/`SignalAnalysis` 모델, DB 스키마, `DartClient` |

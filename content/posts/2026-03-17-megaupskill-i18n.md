@@ -203,19 +203,19 @@ export function buildExtendedPath(): string {
 
 ## 커밋 로그
 
-| SHA | 메시지 | 변경 파일 |
-|-----|--------|-----------|
-| `7501aea2` | fix(webview): add pull-based recovery for Node.js overlay status | dashboard-provider.ts, card-scripts-init.ts, card-scripts-tabs.ts |
-| `98eaedac` | fix(chat): unify PATH resolution so ChatService finds Claude CLI | chat-service.ts, claude-cli-checker.ts, extended-path.ts, node-checker.ts |
-| `5d1b7401` | docs: restructure -- move developer README to docs/ | README-for-developers.md 외 다수 |
-| `4b943d3c` | chore: bump version to 0.1.1 | package.json, package-lock.json |
-| `6aeb80f8` | docs: add bug reports, specs, and implementation plans | 6개 문서 파일 |
-| `84bc9534` | docs: add i18n commands design spec | i18n-commands-design.md |
-| `7e2d110d` | docs: address spec review feedback for i18n commands | i18n-commands-design.md |
-| `228a2eed` | docs: add i18n commands implementation plan | i18n-commands-plan.md |
-| `47a76583` | feat: add /i18n-audit command for translation key auditing | i18n-audit.md |
-| `349eda2f` | feat: add /i18n-fill command for AI-powered translation gap filling | i18n-fill.md |
-| `3164be32` | chore: allow .claude/commands/ to be tracked in git | .gitignore |
+| 메시지 | 변경 파일 |
+|--------|-----------|
+| fix(webview): add pull-based recovery for Node.js overlay status | dashboard-provider.ts, card-scripts-init.ts, card-scripts-tabs.ts |
+| fix(chat): unify PATH resolution so ChatService finds Claude CLI | chat-service.ts, claude-cli-checker.ts, extended-path.ts, node-checker.ts |
+| docs: restructure -- move developer README to docs/ | README-for-developers.md 외 다수 |
+| chore: bump version to 0.1.1 | package.json, package-lock.json |
+| docs: add bug reports, specs, and implementation plans | 6개 문서 파일 |
+| docs: add i18n commands design spec | i18n-commands-design.md |
+| docs: address spec review feedback for i18n commands | i18n-commands-design.md |
+| docs: add i18n commands implementation plan | i18n-commands-plan.md |
+| feat: add /i18n-audit command for translation key auditing | i18n-audit.md |
+| feat: add /i18n-fill command for AI-powered translation gap filling | i18n-fill.md |
+| chore: allow .claude/commands/ to be tracked in git | .gitignore |
 
 ## 인사이트
 

@@ -233,21 +233,21 @@ uv run log-blog sessions --all --include-short --json
 
 ## 커밋 로그
 
-| SHA | 메시지 | 변경 파일 |
-|-----|--------|-----------|
-| `39c22491` | docs: add design spec for AI chat extraction improvement | specs |
-| `38bb8319` | docs: fix stale references in AI chat extraction spec | specs |
-| `698c3f8b` | docs: add implementation plan for AI chat extraction improvement | plans |
-| `40575eeb` | chore: add pytest dev dependency | pyproject.toml, uv.lock |
-| `3a614c4b` | feat: add AI_LANDING noise filter and Gemini share link support | url_classifier.py, tests |
-| `5cfe77c7` | feat: add url_type to extract --json and filter AI_LANDING noise | cli.py, tests |
-| `8620eb43` | feat: skip AI_LANDING URLs in content fetcher | content_fetcher.py |
-| `f5813a8b` | feat: add Gemini share link content extraction | ai_chat_fetcher.py |
-| `7f57d57e` | docs: update skill to use url_type from extract output | SKILL.md |
-| `035be518` | docs: add session-to-devlog feature design spec | specs |
-| `7782d426` | docs: update session-devlog spec with review fixes | specs |
-| `4356802f` | docs: add session-devlog implementation plan | plans |
-| `75cbbe14` | feat: add sessions command for Claude Code dev log extraction | cli.py, config.py, session_parser.py |
+| 메시지 | 변경 파일 |
+|--------|-----------|
+| docs: add design spec for AI chat extraction improvement | specs |
+| docs: fix stale references in AI chat extraction spec | specs |
+| docs: add implementation plan for AI chat extraction improvement | plans |
+| chore: add pytest dev dependency | pyproject.toml, uv.lock |
+| feat: add AI_LANDING noise filter and Gemini share link support | url_classifier.py, tests |
+| feat: add url_type to extract --json and filter AI_LANDING noise | cli.py, tests |
+| feat: skip AI_LANDING URLs in content fetcher | content_fetcher.py |
+| feat: add Gemini share link content extraction | ai_chat_fetcher.py |
+| docs: update skill to use url_type from extract output | SKILL.md |
+| docs: add session-to-devlog feature design spec | specs |
+| docs: update session-devlog spec with review fixes | specs |
+| docs: add session-devlog implementation plan | plans |
+| feat: add sessions command for Claude Code dev log extraction | cli.py, config.py, session_parser.py |
 
 ---
 

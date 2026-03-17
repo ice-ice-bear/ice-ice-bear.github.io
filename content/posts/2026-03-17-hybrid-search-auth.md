@@ -267,25 +267,25 @@ FILEPATH=$(echo "$INPUT" | jq -r '.tool_input.file_path // empty')
 
 ## 커밋 로그
 
-| 커밋 | 메시지 | 주요 파일 |
-|------|--------|----------|
-| `f19c331d` | docs: Google 로그인 설계 스펙 | `2026-03-17-google-login-design.md` |
-| `b8993da9` | docs: 스펙 리뷰 피드백 반영 | 동일 |
-| `34b67262` | docs: 엔드포인트 경로 및 설명 일관성 수정 | 동일 |
-| `734048ec` | docs: 구현 계획서 작성 | `2026-03-17-google-login.md` |
-| `840c0e8a` | feat: User 모델 + user_id FK 추가 | `models.py`, Alembic 마이그레이션 |
-| `1eb6e9b0` | feat: google-auth, python-jose 의존성 | `requirements.txt` |
-| `e2502dc4` | feat: @react-oauth/google 의존성 | `package.json` |
-| `a2de355f` | feat: 인증 Pydantic 스키마 | `schemas.py` |
-| `9bc52d0d` | feat: 사용자 CRUD 및 활동 추적 | `service.py` |
-| `c80d6de7` | feat: auth 모듈 (토큰 검증 + JWT 쿠키) | `auth.py` |
-| `c039091c` | feat: AuthConfig 추가 | `config.py`, `default.yaml` |
-| `57ce55f6` | feat: LoginPage 컴포넌트 | `LoginPage.tsx` |
-| `ff989bd7` | feat: auth API 함수, 401 인터셉터 | `api.ts` |
-| `cd9d25bd` | feat: 인증 상태, 로그인/로그아웃 플로우 | `App.tsx` |
-| `128be9bb` | feat: auth 엔드포인트 + 전체 라우트 보호 | `main.py`, `service.py` |
-| `395fa5b9` | fix: 보안 가드, async 토큰 검증, UI | `auth.py`, `App.tsx` |
-| `8ccefefd` | feat: Google OAuth 로그인 월 완성 | 최종 병합 |
+| 메시지 | 주요 파일 |
+|--------|----------|
+| docs: Google 로그인 설계 스펙 | `2026-03-17-google-login-design.md` |
+| docs: 스펙 리뷰 피드백 반영 | 동일 |
+| docs: 엔드포인트 경로 및 설명 일관성 수정 | 동일 |
+| docs: 구현 계획서 작성 | `2026-03-17-google-login.md` |
+| feat: User 모델 + user_id FK 추가 | `models.py`, Alembic 마이그레이션 |
+| feat: google-auth, python-jose 의존성 | `requirements.txt` |
+| feat: @react-oauth/google 의존성 | `package.json` |
+| feat: 인증 Pydantic 스키마 | `schemas.py` |
+| feat: 사용자 CRUD 및 활동 추적 | `service.py` |
+| feat: auth 모듈 (토큰 검증 + JWT 쿠키) | `auth.py` |
+| feat: AuthConfig 추가 | `config.py`, `default.yaml` |
+| feat: LoginPage 컴포넌트 | `LoginPage.tsx` |
+| feat: auth API 함수, 401 인터셉터 | `api.ts` |
+| feat: 인증 상태, 로그인/로그아웃 플로우 | `App.tsx` |
+| feat: auth 엔드포인트 + 전체 라우트 보호 | `main.py`, `service.py` |
+| fix: 보안 가드, async 토큰 검증, UI | `auth.py`, `App.tsx` |
+| feat: Google OAuth 로그인 월 완성 | 최종 병합 |
 
 ## 인사이트
 
