@@ -15,6 +15,8 @@ math: false
 
 Claude Code를 쓸 때 매번 같은 설명을 반복하는 것은 이 온보딩이 매일 리셋되는 것과 같다. Harness는 이 문제를 해결하는 프레임워크다. 프로젝트의 코딩 방식, 선호하는 라이브러리, 팀의 규칙을 한 번 정의해 두면 Claude Code가 세션마다 그 맥락을 그대로 이어받는다. 설치는 한 번이지만 절약은 장기적으로 누적된다.
 
+<!--more-->
+
 ---
 
 ## 하니스란 무엇인가
@@ -125,9 +127,9 @@ graph TD
     AG --> A2[플랜 리뷰어]
     AG --> A3[웹 리서치 스페셜리스트]
 
-    CM --> C1[/review-pr]
-    CM --> C2[/generate-schema]
-    CM --> C3[/write-tests]
+    CM --> C1["/review-pr"]
+    CM --> C2["/generate-schema"]
+    CM --> C3["/write-tests"]
 
     S1 --> CC[Claude Code]
     S2 --> CC
@@ -138,7 +140,7 @@ graph TD
     C2 --> CC
 
     CC --> PM[프로젝트 메모리]
-    CC --> OUT[출력 — 일관된 코드 / 문서]
+    CC --> OUT["출력 — 일관된 코드 / 문서"]
     PM --> CC
 
     style H fill:#1a3a5c,color:#fff
