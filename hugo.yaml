@@ -5,6 +5,7 @@ paginate: 10
 languageCode: ko
 defaultContentLanguage: ko
 timezone: "Asia/Seoul"
+hasCJKLanguage: true
 
 params:
   mainSections:
