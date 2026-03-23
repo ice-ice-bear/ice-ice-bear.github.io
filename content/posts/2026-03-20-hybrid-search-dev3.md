@@ -5,7 +5,7 @@ description: "Gemini API 비동기 전환과 동시 생성 지원, 프롬프트 
 date: 2026-03-20
 series: "hybrid-image-search-demo"
 series_num: 3
-last_commit: "658b49a"
+last_commit: "d95ba973"
 categories: ["dev-log"]
 tags: ["python", "fastapi", "gemini-api", "asyncio", "refactoring", "image-search"]
 toc: true
