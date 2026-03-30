@@ -1,7 +1,7 @@
 ---
 image: "/images/posts/2026-03-30-ai-plugin-ecosystem/cover.jpg"
-title: "Superpowers — 5개월 만에 GitHub 11만 스타를 받은 Claude Code 플러그인"
-description: AI 코딩 도구의 작업 방식을 체계화하는 Superpowers 플러그인의 핵심 원리와 브레인스토밍 TDD 서브에이전트 병렬 작업 구조 분석
+title: "Superpowers 후속 — 69k에서 11만 스타로, 그리고 아직 남은 한계"
+description: Superpowers가 69k에서 11만 스타로 성장한 배경과 한국어 유튜버 관점의 실무 비판 그리고 HarnessKit과의 보완 관계 분석
 date: 2026-03-30
 categories: ["tech-log"]
 tags: ["superpowers", "claude-code", "plugin", "tdd", "sub-agent", "brainstorming", "workflow", "harness-engineering"]
@@ -11,7 +11,7 @@ math: false
 
 ## 개요
 
-YouTube 영상 [별 11만개 받은 AI 플러그인, 코드 한 줄이면 끝](https://www.youtube.com/watch?v=jw23empkqGg)을 분석했다. 이 11만 스타 플러그인의 정체는 **Superpowers** — Jesse Vincent가 만든 Claude Code 플러그인으로, AI에게 "일 잘하는 법"을 가르치는 워크플로우 매뉴얼이다. 설치는 `claude plugin install superpowers` 한 줄이면 끝나지만, 그 안에 담긴 설계 철학은 깊다. 관련 포스트: [Claude Code 마켓플레이스 비교](/posts/2026-03-20-claude-code-marketplaces/), [HarnessKit 개발기 #3](/posts/2026-03-25-harnesskit-dev3/)
+YouTube 영상 [별 11만개 받은 AI 플러그인, 코드 한 줄이면 끝](https://www.youtube.com/watch?v=jw23empkqGg)을 분석했다. 이 11만 스타 플러그인의 정체는 **Superpowers** — 이전에 [Superpowers 완벽 가이드](/posts/2026-03-04-claude-code-superpowers/)에서 깊이 다뤘던 Claude Code 플러그인이다. 당시 69k 스타였던 것이 5개월 만에 11만을 돌파했다. 이번 포스트에서는 한국어 유튜버의 실무 관점 분석과 비판 포인트를 중심으로 정리한다. 관련 포스트: [Superpowers 완벽 가이드](/posts/2026-03-04-claude-code-superpowers/), [HarnessKit 개발기 #3](/posts/2026-03-25-harnesskit-dev3/)
 
 <!--more-->
 
