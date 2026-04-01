@@ -1,4 +1,4 @@
 ---
 title: "Dart Api"
-image: "/images/taxonomy/tag-dart-api.svg"
+image: "/images/taxonomy/tag-DART API.svg"
 ---
