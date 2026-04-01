@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-30-ai-dev-tools/cover.jpg"
+image: "/images/posts/2026-03-30-ai-dev-tools/cover-en.jpg"
 title: "LiteParse and the End of the Framework Era — LlamaIndex's Strategic Pivot"
 description: An analysis of why LlamaIndex abandoned the RAG framework model in favor of LiteParse — a single focused tool — and what it signals about the structural shift in the AI developer tooling ecosystem
 date: 2026-03-30

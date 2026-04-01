@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-20-harness-plugins/cover.jpg"
+image: "/images/posts/2026-03-20-harness-plugins/cover-en.jpg"
 title: "Claude Code Harness Plugins Compared — claude-code-harness vs. claude-harness"
 description: A comparative analysis of claude-code-harness (TypeScript guardrail engine) and claude-harness (Shell-based 5-layer memory architecture), from design philosophy through practical workflow
 date: 2026-03-20

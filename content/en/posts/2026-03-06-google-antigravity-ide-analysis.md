@@ -1,7 +1,7 @@
 ---
 title: "Google Antigravity IDE Deep Dive — A New Player in the AI IDE Wars"
 date: 2026-03-06
-image: "/images/posts/2026-03-06-google-antigravity-ide-analysis/cover.jpg"
+image: "/images/posts/2026-03-06-google-antigravity-ide-analysis/cover-en.jpg"
 description: "A hands-on analysis of Google's Antigravity IDE — from initial setup to building NotebookLM-powered sub-agents — and how it stacks up against Anthropic Claude Code and OpenAI Codex."
 categories: ["developer-tools"]
 tags: ["google-antigravity", "notebooklm", "vibe-coding", "ai-ide", "gemini", "sub-agent"]

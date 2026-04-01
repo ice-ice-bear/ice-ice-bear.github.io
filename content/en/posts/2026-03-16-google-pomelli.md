@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-16-google-pomelli/cover.jpg"
+image: "/images/posts/2026-03-16-google-pomelli/cover-en.jpg"
 title: "Google Pomelli — AI Marketing Tool That Builds On-Brand Content from a URL"
 description: "Google Labs' Pomelli extracts brand DNA from your website and auto-generates campaign ideas and channel-specific creatives — built for small and medium businesses"
 date: 2026-03-16

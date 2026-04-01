@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-16-claude-code-remote-control/cover.jpg"
+image: "/images/posts/2026-03-16-claude-code-remote-control/cover-en.jpg"
 title: "Claude Code Remote Control — Pick Up Your Coding Session From Any Device"
 description: "How to use Claude Code's official Remote Control feature to continue a terminal session from a smartphone, tablet, or another browser — including the architecture and key options."
 date: 2026-03-16

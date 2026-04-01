@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-16-claude-interactive-visuals/cover.jpg"
+image: "/images/posts/2026-03-16-claude-interactive-visuals/cover-en.jpg"
 title: "Claude In-Chat Interactive Visuals — When a Conversation Becomes a Dashboard"
 description: "How Claude's new in-chat interactive chart feature works, how it differs from Artifacts, and practical use cases for the beta."
 date: 2026-03-16

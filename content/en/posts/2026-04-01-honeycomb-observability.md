@@ -2,7 +2,7 @@
 title: "Honeycomb and Observability Fundamentals — Comparing Open Source Alternatives"
 description: Core observability concepts and the structured events model from Honeycomb's official docs, with a practical comparison of open source alternatives including Jaeger, Zipkin, SigNoz, and Pinpoint
 date: 2026-04-01
-image: "/images/posts/2026-04-01-honeycomb-observability/cover.jpg"
+image: "/images/posts/2026-04-01-honeycomb-observability/cover-en.jpg"
 categories: ["devops"]
 tags: ["observability", "honeycomb", "jaeger", "zipkin", "signoz", "pinpoint", "opentelemetry", "ebpf", "distributed-tracing"]
 toc: true

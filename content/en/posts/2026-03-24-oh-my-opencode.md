@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-24-oh-my-opencode/cover.jpg"
+image: "/images/posts/2026-03-24-oh-my-opencode/cover-en.jpg"
 title: "oh-my-opencode — A Model-Agnostic Agent Orchestrator"
 description: oh-my-openagent (formerly oh-my-opencode) is a model-agnostic AI coding tool that orchestrates diverse LLMs — Claude, GPT, Gemini, and more — through a single CLI
 date: 2026-03-24

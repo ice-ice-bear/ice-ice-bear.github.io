@@ -2,7 +2,7 @@
 title: "Claude Code's Three Core Concepts — Skills, Subagents, and Commands"
 date: 2026-03-04
 description: "If you're only using Claude Code as a chat interface, you're leaving half its power on the table. Understanding Skills, Subagents, and Commands transforms it from a chat window into an automated agent framework."
-image: "/images/posts/2026-03-04-claude-code-skills-subagents-commands/cover.jpg"
+image: "/images/posts/2026-03-04-claude-code-skills-subagents-commands/cover-en.jpg"
 categories: ["developer-tools"]
 tags: ["claude-code", "skills", "subagents", "commands", "vibe-coding", "ai-coding"]
 toc: true

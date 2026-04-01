@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-17-log-blog-sessions/cover.jpg"
+image: "/images/posts/2026-03-17-log-blog-sessions/cover-en.jpg"
 title: "log-blog Dev Log — Extracting Dev Logs from Claude Code Sessions"
 description: "Building the sessions command that parses Claude Code session data to auto-generate development logs, plus improvements to AI chat extraction"
 date: 2026-03-17

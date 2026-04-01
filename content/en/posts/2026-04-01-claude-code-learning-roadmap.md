@@ -4,7 +4,7 @@ date: 2026-04-01
 description: A structured learning roadmap for Claude Code covering Anthropic's official documentation, the Skilljar course, a Korean WikiDocs community guide, and WeniVooks' vibe-coding guide — with pros, cons, and level-based recommendations.
 categories: ["tech-log"]
 tags: ["claude-code", "learning", "tutorial", "wikidocs", "skilljar", "vibe-coding", "korean-guide"]
-image: "/images/posts/2026-04-01-claude-code-learning-roadmap/cover.jpg"
+image: "/images/posts/2026-04-01-claude-code-learning-roadmap/cover-en.jpg"
 toc: true
 math: false
 ---

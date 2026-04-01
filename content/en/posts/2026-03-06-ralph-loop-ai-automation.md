@@ -1,7 +1,7 @@
 ---
 title: "Ralph Loop — The Agent Loop Pattern Where AI Tests and Fixes Itself"
 date: 2026-03-06
-image: "/images/posts/2026-03-06-ralph-loop-ai-automation/cover.jpg"
+image: "/images/posts/2026-03-06-ralph-loop-ai-automation/cover-en.jpg"
 description: "Ever had Claude Code say 'successfully completed' when it was only half done? Ralph Loop is an agentic loop pattern where AI detects its own failures and keeps iterating — the experiment that produced 1,100 commits across 6 repos overnight."
 categories: ["developer-tools"]
 tags: ["ralph-loop", "claude-code", "ai-automation", "agentic-coding", "agent-loop", "llm"]

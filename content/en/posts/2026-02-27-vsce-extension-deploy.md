@@ -1,7 +1,7 @@
 ---
 title: "Publishing a VS Code Extension — The Complete vsce Workflow"
 date: 2026-02-27
-image: "/images/posts/2026-02-27-vsce-extension-deploy/cover.jpg"
+image: "/images/posts/2026-02-27-vsce-extension-deploy/cover-en.jpg"
 categories: ["developer-tools"]
 tags: ["vscode", "vsce", "azure-devops", "marketplace", "extension"]
 description: "A step-by-step guide to publishing a VS Code extension to the Marketplace using vsce — from creating an Azure DevOps PAT to packaging and deploying."

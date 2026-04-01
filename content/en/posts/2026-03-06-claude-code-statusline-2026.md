@@ -1,7 +1,7 @@
 ---
 title: "Claude Code 2026 — Statusline Update and the Multi-Environment AI Coding Ecosystem"
 date: 2026-03-06
-image: "/images/posts/2026-03-06-claude-code-statusline-2026/cover.jpg"
+image: "/images/posts/2026-03-06-claude-code-statusline-2026/cover-en.jpg"
 description: "A look at Claude Code's latest Statusline terminal UI update, its multi-environment support across Terminal, VS Code, Web, and JetBrains, and the expanding ecosystem through Remote Control and the Agent SDK."
 categories: ["developer-tools"]
 tags: ["claude-code", "statusline", "anthropic", "ai-ide", "mcp", "remote-control", "kiro"]

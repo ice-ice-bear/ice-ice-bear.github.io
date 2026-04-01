@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-20-harnesskit-dev2/cover.jpg"
+image: "/images/posts/2026-03-20-harnesskit-dev2/cover-en.jpg"
 title: "HarnessKit Dev Log #2 — Going Marketplace-First and Building v2a/v2b"
 description: After completing v1, we deleted all custom templates, pivoted to a marketplace-first approach, then designed and implemented v2a Intelligent Harness Evolution and v2b Extended Features in a 26-hour marathon session
 date: 2026-03-20

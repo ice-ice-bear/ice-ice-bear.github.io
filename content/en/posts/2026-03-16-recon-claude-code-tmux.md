@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-16-recon-claude-code-tmux/cover.jpg"
+image: "/images/posts/2026-03-16-recon-claude-code-tmux/cover-en.jpg"
 title: "recon — A tmux Dashboard for Managing Claude Code Agents Like Tamagotchis"
 description: "gavraz/recon is a Rust-based TUI dashboard that monitors and switches between multiple Claude Code sessions within tmux at a glance"
 date: 2026-03-16

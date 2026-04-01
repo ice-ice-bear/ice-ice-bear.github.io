@@ -1,7 +1,7 @@
 ---
 title: "Building High-Quality Presentations with Gemini + NotebookLM — From Research to Slides"
 date: 2026-03-06
-image: "/images/posts/2026-03-06-gemini-notebooklm-ppt/cover.jpg"
+image: "/images/posts/2026-03-06-gemini-notebooklm-ppt/cover-en.jpg"
 description: "A practical workflow that combines Google NotebookLM's document analysis with Gemini's generation capabilities to automate the entire PPT creation process, from research to slide editing."
 categories: ["ai-ml"]
 tags: ["gemini", "notebooklm", "ppt", "ai-productivity", "google", "workflow-automation"]

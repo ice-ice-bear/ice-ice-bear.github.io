@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-11-claudetuner/cover.jpg"
+image: "/images/posts/2026-03-11-claudetuner/cover-en.jpg"
 title: "ClaudeTuner — Real-Time Claude Usage Tracking and Plan Optimization"
 description: "An analysis of ClaudeTuner, a Chrome extension and web dashboard for tracking Claude usage in real time and optimizing your plan."
 date: 2026-03-11

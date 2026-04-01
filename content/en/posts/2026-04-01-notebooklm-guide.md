@@ -2,7 +2,7 @@
 title: "12 Practical Uses for NotebookLM — A Complete Guide to Your Free AI Research Assistant"
 date: 2026-04-01
 description: "Twelve practical applications of Google NotebookLM, from no-code RAG and workplace AI assistants to Deep Research reports, meeting analysis, and academic paper review. A complete guide to a free AI tool you can start using today."
-image: "/images/posts/2026-04-01-notebooklm-guide/cover.jpg"
+image: "/images/posts/2026-04-01-notebooklm-guide/cover-en.jpg"
 categories: ["tech-log"]
 tags: ["notebooklm", "google", "rag", "ai-assistant", "productivity", "deep-research", "free-ai"]
 toc: true

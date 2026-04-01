@@ -1,7 +1,7 @@
 ---
 title: "Claude Code Token Optimization — Practical Strategies to Cut Costs by 80%"
 date: 2026-03-03
-image: "/images/posts/2026-03-03-claude-code-token-optimization/cover.jpg"
+image: "/images/posts/2026-03-03-claude-code-token-optimization/cover-en.jpg"
 categories: ["developer-tools"]
 tags: ["claude-code", "token-optimization", "usage-api", "cost-management", "prompt-caching", "claude-md"]
 description: "Claude Code averages $6/day per developer. With the right strategies — context management, model selection, CLAUDE.md optimization, and Usage API monitoring — you can cut that by 50–80%."

@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-30-hybrid-search-dev6/cover.jpg"
+image: "/images/posts/2026-03-30-hybrid-search-dev6/cover-en.jpg"
 title: "Hybrid Image Search Dev Log #6 — S3 Image Storage Migration and Branding"
 description: Migrating image storage from the local filesystem to AWS S3, applying Diffs branding, and a series of UI stability improvements across 31 commits
 date: 2026-03-30

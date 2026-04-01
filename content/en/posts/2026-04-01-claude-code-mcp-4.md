@@ -2,7 +2,7 @@
 title: "4 Essential MCP Servers for Claude Code — Playwright to Firecrawl"
 date: 2026-04-01
 description: "A practical guide to four essential MCP servers that extend Claude Code's capabilities — Playwright, Firecrawl, Context7, and Supabase — covering installation and real-world prompts."
-image: "/images/posts/2026-04-01-claude-code-mcp-4/cover.jpg"
+image: "/images/posts/2026-04-01-claude-code-mcp-4/cover-en.jpg"
 categories: ["tech-log"]
 tags: ["claude-code", "mcp", "playwright", "firecrawl", "context7", "supabase", "automation"]
 toc: true

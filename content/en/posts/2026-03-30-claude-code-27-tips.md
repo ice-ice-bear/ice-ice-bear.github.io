@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-30-claude-code-27-tips/cover.jpg"
+image: "/images/posts/2026-03-30-claude-code-27-tips/cover-en.jpg"
 title: "Claude Code Practical Guide 3 — 27 Tips from 500 Hours of Use"
 description: 27 tips drawn from 500+ hours of Claude Code experience, organized by beginner, intermediate, and advanced levels with practical application notes
 date: 2026-03-30

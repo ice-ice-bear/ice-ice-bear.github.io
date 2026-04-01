@@ -2,7 +2,7 @@
 title: "Automating Observability with Honeycomb MCP"
 description: The Honeycomb MCP Server GA release and Canvas AI bring observability data directly into AI tools, enabling automated debugging workflows from trace to code fix
 date: 2026-04-01
-image: "/images/posts/2026-04-01-honeycomb-mcp/cover.jpg"
+image: "/images/posts/2026-04-01-honeycomb-mcp/cover-en.jpg"
 categories: ["devops"]
 tags: ["honeycomb", "mcp", "observability", "opentelemetry", "canvas", "ai-debugging", "distributed-tracing"]
 toc: true

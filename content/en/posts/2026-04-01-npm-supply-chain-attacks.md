@@ -2,7 +2,7 @@
 title: "2026 npm Supply Chain Attacks — axios, LiteLLM, and the Lessons Learned"
 date: 2026-04-01
 description: "Three supply chain attacks that hit in a single week in March 2026: the axios npm account takeover, LiteLLM PyPI malware, and Claude Code source code exposure. A breakdown of the common attack patterns and practical defenses."
-image: "/images/posts/2026-04-01-npm-supply-chain-attacks/cover.jpg"
+image: "/images/posts/2026-04-01-npm-supply-chain-attacks/cover-en.jpg"
 categories: ["security"]
 tags: ["npm", "pypi", "supply-chain-attack", "axios", "litellm", "security", "malware", "ci-cd"]
 toc: true

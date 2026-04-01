@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-16-claude-for-chrome/cover.jpg"
+image: "/images/posts/2026-03-16-claude-for-chrome/cover-en.jpg"
 title: "Claude for Chrome — Anthropic's Strategy to Embed AI Into the Browser"
 description: "An analysis of Anthropic's Claude for Chrome extension and the significance of the March 2x usage promotion."
 date: 2026-03-16

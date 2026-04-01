@@ -2,7 +2,7 @@
 title: "Firecrawl — The Web Scraping Powerhouse for the AI Era"
 description: "Firecrawl's core features, MCP integration with Claude Code, and real-world benchmarks that go beyond Claude Code's built-in web fetch"
 date: 2026-04-01
-image: "/images/posts/2026-04-01-firecrawl-web-scraping/cover.jpg"
+image: "/images/posts/2026-04-01-firecrawl-web-scraping/cover-en.jpg"
 categories: ["tech-log"]
 tags: ["firecrawl", "web-scraping", "claude-code", "mcp", "playwright", "automation", "ai-tools"]
 toc: true

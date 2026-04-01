@@ -2,7 +2,7 @@
 title: "How Stripe Ships 1,300 PRs a Week — Coding Agents and Adversarial Development"
 description: "An analysis of Stripe Minions' structured workflow that produces 1,300+ AI-written PRs per week, and the adversarial development technique that dramatically improves agent reliability"
 date: 2026-04-01
-image: "/images/posts/2026-04-01-stripe-coding-agents/cover.jpg"
+image: "/images/posts/2026-04-01-stripe-coding-agents/cover-en.jpg"
 categories: ["tech-log"]
 tags: ["stripe", "coding-agent", "adversarial-development", "workflow", "ai-engineering", "code-review", "multi-agent"]
 toc: true

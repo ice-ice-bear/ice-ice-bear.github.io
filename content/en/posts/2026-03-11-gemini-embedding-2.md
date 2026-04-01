@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-11-gemini-embedding-2/cover.jpg"
+image: "/images/posts/2026-03-11-gemini-embedding-2/cover-en.jpg"
 title: "Gemini Embedding 2 — Google's First Native Multimodal Embedding Model"
 description: "An analysis of Gemini Embedding 2, Google's first native multimodal embedding model that maps text, images, video, and audio into a single embedding space."
 date: 2026-03-11

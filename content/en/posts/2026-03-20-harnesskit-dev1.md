@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-20-harnesskit-dev1/cover.jpg"
+image: "/images/posts/2026-03-20-harnesskit-dev1/cover-en.jpg"
 title: "HarnessKit Dev Log #1 — Designing and Building an Adaptive Harness Plugin for Zero-Based Vibe Coders"
 description: Designing an adaptive harness as a Claude Code Plugin for vibe coders and implementing v0.1.0 — covering repo auto-detection, preset system, session management hooks, and the insights improvement loop, all completed across 4 implementation plans in a single day.
 date: 2026-03-20

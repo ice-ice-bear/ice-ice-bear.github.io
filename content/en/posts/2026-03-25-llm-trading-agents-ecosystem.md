@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-25-llm-trading-agents-ecosystem/cover.jpg"
+image: "/images/posts/2026-03-25-llm-trading-agents-ecosystem/cover-en.jpg"
 title: "The LLM Trading Agent Ecosystem — TradingAgents, StockBench, FinRL-DeepSeek"
 description: "A comprehensive analysis of open-source LLM-based stock trading agent frameworks and recent academic research"
 date: 2026-03-25

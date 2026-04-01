@@ -1,7 +1,7 @@
 ---
 title: "Gemini 3 Flash Preview Bug: Infinite Reasoning Loop and Internal Logic Leak"
 date: 2026-02-25
-image: "/images/posts/2026-02-25-gemini-3-flash-infinite-loop-bug/cover.jpg"
+image: "/images/posts/2026-02-25-gemini-3-flash-infinite-loop-bug/cover-en.jpg"
 description: "A 3-5% rate infinite reasoning loop bug in Gemini 3 Flash Preview under concurrent load, the internal logic leak that accompanies it, and the client-side defensive code you should add now."
 categories: ["ai-ml"]
 tags: ["gemini", "llm", "bug", "google-ai", "thinking", "api", "production"]

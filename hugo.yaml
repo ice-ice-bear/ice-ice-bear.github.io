@@ -81,12 +81,6 @@ languages:
           weight: 30
           params:
             icon: tag
-        - identifier: search
-          name: Search
-          url: /search/
-          weight: 40
-          params:
-            icon: search
       social:
         - identifier: github
           name: GitHub
@@ -109,28 +103,22 @@ languages:
       main:
         - identifier: posts
           name: 포스트
-          url: /posts/
+          url: /ko/posts/
           weight: 10
           params:
             icon: archives
         - identifier: categories
           name: 카테고리
-          url: /categories/
+          url: /ko/categories/
           weight: 20
           params:
             icon: categories
         - identifier: tags
           name: 태그
-          url: /tags/
+          url: /ko/tags/
           weight: 30
           params:
             icon: tag
-        - identifier: search
-          name: 검색
-          url: /search/
-          weight: 40
-          params:
-            icon: search
       social:
         - identifier: github
           name: GitHub

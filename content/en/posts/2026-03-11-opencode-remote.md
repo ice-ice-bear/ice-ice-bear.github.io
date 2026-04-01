@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-11-opencode-remote/cover.jpg"
+image: "/images/posts/2026-03-11-opencode-remote/cover-en.jpg"
 title: "opencode serve/web — Control Your Dev PC Remotely From Your Phone"
 description: "How to use opencode's serve/web feature with Tailscale VPN to connect to an AI coding session on your development PC from a mobile device."
 date: 2026-03-11

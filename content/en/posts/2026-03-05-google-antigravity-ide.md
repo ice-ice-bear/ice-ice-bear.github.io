@@ -1,7 +1,7 @@
 ---
 title: "Google Antigravity IDE — The New Contender in the AI IDE War"
 date: 2026-03-05
-image: "/images/posts/2026-03-05-google-antigravity-ide/cover.jpg"
+image: "/images/posts/2026-03-05-google-antigravity-ide/cover-en.jpg"
 description: "Google's VS Code fork Antigravity IDE reviewed from real usage: hands-on impressions, a comparison with Cursor and Windsurf, and a deep dive into the URL scheme conflict problem."
 categories: ["developer-tools"]
 tags: ["antigravity", "vscode", "cursor", "ai-ide", "google", "url-scheme"]

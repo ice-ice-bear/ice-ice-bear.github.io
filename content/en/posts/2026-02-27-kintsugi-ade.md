@@ -1,7 +1,7 @@
 ---
 title: "Kintsugi — SonarSource's ADE Built for Claude Code"
 date: 2026-02-27
-image: "/images/posts/2026-02-27-kintsugi-ade/cover.jpg"
+image: "/images/posts/2026-02-27-kintsugi-ade/cover-en.jpg"
 description: "Kintsugi is an Agentic Development Environment from SonarSource that visually complements CLI agents like Claude Code. Multi-threaded development, plan review, and Sonar-powered guardrails."
 categories: ["developer-tools"]
 tags: ["kintsugi", "sonarqube", "claude-code", "sonarcloud", "agentic-development"]

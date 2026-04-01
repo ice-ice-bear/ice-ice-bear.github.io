@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-25-claude-computer-use/cover.jpg"
+image: "/images/posts/2026-03-25-claude-computer-use/cover-en.jpg"
 title: "Claude Computer Use — An AI That Controls Your Mouse and Keyboard"
 description: An analysis of the architecture and use cases for Anthropic's officially released Claude Computer Use feature
 date: 2026-03-25

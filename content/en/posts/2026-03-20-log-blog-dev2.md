@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-20-log-blog-dev2/cover.jpg"
+image: "/images/posts/2026-03-20-log-blog-dev2/cover-en.jpg"
 title: "Log-Blog Dev Log #2 — Unified Skill Flow and --since-last-run Tracking"
 description: How we integrated Claude Code sessions and commit-based dev logs into the unified skill flow, and added automatic time range calculation based on last-run timestamps
 date: 2026-03-20

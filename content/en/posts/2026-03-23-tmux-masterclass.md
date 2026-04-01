@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-23-tmux-masterclass/cover.jpg"
+image: "/images/posts/2026-03-23-tmux-masterclass/cover-en.jpg"
 title: "tmux Masterclass — Everything You Need to Know, Including AI Agent Integration"
 description: A complete guide to tmux — from the 19-year-proven architecture to session management, customization, plugins, and integrating with AI coding agents
 date: 2026-03-23

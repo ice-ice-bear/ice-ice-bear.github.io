@@ -2,7 +2,7 @@
 title: "Claude Code Plugin Marketplaces Compared — Where to Find Them and How to Choose"
 description: A comparative analysis of the official marketplace, community directories, and the Korean-language marketplace that make up the Claude Code plugin ecosystem
 date: 2026-03-20
-image: "/images/posts/2026-03-20-claude-code-marketplaces/cover.jpg"
+image: "/images/posts/2026-03-20-claude-code-marketplaces/cover-en.jpg"
 categories: ["developer-tools"]
 tags: ["claude-code", "plugin", "marketplace", "modu-ai", "skills"]
 toc: true

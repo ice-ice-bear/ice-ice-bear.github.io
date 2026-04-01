@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-30-ai-plugin-ecosystem/cover.jpg"
+image: "/images/posts/2026-03-30-ai-plugin-ecosystem/cover-en.jpg"
 title: "Superpowers Follow-up — From 69k to 110k Stars, and What's Still Missing"
 description: How Superpowers grew from 69k to 110k GitHub stars, a practitioner's critique from a Korean YouTuber perspective, and an analysis of how it complements HarnessKit
 date: 2026-03-30

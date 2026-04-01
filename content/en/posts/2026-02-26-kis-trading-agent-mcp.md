@@ -2,7 +2,7 @@
 title: "KIS Trading Agent — LLM Stock Trading Architecture with MCP"
 description: "An architectural deep-dive into an LLM-based stock trading agent built on Korea Investment & Securities API and MCP. Covers the FastMCP server, React frontend, and Claude integration."
 date: 2026-02-26
-image: "/images/posts/2026-02-26-kis-trading-agent-mcp/cover.jpg"
+image: "/images/posts/2026-02-26-kis-trading-agent-mcp/cover-en.jpg"
 categories: ["fintech"]
 tags: ["mcp", "claude", "fastapi", "react", "trading", "kis-api", "llm", "fastmcp"]
 toc: true

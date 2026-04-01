@@ -2,7 +2,7 @@
 title: "Nano Banana 2 Deep Dive — Google's Latest Image Generation Model"
 date: 2026-03-04
 description: "Google's Nano Banana 2 delivers Pro-grade image quality at Flash speed. A breakdown of subject consistency, precise text rendering, real-world knowledge integration, and three API access methods."
-image: "/images/posts/2026-03-04-nano-banana-2/cover.jpg"
+image: "/images/posts/2026-03-04-nano-banana-2/cover-en.jpg"
 categories: ["ai-ml"]
 tags: ["nano-banana-2", "gemini", "image-generation", "google-deepmind", "generative-ai", "api"]
 toc: true

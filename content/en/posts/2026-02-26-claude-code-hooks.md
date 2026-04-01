@@ -2,7 +2,7 @@
 title: "Claude Code Hooks — Deterministic Control Over Agent Behavior"
 description: "A guide to Claude Code Hooks: the four lifecycle events, configuration structure, and real-world usage patterns. A mechanism for adding deterministic guarantees to non-deterministic agent behavior."
 date: 2026-02-26
-image: "/images/posts/2026-02-26-claude-code-hooks/cover.jpg"
+image: "/images/posts/2026-02-26-claude-code-hooks/cover-en.jpg"
 categories: ["developer-tools"]
 tags: ["claude-code", "hooks", "automation", "developer-tools", "shell"]
 toc: true

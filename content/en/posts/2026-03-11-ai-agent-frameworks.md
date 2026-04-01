@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-11-ai-agent-frameworks/cover.jpg"
+image: "/images/posts/2026-03-11-ai-agent-frameworks/cover-en.jpg"
 title: "Three AI Coding Agent Extension Frameworks Compared — bkit-codex, oh-my-codex, and Superpowers"
 description: "A comparison of three extension frameworks (bkit-codex, oh-my-codex, Superpowers) that layer on top of OpenAI Codex and Claude Code to control agent behavior and enforce development methodology."
 date: 2026-03-11

@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-17-megaupskill-i18n/cover.jpg"
+image: "/images/posts/2026-03-17-megaupskill-i18n/cover-en.jpg"
 title: "MegaUpskill Dev Log — Automating i18n Audits and Translation Gap-Filling"
 description: "Adding i18n-audit and i18n-fill commands to the VS Code extension, and fixing a ChatService PATH mismatch and a Node.js overlay race condition"
 date: 2026-03-17

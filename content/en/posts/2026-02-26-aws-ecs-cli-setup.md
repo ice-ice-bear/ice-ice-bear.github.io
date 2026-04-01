@@ -2,7 +2,7 @@
 title: "AWS ECS Service Operations and CLI Credential Setup"
 description: "DevOps work log: ECS service updates, EC2 instance checks, ElastiCache Valkey monitoring, IAM access key creation, and AWS CLI credential configuration."
 date: 2026-02-26
-image: "/images/posts/2026-02-26-aws-ecs-cli-setup/cover.jpg"
+image: "/images/posts/2026-02-26-aws-ecs-cli-setup/cover-en.jpg"
 categories: ["devops"]
 tags: ["aws", "ecs", "ec2", "elasticache", "valkey", "iam", "cli", "devops"]
 toc: true

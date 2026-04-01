@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-02-24-vscode-extension-auth-security/cover.jpg"
+image: "/images/posts/2026-02-24-vscode-extension-auth-security/cover-en.jpg"
 title: "VS Code Extension Development — Remote Architecture, Core APIs, and Secret Security"
 description: "A deep dive into VS Code extension development: the UI vs Workspace extension split for remote environments, core API namespaces, secret storage security risks, and Azure authentication patterns."
 date: 2026-02-24

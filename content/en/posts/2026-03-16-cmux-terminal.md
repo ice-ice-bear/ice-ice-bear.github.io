@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-16-cmux-terminal/cover.jpg"
+image: "/images/posts/2026-03-16-cmux-terminal/cover-en.jpg"
 title: "cmux — A macOS-Native Terminal Designed for the AI Agent Era"
 description: cmux is a macOS-native terminal built on the Ghostty rendering engine, with workspace notifications, read-screen inter-pane communication, and browser automation — completely redefining the AI coding agent workflow.
 date: 2026-03-16

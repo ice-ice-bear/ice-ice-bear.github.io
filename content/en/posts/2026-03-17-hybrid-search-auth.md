@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-17-hybrid-search-auth/cover.jpg"
+image: "/images/posts/2026-03-17-hybrid-search-auth/cover-en.jpg"
 title: "Hybrid Image Search Dev Log — Implementing the Google OAuth Login Wall"
 description: "Adding Google OAuth to FastAPI and React, protecting the full API with JWT cookie-based authentication"
 date: 2026-03-17

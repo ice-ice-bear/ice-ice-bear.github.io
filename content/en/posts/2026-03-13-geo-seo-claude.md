@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-13-geo-seo-claude/cover.jpg"
+image: "/images/posts/2026-03-13-geo-seo-claude/cover-en.jpg"
 title: "geo-seo-claude — Automating GEO for the AI Search Era with Claude Code"
 description: "geo-seo-claude is a Claude Code skill that runs GEO audits, AI citability scoring, crawler analysis, and brand authority scans using parallel subagents. An open-source tool for the AI search era."
 date: 2026-03-13

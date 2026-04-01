@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-02-19-hugo-theme-comparison-blog-setup/cover.jpg"
+image: "/images/posts/2026-02-19-hugo-theme-comparison-blog-setup/cover-en.jpg"
 title: "Hugo Theme Comparison & GitHub Pages Setup Guide"
 description: "A deep dive into Hugo blog themes — comparing PaperMod and Stack against several others — plus a practical guide to deploying a Hugo blog on GitHub Pages."
 date: 2026-02-19

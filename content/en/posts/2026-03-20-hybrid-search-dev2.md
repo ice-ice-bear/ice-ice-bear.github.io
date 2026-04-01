@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-20-hybrid-search-dev2/cover.jpg"
+image: "/images/posts/2026-03-20-hybrid-search-dev2/cover-en.jpg"
 title: "Hybrid Image Search Dev Log #2 — Auto-Injection Visualization, User Isolation, and Async Parallel Generation"
 description: How we built visual feedback for auto-injected tone/angle references, implemented per-user data isolation, and parallelized Gemini API calls with asyncio.gather
 date: 2026-03-20

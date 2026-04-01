@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-17-trading-agent-dev4/cover.jpg"
+image: "/images/posts/2026-03-17-trading-agent-dev4/cover-en.jpg"
 title: "Stock Trading Agent Dev Log #4 — DART Integration, Signal Critic, Real-time Dashboard"
 description: How DART financial data integration and SignalCriticAgent improved signal quality, alongside building a WebSocket-powered real-time dashboard and ReportViewer
 date: 2026-03-17

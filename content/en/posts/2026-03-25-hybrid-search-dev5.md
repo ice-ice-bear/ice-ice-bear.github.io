@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-25-hybrid-search-dev5/cover.jpg"
+image: "/images/posts/2026-03-25-hybrid-search-dev5/cover-en.jpg"
 title: "Hybrid Image Search Dev Log #5 — Inpaint UX, EC2 Dev Server, Stability"
 description: "Inpaint editor UX improvements, Google OAuth on the EC2 dev server, and generation stability hardening across 13 commits"
 date: 2026-03-25

@@ -1,7 +1,7 @@
 ---
 title: "Building a Stock Trading Agent #2 — Expert Agent Team and KOSPI200 Data Struggles"
 date: 2026-03-05
-image: "/images/posts/2026-03-05-trading-agent-expert-team/cover.jpg"
+image: "/images/posts/2026-03-05-trading-agent-expert-team/cover-en.jpg"
 description: "A dev log of introducing an Expert Analyst panel into an AI multi-agent stock trading system, and switching KOSPI200 data sources three times — from KIS API to pykrx to NAVER Finance."
 categories: ["fintech"]
 tags: ["trading-agent", "kospi200", "claude-api", "multi-agent", "technical-indicators", "python", "naver-finance"]

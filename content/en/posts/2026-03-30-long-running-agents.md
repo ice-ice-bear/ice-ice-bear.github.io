@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-30-long-running-agents/cover.jpg"
+image: "/images/posts/2026-03-30-long-running-agents/cover-en.jpg"
 title: "Long-Running AI Agents and Harness Engineering in Practice"
 description: A deep dive into Anthropic's long-running agent blueprint and how harness engineering provides a systematic quality management framework for AI agents
 date: 2026-03-30

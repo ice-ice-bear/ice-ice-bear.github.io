@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-02-24-alembic-database-migration/cover.jpg"
+image: "/images/posts/2026-02-24-alembic-database-migration/cover-en.jpg"
 title: "Alembic — Database Migration with SQLAlchemy"
 description: "A practical guide to Alembic for version-controlled database schema migrations with SQLAlchemy — covering setup, the basic workflow, rollbacks, and useful features like post-write hooks and pyproject.toml support."
 date: 2026-02-24

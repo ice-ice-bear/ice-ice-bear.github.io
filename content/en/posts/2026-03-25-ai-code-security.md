@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-25-ai-code-security/cover.jpg"
+image: "/images/posts/2026-03-25-ai-code-security/cover-en.jpg"
 title: "Vibe Coding Security Checklist — OWASP Top 10 and Automated Scanning"
 description: How to check AI-generated code for security vulnerabilities using OWASP standards and automated scanning tools
 date: 2026-03-25

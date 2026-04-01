@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-25-gemini-video-embedding/cover.jpg"
+image: "/images/posts/2026-03-25-gemini-video-embedding/cover-en.jpg"
 title: "Gemini Video Embedding — A New Paradigm for Multimodal Search"
 description: How Gemini Embedding 2 embeds video directly into 768-dimensional vectors for natural language search, and the surveillance society debate it sparked on Hacker News
 date: 2026-03-25

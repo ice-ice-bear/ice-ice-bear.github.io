@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-24-claude-code-new-features/cover.jpg"
+image: "/images/posts/2026-03-24-claude-code-new-features/cover-en.jpg"
 title: "Claude Code Practical Guide Part 2 — 9 New Features from the Last Two Months"
 description: A hands-on breakdown of 9 new Claude Code features released in the past two months — 1M context, Git Worktrees, /simplify, /batch, Remote Control, Auto-memory, /btw, /loop, and /voice
 date: 2026-03-24

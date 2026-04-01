@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-25-trading-agent-dev6/cover.jpg"
+image: "/images/posts/2026-03-25-trading-agent-dev6/cover-en.jpg"
 title: "Trading Agent Dev Log #6 — Deeper Analysis and Major Frontend Expansion"
 description: "DCF valuation, portfolio risk analysis, investment memo generation, and a news/macro analyst added across 35 commits"
 date: 2026-03-25

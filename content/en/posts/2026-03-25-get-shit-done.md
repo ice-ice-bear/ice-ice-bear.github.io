@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-25-get-shit-done/cover.jpg"
+image: "/images/posts/2026-03-25-get-shit-done/cover-en.jpg"
 title: "Get Shit Done — A Meta-Prompting System That Solves Context Rot"
 description: "An analysis of GSD's spec-driven development workflow for fixing context quality degradation in Claude Code and other AI coding tools"
 date: 2026-03-25

@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-20-trading-agent-dev5/cover.jpg"
+image: "/images/posts/2026-03-20-trading-agent-dev5/cover-en.jpg"
 title: "Trading Agent Dev Log #5 — Backend Stabilization and Data Pipeline Improvements"
 description: Improving the DART client with year fallback and PBR calculation, fixing the market scanner pipeline's missing current_price bug, resolving async/sync confusion in FastMCP middleware, and frontend improvements to SignalPanel and DAG visualization
 date: 2026-03-20

@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-20-subagent-era/cover.jpg"
+image: "/images/posts/2026-03-20-subagent-era/cover-en.jpg"
 title: "The Subagent Era Has Arrived — GPT 5.4 nano and Strategies for Context Rot"
 description: The core concepts of subagent architecture made mainstream by the OpenAI GPT 5.4 nano release, and practical strategies for leveraging it — based on Cole Medin's analysis
 date: 2026-03-20

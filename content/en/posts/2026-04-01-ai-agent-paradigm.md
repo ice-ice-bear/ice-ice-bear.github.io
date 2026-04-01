@@ -2,7 +2,7 @@
 title: "A New Paradigm for Building AI Agents — From Frameworks to SDK-First"
 description: The way AI agents are built is shifting from framework-centric approaches to direct use of Claude Agent SDK. An analysis of the Old vs New architecture and the changing role of RAG.
 date: 2026-04-01
-image: "/images/posts/2026-04-01-ai-agent-paradigm/cover.jpg"
+image: "/images/posts/2026-04-01-ai-agent-paradigm/cover-en.jpg"
 categories: ["tech-log"]
 tags: ["ai-agent", "claude-agent-sdk", "rag", "langchain", "pydantic-ai", "skills", "sdk"]
 toc: true

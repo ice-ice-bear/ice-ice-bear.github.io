@@ -3,7 +3,7 @@ title: "Claude Code Practical Guide 5 — 12 Hidden Settings You Should Enable"
 slug: "claude-code-hidden-settings"
 date: 2026-04-01
 description: "A deep dive into 12 hidden settings in Claude Code's settings.json and environment variables — covering conversation retention, output limits, auto-compact, hooks, MCP servers, and model routing"
-image: "/images/posts/2026-04-01-claude-code-settings/cover.jpg"
+image: "/images/posts/2026-04-01-claude-code-settings/cover-en.jpg"
 categories: ["tech-log"]
 tags: ["claude-code", "AI", "developer-tools", "settings", "MCP", "hooks", "workflow"]
 toc: true

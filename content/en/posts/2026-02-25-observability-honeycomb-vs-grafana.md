@@ -1,7 +1,7 @@
 ---
 title: "Observability vs Monitoring: Honeycomb vs Grafana"
 date: 2026-02-25
-image: "/images/posts/2026-02-25-observability-honeycomb-vs-grafana/cover.jpg"
+image: "/images/posts/2026-02-25-observability-honeycomb-vs-grafana/cover-en.jpg"
 description: "Comparing Honeycomb and Grafana to illuminate the difference between the monitoring and observability paradigms — data models, query approaches, SLO design, and pricing."
 categories: ["devops"]
 tags: ["observability", "monitoring", "honeycomb", "grafana", "devops", "slo", "apm", "distributed-tracing"]

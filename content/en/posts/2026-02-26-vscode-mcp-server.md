@@ -2,7 +2,7 @@
 title: "vscode-mcp-server — Exposing VS Code's Editor Capabilities to LLMs via MCP"
 description: "An analysis of vscode-mcp-server: architecture, tool catalog, and how it differs from Claude Code. A VS Code extension that exposes native editor features through the MCP protocol."
 date: 2026-02-26
-image: "/images/posts/2026-02-26-vscode-mcp-server/cover.jpg"
+image: "/images/posts/2026-02-26-vscode-mcp-server/cover-en.jpg"
 categories: ["developer-tools"]
 tags: ["mcp", "vscode", "extension", "claude-desktop", "llm", "web-components"]
 toc: true

@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-20-hybrid-search-dev3/cover.jpg"
+image: "/images/posts/2026-03-20-hybrid-search-dev3/cover-en.jpg"
 title: "Hybrid Image Search Dev Log #3 — Async Parallelization, Prompt Quality, and Structural Refactoring"
 description: Transitioning the Gemini API to async with concurrent generation support, improving prompt structure and reference image randomization, and systematically decomposing a 1500-line main.py
 date: 2026-03-20

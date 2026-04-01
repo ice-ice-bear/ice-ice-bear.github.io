@@ -2,7 +2,7 @@
 title: "Claude Code Practical Guide 4 — auto-fix and the Self-Healing Workflow"
 date: 2026-04-01
 description: How Claude Code's auto-fix feature automatically handles PR fixes and CI failures, plus Cole Medin's Self-Healing workflow that lets coding agents visually validate and self-correct their own work
-image: "/images/posts/2026-04-01-claude-code-autofix/cover.jpg"
+image: "/images/posts/2026-04-01-claude-code-autofix/cover-en.jpg"
 categories: ["tech-log"]
 tags: ["Claude Code", "auto-fix", "CI/CD", "Self-Healing", "Vercel Agent Browser CLI", "GitHub Actions", "AI Coding"]
 toc: true

@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-11-ai-agent-session-managers/cover.jpg"
+image: "/images/posts/2026-03-11-ai-agent-session-managers/cover-en.jpg"
 title: "The Evolution of AI Coding Agent Session Management — agentsview vs agf"
 description: "A comparison of two tools for managing AI coding agent sessions: agentsview (web dashboard) and agf (TUI session finder)."
 date: 2026-03-11

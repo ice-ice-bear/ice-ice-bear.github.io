@@ -4,7 +4,7 @@ date: 2026-03-19
 description: Practical strategies for getting the most out of Claude Code in real-world use, covering context management, workflow patterns, Second Brain setup, Lazy Loading, TDD-based coding, and subagent usage.
 categories: ["developer-tools"]
 tags: ["claude-code", "context-management", "workflow", "tdd", "mcp", "sub-agent", "developer-experience"]
-image: "/images/posts/2026-03-19-claude-code-practical-guide/cover.jpg"
+image: "/images/posts/2026-03-19-claude-code-practical-guide/cover-en.jpg"
 toc: true
 ---
 

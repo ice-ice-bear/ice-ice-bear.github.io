@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-13-page-agent/cover.jpg"
+image: "/images/posts/2026-03-13-page-agent/cover-en.jpg"
 title: "page-agent — Alibaba's Open-Source Tool That Turns Any Web Page Into an AI-Native App With One Line of Code"
 description: "Alibaba's page-agent injects an AI agent into a web page with a single script tag. Its in-page execution model controls the DOM directly — no headless browser needed."
 date: 2026-03-13

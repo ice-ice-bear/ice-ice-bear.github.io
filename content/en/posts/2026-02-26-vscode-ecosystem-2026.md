@@ -2,7 +2,7 @@
 title: "The VS Code Extension Ecosystem in 2026: From Webview UI Toolkit's End to AI Extensions"
 description: "Why Webview UI Toolkit was archived and what to use instead, the best VS Code extensions for 2026, and Claude Code's IDE integration — a look at a turning point in the VS Code extension ecosystem."
 date: 2026-02-26
-image: "/images/posts/2026-02-26-vscode-ecosystem-2026/cover.jpg"
+image: "/images/posts/2026-02-26-vscode-ecosystem-2026/cover-en.jpg"
 categories: ["developer-tools"]
 tags: ["vscode", "web-components", "fast", "claude-code", "extensions", "ai", "developer-tools"]
 toc: true

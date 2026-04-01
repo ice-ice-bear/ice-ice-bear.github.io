@@ -2,7 +2,7 @@
 title: "Gemini 3 — Function Calling, Structured Outputs, and Code Execution New Features"
 description: "A rundown of Gemini 3's new capabilities: Function Calling strict validation, Structured Outputs, Code Execution with images, Multimodal function responses, and the OpenAI-compatible API."
 date: 2026-02-26
-image: "/images/posts/2026-02-26-gemini-3-function-calling/cover.jpg"
+image: "/images/posts/2026-02-26-gemini-3-function-calling/cover-en.jpg"
 categories: ["ai-ml"]
 tags: ["gemini-3", "google-ai", "function-calling", "structured-output", "code-execution", "llm", "api"]
 toc: true

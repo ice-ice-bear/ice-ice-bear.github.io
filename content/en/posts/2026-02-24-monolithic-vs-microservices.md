@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-02-24-monolithic-vs-microservices/cover.jpg"
+image: "/images/posts/2026-02-24-monolithic-vs-microservices/cover-en.jpg"
 title: "Monolithic vs Microservices — How to Choose the Right Architecture"
 description: "A clear-eyed comparison of monolithic and microservices architectures — their tradeoffs, decision criteria, and when each approach actually makes sense."
 date: 2026-02-24

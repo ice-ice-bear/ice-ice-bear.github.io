@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-16-vibe-coding-fundamentals/cover.jpg"
+image: "/images/posts/2026-03-16-vibe-coding-fundamentals/cover-en.jpg"
 title: "Vibe Coding Fundamentals — The Core Principles in 33 Minutes"
 description: "A breakdown of the key principles and practical workflow from the Vibe Coding Fundamentals video"
 date: 2026-03-16

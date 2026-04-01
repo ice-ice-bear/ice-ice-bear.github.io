@@ -1,7 +1,7 @@
 ---
 title: "Harness — From General-Purpose AI to Dedicated Team Member"
 date: 2026-03-06
-image: "/images/posts/2026-03-06-claude-code-harness/cover.jpg"
+image: "/images/posts/2026-03-06-claude-code-harness/cover-en.jpg"
 description: "Harness trains Claude Code the way you'd onboard a new hire — teaching it your team's coding conventions and tech stack. One-time setup, long-term payoff. Here's how Skills, Agents, and Commands work together."
 categories: ["developer-tools"]
 tags: ["harness", "claude-code", "ai-workflow", "skill", "autonomous-agent", "vibe-coding"]

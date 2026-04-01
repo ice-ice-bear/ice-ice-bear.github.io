@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-16-stock-analysis-agent/cover.jpg"
+image: "/images/posts/2026-03-16-stock-analysis-agent/cover-en.jpg"
 title: "stock-analysis-agent — Automating Institutional-Grade Stock Research with Claude Code"
 description: "kipeum86/stock-analysis-agent is a Claude Code-based agent that auto-generates investment research with scenario analysis, R/R Score, and Variant View for US and Korean stocks"
 date: 2026-03-16

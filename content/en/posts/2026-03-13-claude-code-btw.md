@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-13-claude-code-btw/cover.jpg"
+image: "/images/posts/2026-03-13-claude-code-btw/cover-en.jpg"
 title: "Claude Code /btw — Ask Side Questions Without Breaking Your Flow"
 description: "Claude Code's /btw command lets you ask quick questions using the current context without polluting the main conversation history."
 date: 2026-03-13

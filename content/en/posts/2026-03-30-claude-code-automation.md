@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-30-claude-code-automation/cover.jpg"
+image: "/images/posts/2026-03-30-claude-code-automation/cover-en.jpg"
 title: "Claude Code Automation Triple Play — Skills, Scheduling, and Dispatch"
 description: A complete guide to Claude Code automation covering the full skill lifecycle from creation to deployment, three approaches to cron-based scheduling, and remote control via Dispatch
 date: 2026-03-30

@@ -2,7 +2,7 @@
 title: "The Excalidraw Diagram Skill — Teaching Coding Agents Visual Argumentation"
 description: "A deep analysis of the Claude Code Skills system through the lens of the Excalidraw diagram skill — from the philosophy of visual argumentation to building your own skills."
 date: 2026-04-01
-image: "/images/posts/2026-04-01-excalidraw-skill/cover.jpg"
+image: "/images/posts/2026-04-01-excalidraw-skill/cover-en.jpg"
 categories: ["tech-log"]
 tags: ["claude-code", "skills", "excalidraw", "diagram", "visual-argumentation", "workflow", "developer-tools"]
 toc: true

@@ -4,7 +4,7 @@ date: 2026-03-19
 description: How to apply harness engineering in practice using Google's free AI development tool Antigravity. Covers Rules hierarchy, Skills setup, MCP configuration, and building a complete SaaS with vibe coding.
 categories: ["developer-tools"]
 tags: ["harness-engineering", "antigravity", "google", "gemini", "skills", "mcp", "vibe-coding", "saas"]
-image: "/images/posts/2026-03-19-harness-antigravity/cover.jpg"
+image: "/images/posts/2026-03-19-harness-antigravity/cover-en.jpg"
 ---
 
 ## Overview

@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-17-trading-agents/cover.jpg"
+image: "/images/posts/2026-03-17-trading-agents/cover-en.jpg"
 title: "Stock Trading Agent Dev Log #3 — TradingAgents: A 30K-Star Multi-Agent Trading Firm Simulator"
 description: TradingAgents is an open-source framework that models the organizational structure of a securities research team using LLM agents, with a four-stage Analyst-Researcher-Trader-Risk pipeline at its core
 date: 2026-03-17

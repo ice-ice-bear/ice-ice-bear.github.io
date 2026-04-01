@@ -1,7 +1,7 @@
 ---
 title: "KIS Developers — Korea Investment & Securities Open API and MCP Trading"
 date: 2026-02-27
-image: "/images/posts/2026-02-27-kis-open-api-mcp/cover.jpg"
+image: "/images/posts/2026-02-27-kis-open-api-mcp/cover-en.jpg"
 description: "KIS Developers is the most developer-forward Open API platform among Korean brokerages, offering REST, WebSocket, and official MCP support for LLM-driven trading."
 categories: ["fintech"]
 tags: ["kis-api", "open-api", "mcp", "trading", "websocket", "rest-api"]

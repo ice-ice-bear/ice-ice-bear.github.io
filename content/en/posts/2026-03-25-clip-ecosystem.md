@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-25-clip-ecosystem/cover.jpg"
+image: "/images/posts/2026-03-25-clip-ecosystem/cover-en.jpg"
 title: "The CLIP Ecosystem — From OpenAI to MetaCLIP2 and MobileCLIP2"
 description: A comparative analysis of image-text embedding models from OpenAI CLIP to MetaCLIP2, SigLIP, MobileCLIP2, and OpenCLIP, with model selection criteria for production use
 date: 2026-03-25

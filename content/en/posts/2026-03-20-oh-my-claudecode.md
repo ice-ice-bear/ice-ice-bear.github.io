@@ -2,7 +2,7 @@
 title: "oh-my-claudecode (OMC) — Teams-First Multi-Agent Orchestration for Claude Code"
 date: 2026-03-20
 description: oh-my-claudecode is a multi-agent orchestration framework that layers 27 specialized agents and 28 skills on top of Claude Code
-image: "/images/posts/2026-03-20-oh-my-claudecode/cover.jpg"
+image: "/images/posts/2026-03-20-oh-my-claudecode/cover-en.jpg"
 tags: ["oh-my-claudecode", "claude-code", "multi-agent", "orchestration", "vibe-coding"]
 categories: ["developer-tools"]
 toc: true

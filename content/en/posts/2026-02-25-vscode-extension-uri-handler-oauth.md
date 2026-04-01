@@ -1,7 +1,7 @@
 ---
 title: "VS Code Extension Development: Implementing OAuth with URI Handlers"
 date: 2026-02-25
-image: "/images/posts/2026-02-25-vscode-extension-uri-handler-oauth/cover.jpg"
+image: "/images/posts/2026-02-25-vscode-extension-uri-handler-oauth/cover-en.jpg"
 description: "How to implement OAuth in a VS Code extension using registerUriHandler and AuthenticationProvider, including protocol limitations in code-server and Remote Tunnels' OAuth mechanism."
 categories: ["developer-tools"]
 tags: ["vscode", "vscode-extension", "oauth", "uri-handler", "authentication", "code-server", "remote-tunnels", "typescript"]

@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-02-19-archon-ai-coding-command-center/cover.jpg"
+image: "/images/posts/2026-02-19-archon-ai-coding-command-center/cover-en.jpg"
 title: "Archon — The Command Center for AI Coding Assistants"
 description: "Archon is an open-source MCP server that brings structured knowledge management and task tracking to AI coding tools like Claude Code, Cursor, and Windsurf."
 date: 2026-02-19

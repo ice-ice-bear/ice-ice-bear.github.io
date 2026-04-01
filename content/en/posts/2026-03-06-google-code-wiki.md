@@ -1,7 +1,7 @@
 ---
 title: "Google Code Wiki — Let AI Write Your Codebase Documentation"
 date: 2026-03-06
-image: "/images/posts/2026-03-06-google-code-wiki/cover.jpg"
+image: "/images/posts/2026-03-06-google-code-wiki/cover-en.jpg"
 description: "Google's Code Wiki uses Gemini to auto-generate codebase documentation and keep it up-to-date in real time on every PR merge — a new documentation tool built for the agentic era."
 categories: ["developer-tools"]
 tags: ["code-wiki", "google", "gemini", "codebase-documentation", "ai-documentation", "developer-tools"]

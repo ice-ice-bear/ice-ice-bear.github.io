@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-24-hybrid-search-dev4/cover.jpg"
+image: "/images/posts/2026-03-24-hybrid-search-dev4/cover-en.jpg"
 title: "Hybrid Image Search Dev Log #4 — Router Extraction, Terraform Dev Server, Inpaint Editor"
 description: A dev log covering three parallel workstreams — refactoring FastAPI main.py into separate routers, building an AWS dev server with Terraform, and implementing a Canvas-based inpaint editor
 date: 2026-03-24

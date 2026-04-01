@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-17-infratice-devops/cover.jpg"
+image: "/images/posts/2026-03-17-infratice-devops/cover-en.jpg"
 title: "Infratice — A Problem-Based DevOps Troubleshooting Platform Built on Real Incident Logs"
 description: Infratice is a problem-based learning platform that provides real-world incident scenarios — from Kubernetes ImagePullBackOff to GitHub Actions build failures — as static logs and config files
 date: 2026-03-17

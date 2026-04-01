@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-24-ai-creative-content/cover.jpg"
+image: "/images/posts/2026-03-24-ai-creative-content/cover-en.jpg"
 title: "Two Faces of AI Creative — Giantstep's Hybrid VFX Pipeline and Val Kilmer's Final Film"
 description: Analyzing the value and ethics of AI creative content through Giantstep's SPACE GREEN hybrid AI VFX pipeline and Val Kilmer's posthumous AI film
 date: 2026-03-24

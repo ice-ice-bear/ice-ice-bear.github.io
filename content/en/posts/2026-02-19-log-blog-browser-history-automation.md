@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-02-19-log-blog-browser-history-automation/cover.jpg"
+image: "/images/posts/2026-02-19-log-blog-browser-history-automation/cover-en.jpg"
 title: "log-blog — Turning Browser History into Blog Posts Automatically"
 description: "log-blog is a Python CLI tool that reads Chrome browsing history and converts it into Hugo-compatible blog posts, automating the full pipeline from extraction to git commit."
 date: 2026-02-19

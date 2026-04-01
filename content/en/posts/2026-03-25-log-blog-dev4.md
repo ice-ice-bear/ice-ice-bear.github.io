@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-25-log-blog-dev4/cover.jpg"
+image: "/images/posts/2026-03-25-log-blog-dev4/cover-en.jpg"
 title: "Log-Blog Dev Log #4 — Preparing for the Official Marketplace"
 description: "Rewriting the README to match official plugin format and cleaning up licensing and personal information for Claude Code marketplace submission"
 date: 2026-03-25

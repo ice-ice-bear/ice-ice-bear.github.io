@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-25-harnesskit-dev3/cover.jpg"
+image: "/images/posts/2026-03-25-harnesskit-dev3/cover-en.jpg"
 title: "HarnessKit Dev Log #3 — Plugin Trigger Fixes and Marketplace Recommendation System"
 description: "Diagnosing and fixing plugin triggering issues in HarnessKit, then redesigning the marketplace recommendation system with validation and upgrading the tool sequence to a 3-step sliding window"
 date: 2026-03-25

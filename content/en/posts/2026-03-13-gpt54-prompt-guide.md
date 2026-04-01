@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-13-gpt54-prompt-guide/cover.jpg"
+image: "/images/posts/2026-03-13-gpt54-prompt-guide/cover-en.jpg"
 title: "GPT-5.4 Prompt Guide Essentials — Lock Down the Contract Before Tuning Reasoning"
 description: "Key takeaways from OpenAI's official GPT-5.4 prompt guide. Four techniques — output contract, tool persistence rules, completeness contract, and verification loop — outperform raw reasoning effort in cost-effectiveness."
 date: 2026-03-13

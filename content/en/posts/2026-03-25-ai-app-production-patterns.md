@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-25-ai-app-production-patterns/cover.jpg"
+image: "/images/posts/2026-03-25-ai-app-production-patterns/cover-en.jpg"
 title: "Designing AI Apps for Production — Deterministic Fallback, HITL, and Evaluation Stack"
 description: Three essential design patterns for how your system should behave when an AI app is wrong, with a practical order of adoption
 date: 2026-03-25

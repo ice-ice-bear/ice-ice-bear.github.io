@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-17-replit-agent4/cover.jpg"
+image: "/images/posts/2026-03-17-replit-agent4/cover-en.jpg"
 title: "Replit Agent 4 — From Coding Agent to Creative Collaboration Platform"
 description: Replit Agent 4 expands the coding agent paradigm to knowledge work at large with an infinite canvas, parallel agents, and a kanban workflow
 date: 2026-03-17

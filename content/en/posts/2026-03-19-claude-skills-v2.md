@@ -4,7 +4,7 @@ date: 2026-03-19
 description: A breakdown of the key changes in Claude Code Skills V2. A built-in benchmarking system measures skill effectiveness numerically, and Skill Creator now automates everything from test case generation to iterative improvement. New frontmatter options and improved implicit triggering are also covered.
 categories: ["developer-tools"]
 tags: ["claude-code", "skills", "benchmarking", "evaluation", "anthropic", "skill-creator", "automation"]
-image: "/images/posts/2026-03-19-claude-skills-v2/cover.jpg"
+image: "/images/posts/2026-03-19-claude-skills-v2/cover-en.jpg"
 ---
 
 ## Overview

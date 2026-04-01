@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-24-log-blog-dev3/cover.jpg"
+image: "/images/posts/2026-03-24-log-blog-dev3/cover-en.jpg"
 title: "Log-Blog Dev Log #3 — From Skill to Plugin"
 description: The third Log-Blog dev log covering YouTube oEmbed metadata improvements, series continuity detection, and migrating from a standalone Claude Code skill to a plugin structure
 date: 2026-03-24

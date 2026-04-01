@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-16-ai-frontier-podcast/cover.jpg"
+image: "/images/posts/2026-03-16-ai-frontier-podcast/cover-en.jpg"
 title: "AI Frontier Podcast: Three Episodes — AlphaGo at 10, the RL Era, and Agentic Workflows"
 description: "Summaries of AI Frontier Podcast EP 86, 88, and 90. Covers the ten-year retrospective on AlphaGo, the RL-centric technical landscape, Backend.AI GO, and the future of agentic coding."
 date: 2026-03-16

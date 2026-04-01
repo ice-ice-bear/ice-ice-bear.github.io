@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-25-claude-code-figma/cover.jpg"
+image: "/images/posts/2026-03-25-claude-code-figma/cover-en.jpg"
 title: "Consistent UI with Claude Code and Figma — Analyzing Figma Community Resources"
 description: How to maintain consistent design systems when using Claude Code and Figma together — a practical workflow analysis
 date: 2026-03-25

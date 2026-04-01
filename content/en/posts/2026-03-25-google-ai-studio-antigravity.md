@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-25-google-ai-studio-antigravity/cover.jpg"
+image: "/images/posts/2026-03-25-google-ai-studio-antigravity/cover-en.jpg"
 title: "Google AI Studio Full-Stack Vibe Coding — Antigravity Agent and Firebase Integration"
 description: "An analysis of Google AI Studio's Antigravity coding agent and Firebase integration for building full-stack apps from prompt to production"
 date: 2026-03-25

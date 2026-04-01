@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-30-trading-agent-dev7/cover.jpg"
+image: "/images/posts/2026-03-30-trading-agent-dev7/cover-en.jpg"
 title: "Trading Agent Dev Log #7 — DCF Valuation, Portfolio Risk Analysis, and the 6th Expert"
 description: Adding DCF sensitivity analysis, portfolio risk metrics (VaR, beta, correlation), and a news/macro analyst as the sixth expert in the signal pipeline, plus DART integration
 date: 2026-03-30

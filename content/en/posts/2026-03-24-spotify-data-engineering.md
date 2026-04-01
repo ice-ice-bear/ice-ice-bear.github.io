@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-24-spotify-data-engineering/cover.jpg"
+image: "/images/posts/2026-03-24-spotify-data-engineering/cover-en.jpg"
 title: "Spotify Data Engineering — Practitioner Meetup Recap and Platform Evolution in 2026"
 description: Insights from a Spotify data engineer at a 2024 Inflearn meetup, crossed with the latest technical stack and AI pipeline changes from the 2025-2026 engineering blog
 date: 2026-03-24

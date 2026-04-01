@@ -1,7 +1,7 @@
 ---
 title: "Claude Code Agent Teams — A New Paradigm for Multi-Agent Collaboration"
 date: 2026-03-03
-image: "/images/posts/2026-03-03-claude-code-agent-teams/cover.jpg"
+image: "/images/posts/2026-03-03-claude-code-agent-teams/cover-en.jpg"
 categories: ["developer-tools"]
 tags: ["claude-code", "agent-teams", "subagent", "worktree", "multi-agent", "tmux"]
 description: "Claude Code Agent Teams lets multiple Claude instances collaborate as a team, with direct peer messaging and a shared task list. Here's how it works and when to use it."

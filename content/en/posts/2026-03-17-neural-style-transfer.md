@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-03-17-neural-style-transfer/cover.jpg"
+image: "/images/posts/2026-03-17-neural-style-transfer/cover-en.jpg"
 title: "From Neural Style Transfer to Virtual Humans — Three Approaches to AI Image Generation"
 description: Comparing three open-source projects across the spectrum of AI image generation — classic VGG19 style transfer, Stable Diffusion-based style application, and pose-driven video generation
 date: 2026-03-17

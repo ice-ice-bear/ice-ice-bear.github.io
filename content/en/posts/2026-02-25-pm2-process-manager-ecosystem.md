@@ -1,7 +1,7 @@
 ---
 title: "Running Python + Node.js Multi-Service Apps with PM2 — A Complete ecosystem.config.js Guide"
 date: 2026-02-25
-image: "/images/posts/2026-02-25-pm2-process-manager-ecosystem/cover.jpg"
+image: "/images/posts/2026-02-25-pm2-process-manager-ecosystem/cover-en.jpg"
 description: "How to manage a Python FastAPI backend and Node.js Vite frontend with a single ecosystem.config.js file in PM2, including dotenv conflict resolution."
 categories: ["devops"]
 tags: ["pm2", "devops", "process-management", "ecosystem", "fastapi", "vite", "python", "node", "deployment", "aws-ec2"]

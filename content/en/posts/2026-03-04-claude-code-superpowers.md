@@ -2,7 +2,7 @@
 title: "Superpowers: Injecting Engineering Discipline into Claude Code"
 date: 2026-03-04
 description: "Superpowers is a Skills framework that forces Claude Code to brainstorm, plan, write tests, implement, and review — before touching production code. A deep dive into the 69k-star framework that's changing how developers use AI."
-image: "/images/posts/2026-03-04-claude-code-superpowers/cover.jpg"
+image: "/images/posts/2026-03-04-claude-code-superpowers/cover-en.jpg"
 categories: ["developer-tools"]
 tags: ["claude-code", "superpowers", "tdd", "subagent", "vibe-coding", "skills", "brainstorming"]
 toc: true

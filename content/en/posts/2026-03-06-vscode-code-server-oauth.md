@@ -1,7 +1,7 @@
 ---
 title: "VSCode + code-server OAuth Failures — The code-oss:// Scheme Problem Explained"
 date: 2026-03-06
-image: "/images/posts/2026-03-06-vscode-code-server-oauth/cover.jpg"
+image: "/images/posts/2026-03-06-vscode-code-server-oauth/cover-en.jpg"
 description: "An analysis of why VSCode extension OAuth auth fails in browser-based code-server due to missing code-oss URI scheme handling, with solutions via the vscode.window.registerUriHandler API and a look at GitLens as a reference implementation."
 categories: ["backend"]
 tags: ["vscode", "oauth", "code-server", "extension-api", "authentication", "code-oss", "uri-handler"]
