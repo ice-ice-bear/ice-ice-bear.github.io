@@ -2,10 +2,9 @@ baseURL: "https://ice-ice-bear.github.io/"
 title: "ICE-ICE-BEAR-BLOG"
 theme: stack
 paginate: 10
-languageCode: ko
-defaultContentLanguage: ko
+languageCode: en
+defaultContentLanguage: en
 timezone: "Asia/Seoul"
-hasCJKLanguage: true
 enableRobotsTXT: true
 
 services:
@@ -57,46 +56,92 @@ params:
     page:
       - type: toc
 
-menu:
-  main:
-    - identifier: posts
-      name: Posts
-      url: /posts/
-      weight: 10
-      params:
-        icon: archives
-    - identifier: categories
-      name: Categories
-      url: /categories/
-      weight: 20
-      params:
-        icon: categories
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 30
-      params:
-        icon: tag
-    - identifier: search
-      name: Search
-      url: /search/
-      weight: 40
-      params:
-        icon: search
-
-  social:
-    - identifier: github
-      name: GitHub
-      url: "https://github.com/ice-ice-bear"
-      weight: 10
-      params:
-        icon: brand-github
-    - identifier: email
-      name: Email
-      url: "mailto:3balbi7@gmail.com"
-      weight: 20
-      params:
-        icon: mail
+languages:
+  en:
+    languageName: English
+    weight: 1
+    menu:
+      main:
+        - identifier: posts
+          name: Posts
+          url: /posts/
+          weight: 10
+          params:
+            icon: archives
+        - identifier: categories
+          name: Categories
+          url: /categories/
+          weight: 20
+          params:
+            icon: categories
+        - identifier: tags
+          name: Tags
+          url: /tags/
+          weight: 30
+          params:
+            icon: tag
+        - identifier: search
+          name: Search
+          url: /search/
+          weight: 40
+          params:
+            icon: search
+      social:
+        - identifier: github
+          name: GitHub
+          url: "https://github.com/ice-ice-bear"
+          weight: 10
+          params:
+            icon: brand-github
+        - identifier: email
+          name: Email
+          url: "mailto:3balbi7@gmail.com"
+          weight: 20
+          params:
+            icon: mail
+  ko:
+    languageName: 한국어
+    weight: 2
+    hasCJKLanguage: true
+    menu:
+      main:
+        - identifier: posts
+          name: 포스트
+          url: /posts/
+          weight: 10
+          params:
+            icon: archives
+        - identifier: categories
+          name: 카테고리
+          url: /categories/
+          weight: 20
+          params:
+            icon: categories
+        - identifier: tags
+          name: 태그
+          url: /tags/
+          weight: 30
+          params:
+            icon: tag
+        - identifier: search
+          name: 검색
+          url: /search/
+          weight: 40
+          params:
+            icon: search
+      social:
+        - identifier: github
+          name: GitHub
+          url: "https://github.com/ice-ice-bear"
+          weight: 10
+          params:
+            icon: brand-github
+        - identifier: email
+          name: Email
+          url: "mailto:3balbi7@gmail.com"
+          weight: 20
+          params:
+            icon: mail
 
 outputs:
   home:
