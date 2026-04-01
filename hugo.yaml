@@ -60,6 +60,7 @@ languages:
   en:
     languageName: English
     weight: 1
+    contentDir: content/en
     menu:
       main:
         - identifier: posts
@@ -102,6 +103,7 @@ languages:
   ko:
     languageName: 한국어
     weight: 2
+    contentDir: content/ko
     hasCJKLanguage: true
     menu:
       main:
