@@ -1,5 +1,6 @@
 ---
 title: "Search"
+image: "/images/taxonomy/posts-banner.svg"
 layout: "search"
 slug: "search"
 menu:
