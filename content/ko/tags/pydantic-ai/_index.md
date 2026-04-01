@@ -1,4 +1,4 @@
 ---
-title: "pydantic ai"
+title: "Pydantic Ai"
 image: "/images/taxonomy/tag-pydantic-ai.svg"
 ---

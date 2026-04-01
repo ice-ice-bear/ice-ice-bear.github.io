@@ -1,0 +1,4 @@
+---
+title: "**w (workflow)** — 작업의 흐름과 단계를 plain english로 명확하게 정의한다. 코드를 쓰기 전에 이 작업이 어떤 단계로 이루어져야 하는지를 글로 적는다"
+image: "/images/taxonomy/tag-**w-(workflow)**-—-작업의-흐름과-단계를-plain-english로-명확하게-정의한다.-코드를-쓰기-전에-이-작업이-어떤-단계로-이루어져야-하는지를-글로-적는다.svg"
+---
