@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-04-02-harness-beyond-prompt-engineering/cover.jpg"
+image: "/images/posts/2026-04-02-harness-beyond-prompt-engineering/cover-en.jpg"
 title: "Don't Fix the Prompt, Fix the Harness — The 4-Axis Framework and Generator-Evaluator Architecture"
 description: A new perspective on harness engineering through the prompt-context-harness-agentic 4-axis framework and Anthropic's planner-generator-evaluator architecture
 date: 2026-04-02

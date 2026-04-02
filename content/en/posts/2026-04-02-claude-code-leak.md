@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-04-02-claude-code-leak/cover.jpg"
+image: "/images/posts/2026-04-02-claude-code-leak/cover-en.jpg"
 title: "Claude Code Source Code Leak — Agent Architecture Exposed Through an NPM Source Map Mistake"
 description: A comprehensive analysis of how Claude Code's entire TypeScript source was leaked via NPM source map files, the undisclosed features revealed, and security implications from a harness engineering perspective
 date: 2026-04-02

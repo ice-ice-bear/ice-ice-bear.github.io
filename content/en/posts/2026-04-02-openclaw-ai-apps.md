@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-04-02-openclaw-ai-apps/cover.jpg"
+image: "/images/posts/2026-04-02-openclaw-ai-apps/cover-en.jpg"
 title: "OpenClaw Launch and the Future of the AI App Ecosystem - Will 80% of Apps Disappear?"
 description: "Analyzing OpenClaw's core architecture and installation, creator Peter Steinberger's prediction about app extinction, and how AI agents will reshape the software ecosystem through two video breakdowns"
 date: 2026-04-02

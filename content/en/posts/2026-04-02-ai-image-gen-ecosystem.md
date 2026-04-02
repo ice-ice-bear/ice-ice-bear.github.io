@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-04-02-ai-image-gen-ecosystem/cover.jpg"
+image: "/images/posts/2026-04-02-ai-image-gen-ecosystem/cover-en.jpg"
 title: "AI Image Generation Ecosystem Analysis — Qwen-Image-Layered, Nano Banana 2, Veo 3.1, vLLM-Omni"
 description: Analyzing key projects in the AI image generation ecosystem including Qwen-Image-Layered's layer decomposition architecture, Nano Banana 2's Flash-speed image generation, Veo 3.1's video generation with sound, and vLLM-Omni's multimodal serving framework, with connections to the PopCon project
 date: 2026-04-02

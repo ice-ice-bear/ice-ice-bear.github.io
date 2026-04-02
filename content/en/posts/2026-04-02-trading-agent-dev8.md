@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-04-02-trading-agent-dev8/cover.jpg"
+image: "/images/posts/2026-04-02-trading-agent-dev8/cover-en.jpg"
 title: "Trading Agent Dev Log #8 — Multi-Factor Weighted Score System and Composite Score Migration"
 description: Transitioning from a single RR score to a 5-factor composite score system with UI sliders and database migration
 date: 2026-04-02

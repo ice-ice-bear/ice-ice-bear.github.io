@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-04-02-harnesskit-dev4/cover.jpg"
+image: "/images/posts/2026-04-02-harnesskit-dev4/cover-en.jpg"
 title: "HarnessKit Dev Log #4 — Marketplace Stabilization and v0.3.0 Release"
 description: Establishing HarnessKit marketplace installation structure, splitting README into two languages, overhauling plugin triggers, building a verification recommendation system, and releasing v0.3.0
 date: 2026-04-02

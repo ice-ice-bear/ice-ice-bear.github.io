@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-04-02-log-blog-dev5/cover.jpg"
+image: "/images/posts/2026-04-02-log-blog-dev5/cover-en.jpg"
 title: "Log-Blog Dev Log #5 — Firecrawl Deep Docs Integration and Bilingual Blog"
 description: Implementing deep documentation site crawling via Firecrawl API and an automatic English-Korean bilingual blog translation pipeline
 date: 2026-04-02

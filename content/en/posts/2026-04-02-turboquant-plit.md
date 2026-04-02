@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-04-02-turboquant-plit/cover.jpg"
+image: "/images/posts/2026-04-02-turboquant-plit/cover-en.jpg"
 title: "TurboQuant, Plit, and Nano Banana 2 - From Local AI Quantization to AI Website Creation"
 description: "Google's TurboQuant expands local model context windows by 6x, Plit introduces an AI character chat platform, and the Claude Code plus Nano Banana 2 combo enables one-shot premium website creation"
 date: 2026-04-02

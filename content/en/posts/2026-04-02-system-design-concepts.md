@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-04-02-system-design-concepts/cover.jpg"
+image: "/images/posts/2026-04-02-system-design-concepts/cover-en.jpg"
 title: "System Design Core Concepts - From Interview Prep to Production Architecture"
 description: "A comprehensive guide covering computer fundamentals, CAP theorem, networking, load balancing, caching, and database sharding for system design interviews and real-world architecture"
 date: 2026-04-02

@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-04-02-hybrid-search-dev7/cover.jpg"
+image: "/images/posts/2026-04-02-hybrid-search-dev7/cover-en.jpg"
 title: "Hybrid Image Search Dev Log #7 — LLM Category Classification and S3 Migration"
 description: Replaced score-based tone and angle injection with LLM category classification, fixed S3 download issues, and added user ratio adjustment regeneration
 date: 2026-04-02

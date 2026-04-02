@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-04-02-emoji-market-research/cover.jpg"
+image: "/images/posts/2026-04-02-emoji-market-research/cover-en.jpg"
 title: "Animated Emoji Market Research — From Platform Specs to Open-Source Tools"
 description: Analyzing KakaoTalk and LINE sticker market status, commercial tools like Emorevi, open-source solutions like partymoji and gif_emoji, and image correction techniques to identify PopCon project differentiators
 date: 2026-04-02
