@@ -1,7 +1,7 @@
 ---
 image: "/images/posts/2026-04-02-emoji-market-research/cover.jpg"
-title: "애니메이션 이모지 시장 조사 — 플랫폼 규격부터 오픈소스 도구까지"
-description: "카카오톡과 LINE 이모티콘 시장 현황, 이모레비 같은 상용 도구, partymoji와 gif_emoji 등 오픈소스 솔루션, 이미지 보정 기술을 분석하고 PopCon 프로젝트의 차별점을 도출한다"
+title: "Animated Emoji Market Research — From Platform Specs to Open-Source Tools"
+description: Analyzing KakaoTalk and LINE sticker market status, commercial tools like Emorevi, open-source solutions like partymoji and gif_emoji, and image correction techniques to identify PopCon project differentiators
 date: 2026-04-02
 categories: ["market-research"]
 tags: ["emoji", "sticker", "line", "kakao", "animation", "apng", "gif", "open-source", "image-processing", "popcon"]
@@ -9,127 +9,127 @@ toc: true
 math: false
 ---
 
-## 개요
+## Overview
 
-애니메이션 이모지와 스티커는 모바일 메신저 생태계에서 핵심 수익원이자 사용자 표현 수단이다. 카카오톡 이모티콘 시장은 연간 수천억 원 규모이며, LINE Creators Market은 전 세계 크리에이터가 참여하는 개방형 플랫폼이다. 이 글에서는 플랫폼별 기술 규격, 기존 제작 도구, 오픈소스 대안, 그리고 이미지 보정 기술까지 조사하여 PopCon 프로젝트가 어떤 틈새를 공략할 수 있는지 분석한다.
+Animated emoji and stickers are a core revenue source and user expression medium in the mobile messaging ecosystem. The KakaoTalk emoticon market is worth hundreds of billions of won annually, and LINE Creators Market is an open platform where creators worldwide participate. This post surveys platform-specific technical specs, existing creation tools, open-source alternatives, and image correction techniques to analyze what niche the PopCon project can target.
 
-PopCon이 이 시장에서 어떻게 구현되었는지는 [PopCon 개발기 #1](/posts/2026-04-02-popcon-dev1/)에서 다룬다.
+How PopCon is implemented in this market is covered in [PopCon Dev Log #1](/posts/2026-04-02-popcon-dev1/).
 
 <!--more-->
 
-## 시장 현황
+## Market Status
 
-### 카카오톡 이모티콘
+### KakaoTalk Emoticons
 
-카카오톡 이모티콘 스토어는 국내 최대의 디지털 스티커 마켓이다. 주요 특징은 다음과 같다:
+The KakaoTalk Emoticon Store is the largest digital sticker market in South Korea. Key characteristics:
 
-- **심사 기반 등록**: 크리에이터가 제출하면 카카오 측 심사를 거쳐 출시
-- **움직이는 이모티콘(움티)**: 24프레임 기반 애니메이션, APNG 또는 GIF 포맷
-- **수익 배분**: 크리에이터 35% (플랫폼 수수료가 높은 편)
-- **경쟁 심화**: 월 수천 개의 신규 이모티콘 세트가 제출되며, 승인률은 낮음
+- **Review-based registration**: Creators submit and go through KakaoTalk's review process before launch
+- **Animated emoticons**: 24-frame animations in APNG or GIF format
+- **Revenue sharing**: Creators receive 35% (platform fees are relatively high)
+- **Intensifying competition**: Thousands of new emoticon sets are submitted monthly, with a low approval rate
 
 ### LINE Creators Market
 
-LINE은 글로벌 크리에이터에게 개방된 마켓을 운영한다. 애니메이션 스티커와 이모티콘 두 가지 카테고리가 있으며, 각각 규격이 다르다.
+LINE operates a market open to global creators. It has two categories — animated stickers and emoji — each with different specifications.
 
-**애니메이션 스티커 규격:**
+**Animated Sticker Specs:**
 
-| 항목 | 규격 |
+| Item | Specification |
 |------|------|
-| 이미지 크기 | 최대 320 x 270px (한 변 최소 270px) |
-| 프레임 수 | 5~20프레임 (APNG) |
-| 재생 시간 | 최대 4초 |
-| 반복 횟수 | 1~4회 |
-| 파일 크기 | 개당 1MB 이하, ZIP 전체 60MB 이하 |
-| 파일 형식 | APNG (.png 확장자) |
-| 세트 구성 | 8종, 16종, 24종 중 택1 |
-| 배경 | 투명 필수 |
-| 색 공간 | RGB |
+| Image size | Max 320 x 270px (minimum 270px on one side) |
+| Frame count | 5-20 frames (APNG) |
+| Play duration | Max 4 seconds |
+| Loop count | 1-4 loops |
+| File size | Max 1MB per sticker, max 60MB total ZIP |
+| File format | APNG (.png extension) |
+| Set composition | Choose from 8, 16, or 24 stickers |
+| Background | Transparent required |
+| Color space | RGB |
 
-**이모티콘 규격:**
+**Emoji Specs:**
 
-| 항목 | 규격 |
+| Item | Specification |
 |------|------|
-| 이미지 크기 | 180 x 180px |
-| 세트 구성 | 8~40개 (일반), 문자 이모티콘 포함 시 최대 305개 |
-| 파일 크기 | 개당 1MB 이하, ZIP 20MB 미만 |
-| 해상도 | 최소 72dpi, RGB |
-| 디자인 권장 | 굵고 짙은 테두리, 심플한 형태 |
+| Image size | 180 x 180px |
+| Set composition | 8-40 (standard), up to 305 with text emoji |
+| File size | Max 1MB per emoji, ZIP under 20MB |
+| Resolution | Min 72dpi, RGB |
+| Design guideline | Bold, dark outlines, simple shapes |
 
-LINE의 심사 가이드라인에서 특히 주목할 점은 **이모티콘이 단독 전송 시 스티커처럼 크게 표시**된다는 점이다. 따라서 작은 크기에서도 식별 가능하면서 큰 크기에서도 보기 좋은 디자인이 필요하다.
+A particularly notable point in LINE's review guidelines is that **emoji are displayed large like stickers when sent alone**. Therefore, designs need to be identifiable at small sizes while also looking good at large sizes.
 
-## 기존 제작 도구 분석
+## Existing Creation Tool Analysis
 
-### 이모레비 (Emorevi)
+### Emorevi
 
-[이모레비](https://tokti.ai/emorevi)는 AI 기반 애니메이션 이모티콘 제작 SaaS다.
+[Emorevi](https://tokti.ai/emorevi) is an AI-powered animated emoticon creation SaaS.
 
-**핵심 기능:**
-- **AI Generation**: 단일 이미지에서 애니메이션 자동 생성
-- **Smart Interpolation**: 프레임 간 자연스러운 보간 알고리즘
-- **Platform Optimized**: 카카오톡, LINE, Discord 등 플랫폼별 프리셋
-- **다중 포맷 지원**: MP4, GIF, APNG, WebP 내보내기
-- **Style Transfer**: 애니메이션 스타일 커스터마이징
-- **Real-time Preview**: 편집 중 실시간 미리보기
+**Core Features:**
+- **AI Generation**: Automatic animation generation from a single image
+- **Smart Interpolation**: Natural interpolation algorithms between frames
+- **Platform Optimized**: Presets for KakaoTalk, LINE, Discord, and other platforms
+- **Multi-format support**: Export to MP4, GIF, APNG, WebP
+- **Style Transfer**: Animation style customization
+- **Real-time Preview**: Live preview during editing
 
-**가격 정책:**
-| 플랜 | 가격 | 티켓 수 | 티켓 단가 |
+**Pricing:**
+| Plan | Price | Tickets | Per-ticket cost |
 |------|------|---------|-----------|
 | Basic | $9.99 | 1,000 | $0.01 |
-| Standard | $29.99 | 3,600 (+600 보너스) | $0.008 |
-| Premium | $99.99 | 14,000 (+4,000 보너스) | $0.007 |
+| Standard | $29.99 | 3,600 (+600 bonus) | $0.008 |
+| Premium | $99.99 | 14,000 (+4,000 bonus) | $0.007 |
 
-이모레비는 "이미지 한 장에서 애니메이션까지"라는 워크플로우를 제공하지만, 티켓 기반 과금 모델이라 대량 제작 시 비용이 누적된다. 또한 생성 결과물의 품질 제어가 제한적이다.
+Emorevi offers a "from one image to animation" workflow, but its ticket-based billing model means costs accumulate with bulk production. Quality control over generated outputs is also limited.
 
-## 오픈소스 솔루션
+## Open-Source Solutions
 
 ### Partymoji
 
-[Partymoji](https://github.com/MikeyBurkman/partymoji)는 TypeScript + Rust로 만든 웹 기반 애니메이션 GIF 생성기다.
+[Partymoji](https://github.com/MikeyBurkman/partymoji) is a web-based animated GIF generator built with TypeScript + Rust.
 
-- **스택**: TypeScript (219K LoC), Rust (GIF 인코더), 웹 브라우저에서 실행
-- **기능**: 이미지에 파티 효과(무지개, 회전, 반짝임 등)를 적용하여 애니메이션 GIF 생성
-- **라이브 데모**: https://mikeyburkman.github.io/partymoji/
-- **특징**: IndexedDB 기반 프로젝트 저장, Bezier 커브로 애니메이션 제어
-- **한계**: 이모티콘/스티커 플랫폼 규격에 맞춘 출력 기능 없음, 효과 중심(원본 캐릭터 애니메이션 아님)
+- **Stack**: TypeScript (219K LoC), Rust (GIF encoder), runs in web browser
+- **Features**: Applies party effects (rainbow, rotation, sparkle, etc.) to images to create animated GIFs
+- **Live demo**: https://mikeyburkman.github.io/partymoji/
+- **Highlights**: IndexedDB-based project saving, Bezier curve animation control
+- **Limitations**: No output features tailored to emoticon/sticker platform specs; effect-focused (not original character animation)
 
 ### gif_emoji
 
-[gif_emoji](https://github.com/tomarrell/gif_emoji)는 Python(Pillow)으로 만든 미니멀 도구로, 이미지를 회전하는 GIF로 변환한다.
+[gif_emoji](https://github.com/tomarrell/gif_emoji) is a minimal Python (Pillow) tool that converts images into rotating GIFs.
 
-- **출력**: 32x32 GIF, 36프레임 (10도씩 회전)
-- **용도**: Slack 커스텀 이모지 (60KB 제한 준수)
-- **코드량**: Python 1,655줄 — 매우 간결
-- **한계**: 회전 애니메이션만 지원, 크기/프레임 수 하드코딩
+- **Output**: 32x32 GIF, 36 frames (rotating 10 degrees each)
+- **Use case**: Slack custom emoji (compliant with 60KB limit)
+- **Code size**: 1,655 lines of Python — very concise
+- **Limitations**: Only rotation animation, hardcoded size/frame count
 
-두 프로젝트 모두 "이미지에 효과를 입히는" 접근 방식이다. 캐릭터 자체를 움직이게 하는 것(표정 변화, 손 흔들기 등)과는 근본적으로 다르다.
+Both projects take an "apply effects to images" approach. This is fundamentally different from making the character itself move (expression changes, hand waving, etc.).
 
-## 이미지 보정 기술
+## Image Correction Techniques
 
-애니메이션 이모지 제작 파이프라인에서 입력 이미지의 품질은 결과물에 직접적인 영향을 미친다. 두 가지 관련 기술을 살펴본다.
+In the animated emoji production pipeline, input image quality directly impacts the final output. Let's look at two related technologies.
 
 ### WAIR — Wide-angle Image Rectification
 
-[WAIR](https://github.com/loong8888/WAIR)는 광각/어안 렌즈 왜곡을 보정하는 딥러닝 모델이다.
+[WAIR](https://github.com/loong8888/WAIR) is a deep learning model for correcting wide-angle/fisheye lens distortion.
 
-- **아키텍처**: ResNet50 기반, ImageNet pretrained
-- **왜곡 모델**: FOV, Division Model, Equidistant 세 가지 지원
-- **성능**: ADE20k 데이터셋 기준 PSNR 26.43 / SSIM 0.85 (FOV 모델)
-- **실용성**: 256x256 입력으로 추정한 왜곡 파라미터 k를 1024x1024 원본에 적용 가능 (워핑 5.3ms)
-- **이모지 관련성**: 사용자가 스마트폰 광각 카메라로 촬영한 사진을 이모지 소스로 쓸 때 왜곡 보정에 활용 가능
+- **Architecture**: ResNet50-based, ImageNet pretrained
+- **Distortion models**: Supports FOV, Division Model, and Equidistant
+- **Performance**: PSNR 26.43 / SSIM 0.85 on ADE20k dataset (FOV model)
+- **Practicality**: Distortion parameters estimated from 256x256 input can be applied to 1024x1024 originals (warping in 5.3ms)
+- **Emoji relevance**: Useful for distortion correction when users use photos from smartphone wide-angle cameras as emoji source material
 
 ### Deep-OAD — Image Orientation Angle Detection
 
-[Deep-OAD](https://github.com/pidahbus/deep-image-orientation-angle-detection)는 이미지의 회전 각도를 감지하고 자동으로 바로잡는 모델이다.
+[Deep-OAD](https://github.com/pidahbus/deep-image-orientation-angle-detection) is a model that detects and automatically corrects image rotation angles.
 
-- **V2 업데이트**: ViT(Vision Transformer) 적용으로 SOTA 달성
-- **정확도**: 0~359도 범위에서 test MAE 6.5도
-- **학습 데이터**: MS COCO 대부분의 이미지로 학습
-- **활용**: 사용자 업로드 이미지의 방향을 자동 감지하여 전처리 단계에서 보정
+- **V2 update**: Achieved SOTA with ViT (Vision Transformer)
+- **Accuracy**: Test MAE of 6.5 degrees across the 0-359 degree range
+- **Training data**: Trained on most MS COCO images
+- **Application**: Automatically detecting orientation of user-uploaded images for correction in the preprocessing stage
 
-이 두 기술은 "사용자가 제공하는 원본 이미지를 자동으로 정규화"하는 전처리 파이프라인에 통합할 수 있다.
+These two technologies can be integrated into a preprocessing pipeline that "automatically normalizes the source images provided by users."
 
-## 도구 비교
+## Tool Comparison
 
 ```mermaid
 graph LR
@@ -154,39 +154,39 @@ graph LR
     E -->|"전처리"| F
 ```
 
-## PopCon과의 차별점
+## Differentiation from PopCon
 
-기존 도구들의 한계를 정리하면 PopCon이 차지할 포지션이 보인다:
+Summarizing the limitations of existing tools reveals the position PopCon can occupy:
 
-| 측면 | 기존 도구 | PopCon |
+| Aspect | Existing Tools | PopCon |
 |------|-----------|--------|
-| **애니메이션 방식** | 효과 적용(회전, 파티) 또는 AI 블랙박스 | 캐릭터 리깅 기반 의도된 움직임 |
-| **플랫폼 규격** | 범용 GIF 출력 | LINE/카카오 규격 프리셋 내장 |
-| **비용** | SaaS 과금 (이모레비) | 로컬 실행, 무료 |
-| **제어 수준** | 제한적 파라미터 | 프레임 단위 세밀한 제어 |
-| **이미지 전처리** | 없음 | 왜곡 보정 + 방향 감지 파이프라인 통합 가능 |
-| **출력 포맷** | 주로 GIF | APNG, GIF, WebP 멀티 포맷 |
+| **Animation method** | Effect application (rotation, party) or AI black box | Intentional movement via character rigging |
+| **Platform specs** | Generic GIF output | LINE/KakaoTalk spec presets built in |
+| **Cost** | SaaS billing (Emorevi) | Local execution, free |
+| **Control level** | Limited parameters | Fine-grained frame-by-frame control |
+| **Image preprocessing** | None | Distortion correction + orientation detection pipeline integration |
+| **Output format** | Primarily GIF | APNG, GIF, WebP multi-format |
 
-핵심 차별점은 세 가지로 요약된다:
+The key differentiators boil down to three points:
 
-1. **규격 준수 자동화** — LINE 애니메이션 스티커의 320x270px, 5~20프레임, 4초 제한 등을 프리셋으로 제공하여 제출 시행착오를 줄인다
-2. **캐릭터 중심 애니메이션** — 효과를 "입히는" 것이 아니라 캐릭터가 "움직이는" 애니메이션을 생성한다
-3. **전처리 파이프라인** — WAIR, Deep-OAD 같은 보정 모델을 통합하여 다양한 품질의 입력 이미지를 정규화한다
+1. **Automated spec compliance** — Providing presets for LINE animated sticker constraints like 320x270px, 5-20 frames, and 4-second limits to reduce submission trial and error
+2. **Character-centric animation** — Instead of "applying" effects, generating animation where the character "moves"
+3. **Preprocessing pipeline** — Integrating correction models like WAIR and Deep-OAD to normalize input images of varying quality
 
-## 빠른 링크
+## Quick Links
 
-- [이모레비 — AI 애니메이션 이모티콘 제작](https://tokti.ai/emorevi)
-- [LINE Creators Market 애니메이션 스티커 가이드라인](https://creator.line.me/ko/guideline/animationsticker/)
-- [LINE Creators Market 이모티콘 가이드라인](https://creator.line.me/ko/guideline/emoji/)
-- [Partymoji — 웹 기반 애니메이션 GIF 생성기](https://github.com/MikeyBurkman/partymoji)
-- [gif_emoji — Python 회전 GIF 생성기](https://github.com/tomarrell/gif_emoji)
-- [WAIR — 광각 이미지 왜곡 보정](https://github.com/loong8888/WAIR)
-- [Deep-OAD — 이미지 방향 자동 감지](https://github.com/pidahbus/deep-image-orientation-angle-detection)
+- [Emorevi — AI Animated Emoticon Creation](https://tokti.ai/emorevi)
+- [LINE Creators Market Animated Sticker Guidelines](https://creator.line.me/ko/guideline/animationsticker/)
+- [LINE Creators Market Emoji Guidelines](https://creator.line.me/ko/guideline/emoji/)
+- [Partymoji — Web-based Animated GIF Generator](https://github.com/MikeyBurkman/partymoji)
+- [gif_emoji — Python Rotating GIF Generator](https://github.com/tomarrell/gif_emoji)
+- [WAIR — Wide-angle Image Distortion Correction](https://github.com/loong8888/WAIR)
+- [Deep-OAD — Automatic Image Orientation Detection](https://github.com/pidahbus/deep-image-orientation-angle-detection)
 
-## 인사이트
+## Insights
 
-- **시장 진입 장벽은 "심사"에 있다** — 기술적으로 애니메이션을 만드는 것보다, 카카오/LINE 심사를 통과하는 품질을 일관되게 내는 것이 더 어렵다. 자동화 도구가 규격을 정확히 지키는 것이 첫 번째 과제다.
-- **오픈소스 공백이 크다** — partymoji나 gif_emoji는 "장난감" 수준이다. 플랫폼 규격을 준수하면서 캐릭터 애니메이션을 생성하는 오픈소스 도구는 사실상 없다.
-- **이모레비의 한계가 기회** — SaaS 모델은 대량 제작에 비용이 쌓이고, AI 생성 결과물의 세밀한 제어가 어렵다. 로컬에서 실행되면서 프레임 단위 제어가 가능한 도구에 수요가 있다.
-- **전처리 자동화가 UX를 결정한다** — 사용자가 올린 사진이 기울어져 있거나 광각 왜곡이 있으면, 아무리 좋은 애니메이션 엔진이 있어도 결과물이 어색하다. WAIR + Deep-OAD 같은 모델의 전처리 통합이 체감 품질을 크게 높일 수 있다.
-- **APNG가 핵심 포맷이다** — LINE과 카카오 모두 APNG를 공식 지원한다. GIF보다 색상 표현이 풍부하고(알파 채널 지원), 파일 크기 효율도 좋다. PopCon의 기본 출력 포맷은 APNG여야 한다.
+- **The market entry barrier is in "review"** — It's harder to consistently produce quality that passes KakaoTalk/LINE review than to technically create animations. Having automation tools strictly follow specs is the first challenge.
+- **The open-source gap is large** — partymoji and gif_emoji are at the "toy" level. There are virtually no open-source tools that generate character animations while complying with platform specs.
+- **Emorevi's limitations are an opportunity** — The SaaS model accumulates costs with bulk production, and fine control over AI-generated output is difficult. There's demand for a locally-run tool with frame-by-frame control.
+- **Preprocessing automation determines UX** — If a user's uploaded photo is tilted or has wide-angle distortion, the result looks awkward no matter how good the animation engine is. Integrating preprocessing with models like WAIR + Deep-OAD can significantly improve perceived quality.
+- **APNG is the essential format** — Both LINE and KakaoTalk officially support APNG. It has richer color representation than GIF (alpha channel support) and better file size efficiency. PopCon's default output format should be APNG.

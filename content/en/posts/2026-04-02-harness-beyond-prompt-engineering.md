@@ -1,7 +1,7 @@
 ---
 image: "/images/posts/2026-04-02-harness-beyond-prompt-engineering/cover.jpg"
-title: "프롬프트를 고치지 마세요, 하네스를 고치세요 — 4축 프레임워크와 생성기-평가자 아키텍처"
-description: 프롬프트 컨텍스트 하네스 에이전틱 4축 프레임워크와 Anthropic 플래너 생성기 평가자 아키텍처로 본 하네스 엔지니어링의 새로운 관점
+title: "Don't Fix the Prompt, Fix the Harness — The 4-Axis Framework and Generator-Evaluator Architecture"
+description: A new perspective on harness engineering through the prompt-context-harness-agentic 4-axis framework and Anthropic's planner-generator-evaluator architecture
 date: 2026-04-02
 categories: ["tech-log"]
 tags: ["harness-engineering", "prompt-engineering", "context-engineering", "agentic-engineering", "generator-evaluator", "anthropic", "planner", "playwright", "sprint-contract"]
@@ -9,9 +9,9 @@ toc: true
 math: false
 ---
 
-## 개요
+## Overview
 
-이전 포스트들에서 하네스의 기본 개념(가드레일/모니터링/피드백 루프 3요소), 장기 실행 에이전트의 체크포인트와 상태 관리, 그리고 플러그인 생태계를 다뤘다. 이번 포스트에서는 **기존에 다루지 않은 두 가지 관점**을 정리한다. 첫째, 실베개발자의 YouTube 영상에서 제시하는 **프롬프트 → 컨텍스트 → 하네스 → 에이전틱 4축 프레임워크**와 "프롬프트는 부탁, 하네스는 물리적 차단"이라는 핵심 철학. 둘째, Anthropic의 하네스 디자인 문서를 분석한 TILNOTE 아티클에서 나온 **플래너-생성기-평가자 3인조 아키텍처**와 스프린트 계약 패턴. 관련 포스트: [Long-Running Agents와 하네스 엔지니어링](/posts/2026-03-30-long-running-agents/), [HarnessKit 개발기 #3](/posts/2026-03-25-harnesskit-dev3/)
+Previous posts covered the basic concepts of harnesses (the three elements of guardrails/monitoring/feedback loops), checkpointing and state management for long-running agents, and plugin ecosystems. This post covers **two perspectives not previously addressed**. First, the **prompt -> context -> harness -> agentic 4-axis framework** from SilbeDeveloper's YouTube video and the core philosophy that "prompts are requests, harnesses are physical barriers." Second, the **planner-generator-evaluator trio architecture** and sprint contract pattern from a TILNOTE article analyzing Anthropic's harness design documentation. Related posts: [Long-Running Agents and Harness Engineering](/posts/2026-03-30-long-running-agents/), [HarnessKit Dev Log #3](/posts/2026-03-25-harnesskit-dev3/)
 
 <!--more-->
 
@@ -29,83 +29,83 @@ graph TD
 
 ---
 
-## 4축 프레임워크 — 프롬프트부터 에이전틱까지
+## The 4-Axis Framework — From Prompt to Agentic
 
-[프롬프트 엔지니어링은 끝났습니다: 이제 '하네스'의 시대입니다](https://www.youtube.com/watch?v=6gvnDSAcZww) 영상에서 실베개발자는 AI 활용 방법론을 네 가지 축으로 정리한다. 이 축들은 순서대로 졸업하는 것이 아니라 **전부 동시에 필요한 상호보완적 관계**다.
+In the video [Prompt Engineering Is Over: The Era of 'Harness' Has Arrived](https://www.youtube.com/watch?v=6gvnDSAcZww), SilbeDeveloper organizes AI utilization methodologies into four axes. These axes are not graduated sequentially — they are **all simultaneously necessary and complementary**.
 
-### 프롬프트의 천장
+### The Ceiling of Prompts
 
-프롬프트 엔지니어링은 AI에게 "말을 잘 거는 기술"이다. "계산기 만들어줘" 대신 "공학용 계산기, 사인/코사인 지원, GUI 포함"으로 구체화하면 결과가 달라진다. 하지만 천장이 있다. 아무리 정교한 프롬프트를 써도 프로젝트 기술 스택, 코드 구조, DB 스키마를 모르면 좋은 코드가 나올 수 없다.
+Prompt engineering is the skill of "talking to AI effectively." Specifying "an engineering calculator with sin/cos support and a GUI" instead of just "make me a calculator" yields different results. But there's a ceiling. No matter how sophisticated the prompt, you can't get good code without knowledge of the project's tech stack, code structure, and DB schema.
 
-### 컨텍스트만으로 부족한 이유
+### Why Context Alone Isn't Enough
 
-컨텍스트 엔지니어링은 프로젝트 구조, 기존 코드, API 문서, 디자인 규칙을 함께 제공한다. Anthropic의 정의: "AI가 일할 때 필요한 정보를 적절하게 골라서 제공하는 기술." 핵심은 많이 주는 것이 아니라 **지금 필요한 것만 정확하게** 주는 것이다.
+Context engineering provides project structure, existing code, API documentation, and design guidelines together. Anthropic's definition: "The skill of appropriately selecting and providing the information AI needs to do its work." The key is not providing a lot, but providing **exactly what's needed right now**.
 
-그런데 컨텍스트를 아무리 잘 설계해도 해결 안 되는 문제가 있다. AI가 정보를 다 알고 있는데 **엉뚱한 짓을 하는 경우**다. 결제 시스템을 맡겼더니 DB 스키마를 마음대로 바꾸거나, 신용카드 번호를 로그에 찍어 버리는 상황. 이것은 정보의 문제가 아니라 **규칙과 울타리의 문제**다.
+But there are problems that context engineering can't solve no matter how well designed. Cases where **the AI has all the information but does something unexpected**. You assign it to a payment system and it changes the DB schema on its own, or prints credit card numbers to the log. This isn't an information problem — it's a problem of **rules and boundaries**.
 
-### 하네스 vs 에이전틱 — 마구 vs 말 훈련
+### Harness vs Agentic — Reins vs Horse Training
 
-이전 포스트에서 하네스의 기본 개념은 다뤘지만, 에이전틱 엔지니어링과의 관계는 명확히 정리하지 않았다. 영상의 정리가 깔끔하다:
+Previous posts covered the basic concepts of harnesses but didn't clearly articulate the relationship with agentic engineering. The video's summary is clean:
 
-| 관점 | 에이전틱 엔지니어링 | 하네스 엔지니어링 |
+| Perspective | Agentic Engineering | Harness Engineering |
 |------|-------------------|-----------------|
-| 비유 | 말을 훈련시키는 기술 | 마구를 만드는 기술 |
-| 초점 | AI가 **어떻게 생각하는가** | AI가 **무엇을 할 수 있고 없는가** |
-| 실패 대응 | 프롬프트 변경, 추론 루프 조정 | 규칙/테스트 자동 추가 |
-| 인간 역할 | 위임자, 감독자 | 설계자, 경계 설정자 |
+| Analogy | The skill of training the horse | The skill of making the reins |
+| Focus | **How** the AI thinks | **What** the AI can and cannot do |
+| Failure Response | Prompt changes, reasoning loop adjustments | Automatically adding rules/tests |
+| Human Role | Delegator, supervisor | Designer, boundary setter |
 
-핵심은 한 줄: **아무리 잘 훈련된 말이라도 마구 없이는 밭을 갈 수 없다.**
-
----
-
-## 구조적 반복 불가능성 — 하네스의 핵심 철학
-
-이전 포스트에서 가드레일과 피드백 루프를 다뤘지만, 영상이 제시하는 **가장 중요한 문장**은 별도로 정리할 가치가 있다:
-
-> 에이전트가 규칙을 어겼을 때 "더 잘해봐"라고 프롬프트를 고치는 것이 아니다. **그 실패가 구조적으로 반복 불가능하도록 하네스를 고치는 것**이다.
-
-### 부탁 vs 물리적 차단
-
-AI 에이전트가 프론트엔드 코드에서 DB를 직접 호출했다고 하자.
-
-- **프롬프트 접근**: "DB를 직접 호출하지 마"를 프롬프트에 추가 → 다음번에 또 실수한다. **프롬프트는 부탁이지 강제가 아니기 때문이다.**
-- **하네스 접근**: 아키텍처 테스트를 추가해서 프론트엔드 폴더에서 DB를 임포트하는 순간 **빌드가 실패**하도록 만든다. 구조적으로 불가능해진다.
-
-이 구분이 중요한 이유는 기존 포스트에서 "가드레일"을 다룰 때 개념적 수준에 머물렀기 때문이다. "프롬프트는 부탁, 도구적 경계는 물리적 차단"이라는 프레이밍은 실무에서 어떤 수준의 제약을 걸어야 하는지를 판단하는 기준이 된다.
+The key in one line: **No matter how well-trained the horse, it cannot plow a field without reins.**
 
 ---
 
-## 하네스의 4기둥 — 기존 3요소를 넘어서
+## Structural Non-Repeatability — The Core Philosophy of Harnesses
 
-이전 포스트에서 가드레일/모니터링/피드백 루프 3요소를 다뤘다. 영상에서는 마틴 파울러가 체계화한 4기둥 구조를 소개하는데, 기존 3요소와 겹치는 부분이 있지만 **새로운 두 가지**가 눈에 띈다.
+Previous posts covered guardrails and feedback loops, but the **most important statement** from the video deserves separate discussion:
 
-### 새로운 기둥 1: 도구 경계 (Tool Boundaries)
+> When an agent violates a rule, you don't fix the prompt by saying "try harder." **You fix the harness so that failure becomes structurally impossible to repeat.**
 
-AI 에이전트가 어떤 도구를 쓸 수 있고 어디까지 접근할 수 있는지를 물리적으로 제한한다:
+### Request vs Physical Barrier
 
-- **파일 시스템**: `src/` 폴더는 읽기/쓰기, `config/` 폴더는 읽기만 가능
-- **API**: 내부 API 호출은 가능, 외부 서비스 호출은 불가
-- **데이터베이스**: SELECT는 가능, DROP TABLE은 절대 불가
-- **터미널**: 화이트리스트된 명령만 실행 가능
+Suppose an AI agent directly called the DB from frontend code.
 
-이전 포스트의 "가드레일"은 "하면 안 되는 것을 정의"하는 수준이었다면, 도구 경계는 **접근 자체를 시스템적으로 차단**하는 물리적 계층이다.
+- **Prompt approach**: Add "Don't call the DB directly" to the prompt -> It makes the same mistake next time. **Because a prompt is a request, not enforcement.**
+- **Harness approach**: Add an architecture test so that the moment the frontend folder imports DB, **the build fails**. It becomes structurally impossible.
 
-### 새로운 기둥 2: 가비지 컬렉션 (코드 품질 자동 정리)
-
-마틴 파울러가 명명한 이 개념은 기존 포스트에서 다루지 않았다. AI가 기존 코드를 참고해서 새 코드를 짜는데, **기존 코드에 나쁜 패턴이 있으면 그대로 따라한다**. 나쁜 패턴이 눈덩이처럼 불어나는 것을 막기 위한 자동 청소 시스템이다:
-
-- 코딩 규칙 위반 자동 감지
-- 중복 코드 발견 및 리팩토링 PR 자동 생성
-- 데드 코드 자동 제거
-- 아키텍처 안티패턴 주기적 체크
-
-핵심: **에이전트가 실수할 때마다 그 실수가 새로운 규칙이 된다.** 린터 규칙 추가, 테스트 추가, 제약 추가 — 하네스가 점점 더 정교해지는 진화적 특성이다.
+This distinction matters because previous posts addressed "guardrails" at a conceptual level. The framing of "prompts are requests, tooling boundaries are physical barriers" provides a criterion for judging what level of constraint to apply in practice.
 
 ---
 
-## 플래너-생성기-평가자 아키텍처
+## The 4 Pillars of Harness — Beyond the Original 3 Elements
 
-여기서부터는 [Anthropic의 하네스 디자인: 플래너-생성기-평가자 아키텍처](https://tilnote.io/pages/69cde2f8516a33dd7927c5c8) 아티클의 내용이다. 이전 포스트에서 다루지 않은 **완전히 새로운 아키텍처 패턴**이다.
+Previous posts covered the guardrails/monitoring/feedback loop triad. The video introduces Martin Fowler's 4-pillar structure, which overlaps with the original three elements but includes **two notable additions**.
+
+### New Pillar 1: Tool Boundaries
+
+Physically limiting what tools an AI agent can use and what it can access:
+
+- **File system**: `src/` folder is read/write, `config/` folder is read-only
+- **API**: Internal API calls allowed, external service calls blocked
+- **Database**: SELECT allowed, DROP TABLE absolutely forbidden
+- **Terminal**: Only whitelisted commands can be executed
+
+While the previous posts' "guardrails" defined "what shouldn't be done," tool boundaries are a physical layer that **systemically blocks access itself**.
+
+### New Pillar 2: Garbage Collection (Automated Code Quality Cleanup)
+
+Named by Martin Fowler, this concept wasn't covered in previous posts. AI references existing code to write new code, and **if the existing code has bad patterns, it copies them**. This is an automated cleanup system to prevent bad patterns from snowballing:
+
+- Automatic detection of coding rule violations
+- Automatic discovery of duplicate code and auto-generation of refactoring PRs
+- Automatic removal of dead code
+- Periodic checking of architectural anti-patterns
+
+The key: **Every time an agent makes a mistake, that mistake becomes a new rule.** Adding linter rules, adding tests, adding constraints — the harness grows increasingly sophisticated through this evolutionary characteristic.
+
+---
+
+## Planner-Generator-Evaluator Architecture
+
+From here, the content comes from the article [Anthropic's Harness Design: Planner-Generator-Evaluator Architecture](https://tilnote.io/pages/69cde2f8516a33dd7927c5c8). This is an **entirely new architecture pattern** not covered in previous posts.
 
 ```mermaid
 graph LR
@@ -129,110 +129,110 @@ graph LR
     style E fill:#ff6b6b,stroke:#c92a2a,color:#fff
 ```
 
-### 왜 단일 에이전트가 무너지는가
+### Why a Single Agent Breaks Down
 
-장시간 작업에서 두 가지 붕괴 원인이 있다:
+There are two causes of collapse in long-duration tasks:
 
-1. **컨텍스트 불안**: 컨텍스트 창이 차면서 앞서 한 결정이 뒤엉기고, 모델이 한계가 다가온다고 "느끼면" 일을 서둘러 마무리하려는 경향을 보인다
-2. **자기평가의 관대함**: 에이전트에게 자기 결과를 평가하라고 하면, 실제 품질이 결함이 있어도 "괜찮다"고 결론내리기 쉽다
+1. **Context instability**: As the context window fills up, earlier decisions become entangled, and when the model "senses" it's approaching its limits, it tends to rush to finish
+2. **Lenient self-evaluation**: When you ask an agent to evaluate its own output, it tends to conclude "it's fine" even when the actual quality has defects
 
-이전 포스트에서 다룬 체크포인트/상태 관리는 첫 번째 문제의 해결책이었다. 두 번째 문제의 해결책이 바로 **역할 분리** — GAN에서 빌린 생성기-평가자 루프다.
+Checkpointing/state management covered in previous posts addressed the first problem. The solution to the second problem is **role separation** — the generator-evaluator loop borrowed from GANs.
 
-### GAN의 직관을 엔지니어링으로
+### From GAN Intuition to Engineering
 
-GAN(Generative Adversarial Network)에서 생성자와 판별자가 경쟁하며 품질을 올리듯:
+Just as a generator and discriminator compete in a GAN (Generative Adversarial Network) to improve quality:
 
-- **생성기**: 결과물을 만든다
-- **평가자**: 기준에 따라 채점하고 비평한다
-- **생성기**: 피드백을 받아 다음 버전을 만든다
+- **Generator**: Creates the output
+- **Evaluator**: Scores and critiques according to criteria
+- **Generator**: Takes the feedback and creates the next version
 
-"막연한 개선"이 아니라 **"특정 기준을 만족시키는 개선"**이 반복된다. 평가자가 독립적일수록 '봐주기'가 줄어든다. 다만 평가자도 LLM이므로 기본 성향은 관대하다 — 퓨샷 예시와 점수 분해로 채점 습관을 교정해야 한다.
+What repeats is not "vague improvement" but **"improvement that satisfies specific criteria."** The more independent the evaluator, the less "leniency" there is. However, since the evaluator is also an LLM, its default tendency is lenient — scoring habits must be calibrated with few-shot examples and score decomposition.
 
-### 플래너의 역할
+### The Role of the Planner
 
-3인조에서 플래너는 1~4문장짜리 요청을 "충분히 큰" 제품 스펙으로 확장한다. 핵심 원칙:
+In the trio, the planner expands 1-4 sentence requests into a "sufficiently large" product spec. Core principles:
 
-- **너무 이른 구현 세부사항을 넣지 않는다** — 틀린 결정이 아래로 전염된다
-- 제품 맥락과 큰 설계를 중심으로 쓰되, 구현은 여지를 남긴다
-- AI 기능을 제품에 섞을 기회를 적극적으로 찾게 만든다
+- **Don't include premature implementation details** — wrong decisions propagate downstream
+- Write around product context and high-level design, leaving room for implementation
+- Actively look for opportunities to integrate AI features into the product
 
 ---
 
-## 스프린트 계약 — 완료 정의의 계약화
+## Sprint Contracts — Contractualizing the Definition of Done
 
-이전 포스트에서 체크포인트를 다뤘지만, **"뭘 만들면 완료인지"를 어떻게 정의하는가**는 다루지 않았다. Anthropic의 하네스에서 이 간극을 메우는 장치가 스프린트 계약이다.
+Previous posts covered checkpoints but didn't address **how to define "what counts as done."** In Anthropic's harness, the device that fills this gap is the sprint contract.
 
-### 계약 프로세스
+### The Contract Process
 
-각 스프린트 시작 전에 생성기와 평가자가 협상한다:
+Before each sprint begins, the generator and evaluator negotiate:
 
-1. **생성기가 제안**: 구현 계획과 검증 방법을 제시
-2. **평가자가 점검**: 스펙에 부합하는지, 테스트 가능한지 확인
-3. **합의 후 실행**: 합의된 뒤에만 코드 작성 시작
+1. **Generator proposes**: Presents an implementation plan and verification methods
+2. **Evaluator reviews**: Checks alignment with the spec and testability
+3. **Execute after agreement**: Code writing only begins after consensus
 
-이 패턴의 핵심은 에이전트 간 의사소통을 **파일 기반 산출물로 고정**하는 것이다. 한쪽이 파일 작성, 다른 쪽이 읽고 수정/추가. 컨텍스트가 흔들려도 작업 상태가 명시적으로 남아 장기 실행에 유리하다.
+The key pattern is **fixing inter-agent communication as file-based artifacts**. One side writes files, the other reads, modifies, and adds. Even when context wobbles, the work state remains explicit, which is advantageous for long-running tasks.
 
-### 비용 대비 품질
+### Cost vs Quality
 
-| 방식 | 시간 | 결과 |
+| Approach | Time | Result |
 |------|------|------|
-| 단일 에이전트 | 20분 | 겉보기엔 그럴듯하지만 핵심 기능이 깨짐 |
-| 플래너-생성기-평가자 하네스 | 6시간 | 더 많은 기능, 실제 동작하는 수준 |
+| Single agent | 20 min | Looks plausible on the surface but core features are broken |
+| Planner-generator-evaluator harness | 6 hours | More features, actually working quality |
 
-차이를 만든 결정적 요소: 평가자의 **실제 조작 기반 QA**와 **계약 기반 완료 정의**.
-
----
-
-## 평가자는 스크린샷이 아니라 직접 조작
-
-평가자가 정지 이미지 한 장만 보고 판단하면 상호작용, 레이아웃, 상태 변화에서 드러나는 품질을 놓친다. Anthropic의 해법:
-
-- 평가자에게 **Playwright 같은 브라우저 자동화 도구**를 붙인다
-- 평가자가 스스로 클릭하고, 이동하고, 화면을 관찰한다
-- 기준별 점수와 상세 비평을 작성한다
-
-주관적 디자인 품질도 채점 가능하게 만든다. 4개 축:
-
-1. **전체적 디자인 완성도** — 일관된 무드/정체성
-2. **독창성** — 템플릿/기본 컴포넌트 느낌 탈피
-3. **공예적 완성** — 타이포, 간격, 대비 같은 기본기
-4. **기능성** — 사용성
-
-모델은 기능성과 기본기는 무난히 달성하는 경향이 있으므로, 실제로 부족한 **완성도와 독창성에 더 큰 가중치**를 걸어야 안전지대에서 벗어난다.
+The decisive factors that made the difference: the evaluator's **real interaction-based QA** and **contract-based definition of done**.
 
 ---
 
-## 모델이 좋아지면 하네스를 덜어내라
+## The Evaluator Operates, Not Just Screenshots
 
-이전 포스트에서 다루지 않은 중요한 통찰: **하네스의 각 구성 요소는 "모델이 혼자 못 하는 것"에 대한 가정이다.** 모델이 발전하면 그 가정이 틀어진다.
+If the evaluator judges from a single still image, it misses quality issues that emerge in interactions, layout, and state transitions. Anthropic's solution:
 
-### 스프린트 제거 사례
+- Give the evaluator **browser automation tools like Playwright**
+- The evaluator clicks, navigates, and observes screens on its own
+- It writes scores and detailed critiques per criterion
 
-더 강해진 모델에서는:
-- 스프린트 분해 없이도 2시간 넘게 일관된 빌드가 가능해짐
-- 스프린트 구조를 제거하고, 평가도 "마지막에 한 번"으로 축소
-- 불필요한 장치가 비용만 늘리는 결과를 방지
+Even subjective design quality is made scorable. Four axes:
 
-다만 평가자가 완전히 불필요해지는 것은 아니다. 과제가 모델의 신뢰 경계 밖에 걸릴 때 — 예를 들어 핵심 상호작용이 자꾸 스텁으로 남는 경우 — 평가자는 여전히 값비싼 보험이다.
+1. **Overall design polish** — consistent mood/identity
+2. **Originality** — escaping the template/default component feel
+3. **Craftsmanship** — fundamentals like typography, spacing, contrast
+4. **Functionality** — usability
 
-**실천 원칙**: 새 모델이 나올 때마다 하네스를 스트레스 테스트하고, 짐이 된 부분을 떼어내는 재설계를 수행한다.
-
----
-
-## 빠른 링크
-
-- [프롬프트 엔지니어링은 끝났습니다: 이제 '하네스'의 시대입니다 (YouTube)](https://www.youtube.com/watch?v=6gvnDSAcZww) — 실베개발자, 4축 프레임워크와 하네스 4기둥 구조
-- [Anthropic의 하네스 디자인: 플래너-생성기-평가자 아키텍처 (TILNOTE)](https://tilnote.io/pages/69cde2f8516a33dd7927c5c8) — Anthropic 하네스 디자인 문서 분석
-- [Harness design for long-running application development (Anthropic)](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering) — 원문 참고
-- [Long-Running Agents와 하네스 엔지니어링](/posts/2026-03-30-long-running-agents/) — 이전 포스트: 체크포인트, 상태 관리, 3요소
-- [HarnessKit 개발기 #3](/posts/2026-03-25-harnesskit-dev3/) — 이전 포스트: 플러그인 트리거, 마켓플레이스
+Since models tend to achieve functionality and fundamentals comfortably, **greater weight should be placed on polish and originality** to push beyond the comfort zone.
 
 ---
 
-## 인사이트
+## When Models Improve, Lighten the Harness
 
-이전 포스트들이 하네스의 **"무엇을"**(가드레일, 모니터링, 피드백 루프)에 집중했다면, 이번 두 소스는 **"왜"와 "어떻게"**를 보완한다.
+An important insight not covered in previous posts: **each component of the harness is an assumption about "what the model can't do alone."** As models advance, those assumptions shift.
 
-"왜" 측면에서, 4축 프레임워크는 하네스가 프롬프트나 컨텍스트와 어떤 관계에 있는지를 명확히 한다. 프롬프트는 부탁이고 하네스는 물리적 차단이라는 구분은, 실무에서 "이 규칙을 CLAUDE.md에 쓸 것인가, 린터 규칙으로 강제할 것인가"를 판단하는 기준이 된다.
+### Sprint Removal Example
 
-"어떻게" 측면에서, 플래너-생성기-평가자 아키텍처는 하네스의 구체적 구현 패턴을 제시한다. 특히 스프린트 계약으로 완료 정의를 계약화하고, 평가자에게 Playwright를 붙여 실제 조작 기반 QA를 수행하는 패턴은 바로 적용 가능한 수준이다. 그리고 "모델이 좋아지면 하네스를 덜어내라"는 통찰은 하네스를 영구 불변의 인프라가 아니라 **모델 능력에 대한 가정의 집합**으로 바라보게 한다. HarnessKit 개발에서도 새 모델 출시 때마다 각 스킬의 필요성을 재검증하는 프로세스가 필요하겠다.
+With stronger models:
+- Consistent builds lasting over 2 hours became possible without sprint decomposition
+- The sprint structure was removed, and evaluation was reduced to "once at the end"
+- This prevented unnecessary mechanisms from merely increasing costs
+
+However, evaluators don't become entirely unnecessary. When the task falls outside the model's reliability boundary — for example, when core interactions keep getting left as stubs — the evaluator remains valuable insurance.
+
+**Practical principle**: Stress-test the harness with each new model release and redesign by removing parts that have become dead weight.
+
+---
+
+## Quick Links
+
+- [Prompt Engineering Is Over: The Era of 'Harness' Has Arrived (YouTube)](https://www.youtube.com/watch?v=6gvnDSAcZww) — SilbeDeveloper, 4-axis framework and harness 4-pillar structure
+- [Anthropic's Harness Design: Planner-Generator-Evaluator Architecture (TILNOTE)](https://tilnote.io/pages/69cde2f8516a33dd7927c5c8) — Analysis of Anthropic's harness design documentation
+- [Harness design for long-running application development (Anthropic)](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering) — Original reference
+- [Long-Running Agents and Harness Engineering](/posts/2026-03-30-long-running-agents/) — Previous post: checkpoints, state management, 3 elements
+- [HarnessKit Dev Log #3](/posts/2026-03-25-harnesskit-dev3/) — Previous post: plugin triggers, marketplace
+
+---
+
+## Insights
+
+While previous posts focused on the **"what"** of harnesses (guardrails, monitoring, feedback loops), these two sources complement the **"why" and "how."**
+
+On the "why" side, the 4-axis framework clarifies how harnesses relate to prompts and context. The distinction that prompts are requests while harnesses are physical barriers provides a practical criterion for deciding "should this rule go in CLAUDE.md or be enforced as a linter rule?"
+
+On the "how" side, the planner-generator-evaluator architecture presents concrete implementation patterns for harnesses. In particular, the patterns of contractualizing the definition of done through sprint contracts and performing real interaction-based QA by equipping the evaluator with Playwright are immediately applicable. And the insight "when models improve, lighten the harness" reframes harnesses not as permanent, immutable infrastructure but as **a collection of assumptions about model capabilities**. In HarnessKit development as well, a process for re-evaluating the necessity of each skill with every new model release would be needed.
