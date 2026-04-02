@@ -11,7 +11,7 @@ math: false
 
 ## 개요
 
-이전 포스트들에서 하네스의 기본 개념(가드레일/모니터링/피드백 루프 3요소), 장기 실행 에이전트의 체크포인트와 상태 관리, 그리고 플러그인 생태계를 다뤘다. 이번 포스트에서는 **기존에 다루지 않은 두 가지 관점**을 정리한다. 첫째, 실베개발자의 YouTube 영상에서 제시하는 **프롬프트 → 컨텍스트 → 하네스 → 에이전틱 4축 프레임워크**와 "프롬프트는 부탁, 하네스는 물리적 차단"이라는 핵심 철학. 둘째, Anthropic의 하네스 디자인 문서를 분석한 TILNOTE 아티클에서 나온 **플래너-생성기-평가자 3인조 아키텍처**와 스프린트 계약 패턴. 관련 포스트: [Long-Running Agents와 하네스 엔지니어링](/posts/2026-03-30-long-running-agents/), [HarnessKit 개발기 #3](/posts/2026-03-25-harnesskit-dev3/)
+이전 포스트들에서 하네스의 기본 개념(가드레일/모니터링/피드백 루프 3요소), 장기 실행 에이전트의 체크포인트와 상태 관리, 그리고 플러그인 생태계를 다뤘다. 이번 포스트에서는 **기존에 다루지 않은 두 가지 관점**을 정리한다. 첫째, 실베개발자의 YouTube 영상에서 제시하는 **프롬프트 → 컨텍스트 → 하네스 → 에이전틱 4축 프레임워크**와 "프롬프트는 부탁, 하네스는 물리적 차단"이라는 핵심 철학. 둘째, Anthropic의 하네스 디자인 문서를 분석한 TILNOTE 아티클에서 나온 **플래너-생성기-평가자 3인조 아키텍처**와 스프린트 계약 패턴. 관련 포스트: [Long-Running Agents와 하네스 엔지니어링](/ko/posts/2026-03-30-long-running-agents/), [HarnessKit 개발기 #3](/ko/posts/2026-03-25-harnesskit-dev3/)
 
 <!--more-->
 
@@ -224,8 +224,8 @@ GAN(Generative Adversarial Network)에서 생성자와 판별자가 경쟁하며
 - [프롬프트 엔지니어링은 끝났습니다: 이제 '하네스'의 시대입니다 (YouTube)](https://www.youtube.com/watch?v=6gvnDSAcZww) — 실베개발자, 4축 프레임워크와 하네스 4기둥 구조
 - [Anthropic의 하네스 디자인: 플래너-생성기-평가자 아키텍처 (TILNOTE)](https://tilnote.io/pages/69cde2f8516a33dd7927c5c8) — Anthropic 하네스 디자인 문서 분석
 - [Harness design for long-running application development (Anthropic)](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering) — 원문 참고
-- [Long-Running Agents와 하네스 엔지니어링](/posts/2026-03-30-long-running-agents/) — 이전 포스트: 체크포인트, 상태 관리, 3요소
-- [HarnessKit 개발기 #3](/posts/2026-03-25-harnesskit-dev3/) — 이전 포스트: 플러그인 트리거, 마켓플레이스
+- [Long-Running Agents와 하네스 엔지니어링](/ko/posts/2026-03-30-long-running-agents/) — 이전 포스트: 체크포인트, 상태 관리, 3요소
+- [HarnessKit 개발기 #3](/ko/posts/2026-03-25-harnesskit-dev3/) — 이전 포스트: 플러그인 트리거, 마켓플레이스
 
 ---
 
