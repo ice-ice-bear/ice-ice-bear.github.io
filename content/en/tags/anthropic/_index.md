@@ -1,4 +1,4 @@
 ---
 title: "Anthropic"
-image: "/images/taxonomy/tag-anthropic.svg"
+image: "/images/taxonomy/tag-Anthropic.svg"
 ---

@@ -1,4 +1,4 @@
 ---
 title: "React"
-image: "/images/taxonomy/tag-react.svg"
+image: "/images/taxonomy/tag-React.svg"
 ---

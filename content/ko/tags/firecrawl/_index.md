@@ -1,4 +1,4 @@
 ---
 title: "Firecrawl"
-image: "/images/taxonomy/tag-firecrawl.svg"
+image: "/images/taxonomy/tag-Firecrawl.svg"
 ---

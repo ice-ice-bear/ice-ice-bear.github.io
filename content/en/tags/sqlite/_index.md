@@ -1,4 +1,4 @@
 ---
-title: "Sqlite"
-image: "/images/taxonomy/tag-sqlite.svg"
+title: "SQLite"
+image: "/images/taxonomy/tag-SQLite.svg"
 ---

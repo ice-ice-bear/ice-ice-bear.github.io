@@ -1,4 +1,4 @@
 ---
-title: "Npm"
-image: "/images/taxonomy/tag-npm.svg"
+title: "NPM"
+image: "/images/taxonomy/tag-NPM.svg"
 ---

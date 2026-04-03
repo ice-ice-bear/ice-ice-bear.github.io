@@ -1,4 +1,4 @@
 ---
-title: "Fastmcp"
-image: "/images/taxonomy/tag-fastmcp.svg"
+title: "FastMCP"
+image: "/images/taxonomy/tag-FastMCP.svg"
 ---

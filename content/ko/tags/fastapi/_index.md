@@ -1,4 +1,4 @@
 ---
-title: "Fastapi"
-image: "/images/taxonomy/tag-fastapi.svg"
+title: "FastAPI"
+image: "/images/taxonomy/tag-FastAPI.svg"
 ---
