@@ -1,10 +1,10 @@
 ---
 image: "/images/posts/2026-04-02-claude-code-leak/cover.jpg"
 title: "Claude Code 소스코드 유출 사태 — NPM 소스맵 실수로 드러난 에이전트 아키텍처의 민낯"
-description: Claude Code의 전체 TypeScript 소스코드가 NPM 소스맵 파일을 통해 유출된 사건의 경위와 유출된 내부 기능, 하네스 엔지니어링 관점의 보안 시사점을 종합 분석한다
+description: Claude Code 전체 TypeScript 소스코드가 NPM 소스맵을 통해 유출된 사건의 경위와 유출된 내부 기능, 유출 코드 기반으로 탄생한 오픈소스 OpenClaude, 하네스 엔지니어링 관점의 보안 시사점을 종합 분석한다
 date: 2026-04-02
 categories: ["security"]
-tags: ["Claude Code", "Anthropic", "NPM", "source-map", "TypeScript", "harness-engineering", "AI agent", "supply-chain-security", "MCP", "CI/CD"]
+tags: ["Claude Code", "Anthropic", "NPM", "source-map", "TypeScript", "harness-engineering", "AI agent", "supply-chain-security", "MCP", "CI/CD", "OpenClaude", "open-source"]
 toc: true
 math: false
 ---
@@ -113,6 +113,42 @@ flowchart TB
 
 엔터프라이즈 고객 입장에서는 당장 데이터가 유출되지 않았더라도 배포 및 검수 프로세스의 성숙도를 재평가할 수밖에 없다. 안전성을 핵심 브랜드로 내세운 회사가 기본적인 빌드 설정에서 반복 사고를 낸 것은 신뢰 비용을 수반한다.
 
+## OpenClaude — 유출 코드의 재탄생
+
+유출 사태가 가져온 가장 극적인 후속 전개는 OpenClaude의 등장이다. 유출된 Claude Code 소스코드를 기반으로 만들어진 오픈소스 포크로, GPT-4o, Gemini, DeepSeek, Ollama 등 200개 이상의 모델을 Claude Code의 UI와 워크플로우 그대로 사용할 수 있도록 OpenAI 호환 provider shim을 추가한 프로젝트다.
+
+### 무엇이 그대로이고 무엇이 바뀌었나
+
+OpenClaude가 유지하는 것은 Claude Code의 **하네스 전체**다. bash, file read/write/edit, grep, glob, agents, tasks, MCP, 슬래시 커맨드, 스트리밍 출력, 멀티스텝 추론 — Claude Code에서 쓰던 터미널 우선 워크플로우가 그대로 동작한다. 바뀐 것은 백엔드 모델뿐이다. 환경 변수 세 줄로 즉시 전환된다.
+
+```bash
+export CLAUDE_CODE_USE_OPENAI=1
+export OPENAI_API_KEY=sk-your-key-here
+export OPENAI_MODEL=gpt-4o
+```
+
+`OPENAI_BASE_URL`만 바꾸면 OpenRouter(Gemini), DeepSeek, Groq, Mistral, LM Studio, Ollama(로컬 모델) 등 어떤 OpenAI 호환 제공자든 연결할 수 있다. Codex 백엔드도 지원하는데, `codexplan`(GPT-5.4, 고추론)과 `codexspark`(GPT-5.3 Codex Spark, 빠른 루프) 두 가지 모드를 제공한다.
+
+### 설치와 프로필 시스템
+
+```bash
+npm install -g @gitlawb/openclaude
+```
+
+`/provider` 슬래시 커맨드로 guided setup을 진행하면 선호 제공자와 모델을 `.openclaude-profile.json`에 저장한다. 이후에는 프로필만으로 최적 제공자/모델로 바로 실행된다. Ollama를 사용하는 경우 로컬 인스턴스를 자동 감지한다.
+
+### 커뮤니티 반응 — 기회 vs. 저작권
+
+2026년 4월 기준 GitHub에서 **8,176개의 스타와 3,131개의 포크**를 기록하며 폭발적인 관심을 받고 있다. "Claude Code의 UX는 그대로 쓰면서 모델 비용이나 API 선택의 자유를 갖고 싶은 개발자들에게 즉각적인 답이 된다"는 평가다.
+
+그러나 GeekNews 커뮤니티 반응은 냉담하다. "훔친 걸 훔쳐서 훔치고", "해적판 게임 돌아다니는 것과 다른 게 없다", "저작권이 뭔지 모르나봐요" 같은 비판이 주를 이룬다. `Claude`는 Anthropic의 등록 상표이기 때문에 프로젝트 이름 자체도 법적 문제가 될 수 있다는 지적도 있다(`Clawdbot`이 `OpenClaw`로 이름을 바꾼 사례가 언급됐다). OpenClaude 저장소 자체도 "OpenClaude is an independent community project and is not affiliated with, endorsed by, or sponsored by Anthropic"이라고 면책 조항을 명시하고 있다.
+
+### 법적 긴장과 기술적 완성도
+
+유출된 소스 기반이라는 점에서 Anthropic과의 법적 분쟁 가능성이 상존한다. Anthropic은 Claude Code 소스코드에 대한 저작권을 보유하고 있으며, 유출된 코드를 그대로 포크해 배포하는 것은 저작권 침해에 해당할 수 있다. MIT 라이선스를 표방하고 있지만, 그 라이선스를 적용할 권한이 Gitlawb에게 있는지가 핵심 쟁점이다.
+
+기술적 완성도는 별개로 높다는 평가를 받는다. VS Code 익스텐션, Firecrawl 연동, Android 설치 가이드, LM Studio 제공자 지원(PR #227) 등 이미 활발한 커뮤니티 기여가 이루어지고 있다. 유출 사태 이후 불과 며칠 만에 이 정도 규모의 생태계가 형성되었다는 사실 자체가, Claude Code 하네스 아키텍처가 얼마나 재사용 가능성이 높은 설계를 갖추고 있었는지를 역설적으로 증명한다.
+
 ## 빠른 링크
 
 - [Claude Code LEAKS is INSANE! - Julian Goldie SEO](https://www.youtube.com/watch?v=DUP4ccA2mDM) — 유출 경위와 미공개 기능(Buddy, Kairos, Undercover Mode) 종합 분석
@@ -120,7 +156,11 @@ flowchart TB
 - [클로드 코드 소스코드 유출 사태. 도대체 왜 그러시는 건데요?](https://www.youtube.com/watch?v=_re4dNBNLYQ) — 의도적 유출 의혹, 가차 시스템/Dream 시스템 상세 분석 (한국어)
 - [AI 모델 유출보다 더 치명적인 이유 - 클로드 코드 유출, 하네스가 일부 유출](https://www.youtube.com/watch?v=USTr-RAytZ4) — 하네스 엔지니어링 관점의 사건 해석 (한국어)
 - [Claude Code CLI 유출된 소스코드 파헤치기 - bkamp](https://bkamp.ai/ko/community/3c15e334-e054-406b-99a4-fe84dcd51ff4) — 커뮤니티 소스코드 분석 글
+- [OpenClaude GitHub 저장소](https://github.com/Gitlawb/openclaude) — 유출 코드 기반 멀티모델 코딩 에이전트 CLI (8,176 stars)
+- [GeekNews: Claude Code 소스 유출로 탄생한 OpenClaude](https://news.hada.io/topic?id=28115) — GPT-4o, Gemini, Ollama 등 200개 모델을 Claude Code UI로
 
 ## 인사이트
 
-이번 Claude Code 소스코드 유출 사태는 AI 시대의 경쟁력이 어디에 있는지를 극명하게 보여준 사건이다. 모델 가중치가 아닌 하네스 아키텍처가 유출되었다는 점에서, 에이전트 시대의 핵심 IP가 더 이상 모델 파라미터에만 있지 않다는 현실이 드러났다. 40개 이상의 permission-gated 도구, 멀티 에이전트 오케스트레이션, Dream 시스템을 통한 메모리 통합, 15초 차단 예산의 Kairos 상시 어시스턴트 등 Claude Code의 내부 복잡도는 대부분의 예상을 훨씬 뛰어넘었다. 동시에 `.npmignore` 한 줄, CI 파이프라인의 산출물 검증 한 단계만 있었으면 방지할 수 있었다는 점에서 기본기의 중요성도 재확인되었다. Anthropic이 "안전성의 회사"를 표방하면서 소프트웨어 공급망의 가장 기초적인 부분에서 반복 사고를 낸 것은 기술적 아이러니를 넘어 엔터프라이즈 신뢰의 문제로 확장될 수 있다. 개발자로서 이번 사건에서 배울 점은, 아무리 정교한 보안 시스템(Undercover Mode)을 만들어도 빌드 파이프라인의 한 줄 설정이 모든 것을 무력화할 수 있다는 것이다. 결국 소프트웨어 보안은 가장 화려한 기능이 아니라 가장 지루한 체크리스트에서 결정된다.
+이번 Claude Code 소스코드 유출 사태는 AI 시대의 경쟁력이 어디에 있는지를 극명하게 보여준 사건이다. 모델 가중치가 아닌 하네스 아키텍처가 유출되었다는 점에서, 에이전트 시대의 핵심 IP가 더 이상 모델 파라미터에만 있지 않다는 현실이 드러났다. 40개 이상의 permission-gated 도구, 멀티 에이전트 오케스트레이션, Dream 시스템을 통한 메모리 통합, 15초 차단 예산의 Kairos 상시 어시스턴트 등 Claude Code의 내부 복잡도는 대부분의 예상을 훨씬 뛰어넘었다. 동시에 `.npmignore` 한 줄, CI 파이프라인의 산출물 검증 한 단계만 있었으면 방지할 수 있었다는 점에서 기본기의 중요성도 재확인되었다.
+
+OpenClaude의 등장은 이 사태의 여파가 단순한 정보 노출을 넘어섰음을 보여준다. 유출된 하네스 코드가 며칠 만에 다른 모델들을 위한 풀스택 코딩 에이전트로 재탄생한 것은, 아이러니하게도 Claude Code 설계의 품질을 증명하는 증거다. Anthropic이 "안전성의 회사"를 표방하면서 소프트웨어 공급망의 가장 기초적인 부분에서 반복 사고를 낸 것은 기술적 아이러니를 넘어 엔터프라이즈 신뢰의 문제로 확장될 수 있다. 개발자로서 이번 사건에서 배울 점은, 아무리 정교한 보안 시스템(Undercover Mode)을 만들어도 빌드 파이프라인의 한 줄 설정이 모든 것을 무력화할 수 있다는 것이다. 결국 소프트웨어 보안은 가장 화려한 기능이 아니라 가장 지루한 체크리스트에서 결정된다.
