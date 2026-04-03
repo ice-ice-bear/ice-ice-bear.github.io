@@ -1,10 +1,10 @@
 ---
 image: "/images/posts/2026-04-02-claude-code-leak/cover-en.jpg"
 title: "Claude Code Source Code Leak — Agent Architecture Exposed Through an NPM Source Map Mistake"
-description: A comprehensive analysis of how Claude Code's entire TypeScript source was leaked via NPM source map files, the undisclosed features revealed, and security implications from a harness engineering perspective
+description: A comprehensive analysis of how Claude Code's entire TypeScript source was leaked via NPM source map files, the undisclosed features revealed, the birth of open-source OpenClaude from the leaked code, and security implications from a harness engineering perspective
 date: 2026-04-02
 categories: ["security"]
-tags: ["Claude Code", "Anthropic", "NPM", "source-map", "TypeScript", "harness-engineering", "AI agent", "supply-chain-security", "MCP", "CI/CD"]
+tags: ["Claude Code", "Anthropic", "NPM", "source-map", "TypeScript", "harness-engineering", "AI agent", "supply-chain-security", "MCP", "CI/CD", "OpenClaude", "open-source"]
 toc: true
 math: false
 ---
@@ -113,6 +113,42 @@ No user data was leaked. API keys, personal information, and conversation histor
 
 From an enterprise customer perspective, even though no data was immediately leaked, the maturity of deployment and review processes must be reassessed. A company that promotes safety as its core brand repeatedly making mistakes in basic build configuration carries a trust cost.
 
+## OpenClaude — Rebirth from Leaked Code
+
+The most dramatic aftermath of the leak is the emergence of OpenClaude. Built on the leaked Claude Code source, it is an open-source fork that adds an OpenAI-compatible provider shim, allowing GPT-4o, Gemini, DeepSeek, Ollama, and 200+ other models to run within Claude Code's exact UI and workflow.
+
+### What Stays, What Changes
+
+What OpenClaude preserves is the **entire Claude Code harness**. Bash, file read/write/edit, grep, glob, agents, tasks, MCP, slash commands, streaming output, multi-step reasoning — the terminal-first workflow from Claude Code operates unchanged. The only thing that changes is the backend model. Three environment variables are all it takes:
+
+```bash
+export CLAUDE_CODE_USE_OPENAI=1
+export OPENAI_API_KEY=sk-your-key-here
+export OPENAI_MODEL=gpt-4o
+```
+
+Changing `OPENAI_BASE_URL` alone connects any OpenAI-compatible provider — OpenRouter (Gemini), DeepSeek, Groq, Mistral, LM Studio, Ollama (local models), and more. Codex backends are also supported, with two modes: `codexplan` (GPT-5.4, high-reasoning) and `codexspark` (GPT-5.3 Codex Spark, fast loops).
+
+### Installation and Profile System
+
+```bash
+npm install -g @gitlawb/openclaude
+```
+
+The `/provider` slash command runs a guided setup that saves the preferred provider and model to `.openclaude-profile.json`. From that point, the profile alone launches with the optimal provider and model. Local Ollama instances are detected automatically.
+
+### Community Reception — Opportunity vs. Copyright
+
+As of April 2026, the project has attracted **8,176 stars and 3,131 forks** on GitHub, representing explosive growth. The prevailing developer verdict is that "for anyone who wanted Claude Code's UX while having freedom over model cost and API choice, this is an immediate answer."
+
+The Korean tech community on GeekNews, however, is far more critical. Reactions like "stealing stolen goods," "no different from pirated software being passed around," and "does this person not understand copyright?" dominate the comments. The project name itself may be legally problematic since "Claude" is a registered Anthropic trademark — a commenter noted that a similar project, `Clawdbot`, had to rename itself to `OpenClaw`. The OpenClaude repository itself includes a disclaimer: "OpenClaude is an independent community project and is not affiliated with, endorsed by, or sponsored by Anthropic."
+
+### Legal Tension and Technical Merit
+
+Given its foundation in leaked source code, the threat of legal action from Anthropic remains real. Anthropic holds copyright over the Claude Code source, and distributing a fork of leaked proprietary code may constitute infringement. The project declares an MIT license, but whether Gitlawb has the authority to apply that license is the central legal question.
+
+On technical merit, the project has earned broadly positive assessments independent of the legal controversy. A VS Code extension, Firecrawl integration, Android install guide, and LM Studio provider support (PR #227) reflect a rapidly growing contributor community. The fact that an ecosystem of this scale emerged within days of the leak is paradoxical proof of just how reusable and well-structured the Claude Code harness architecture was.
+
 ## Quick Links
 
 - [Claude Code LEAKS is INSANE! - Julian Goldie SEO](https://www.youtube.com/watch?v=DUP4ccA2mDM) — Comprehensive analysis of the leak and unreleased features (Buddy, Kairos, Undercover Mode)
@@ -120,7 +156,11 @@ From an enterprise customer perspective, even though no data was immediately lea
 - [Claude Code source code leak. Why would they do this?](https://www.youtube.com/watch?v=_re4dNBNLYQ) — Deliberate leak suspicions, gacha system/Dream system detailed analysis (Korean)
 - [More critical than AI model leaks — Claude Code leak, partial harness exposure](https://www.youtube.com/watch?v=USTr-RAytZ4) — Interpreting the incident from a harness engineering perspective (Korean)
 - [Dissecting the leaked Claude Code CLI source code - bkamp](https://bkamp.ai/ko/community/3c15e334-e054-406b-99a4-fe84dcd51ff4) — Community source code analysis
+- [OpenClaude GitHub Repository](https://github.com/Gitlawb/openclaude) — Multi-model coding agent CLI built on the leaked source (8,176 stars)
+- [GeekNews: OpenClaude born from Claude Code source leak](https://news.hada.io/topic?id=28115) — 200+ models via Claude Code UI: GPT-4o, Gemini, Ollama and more
 
 ## Insights
 
-This Claude Code source code leak vividly demonstrates where competitive advantage lies in the AI era. The fact that it was the harness architecture rather than model weights that was leaked reveals the reality that core IP in the agent era no longer resides solely in model parameters. The internal complexity of Claude Code — over 40 permission-gated tools, multi-agent orchestration, memory consolidation through the Dream system, and the Kairos always-on assistant with its 15-second blocking budget — far exceeded most expectations. At the same time, the fact that it could have been prevented with just one line in `.npmignore` or a single artifact verification step in the CI pipeline reaffirms the importance of fundamentals. The fact that Anthropic, a company that bills itself as "the safety company," caused repeated incidents in the most basic parts of its software supply chain is a technical irony that could escalate into an enterprise trust issue. The lesson for developers from this incident is that no matter how sophisticated a security system you build (Undercover Mode), a single configuration line in the build pipeline can render it all useless. In the end, software security is determined not by the most glamorous features but by the most mundane checklists.
+This Claude Code source code leak vividly demonstrates where competitive advantage lies in the AI era. The fact that it was the harness architecture rather than model weights that was leaked reveals the reality that core IP in the agent era no longer resides solely in model parameters. The internal complexity of Claude Code — over 40 permission-gated tools, multi-agent orchestration, memory consolidation through the Dream system, and the Kairos always-on assistant with its 15-second blocking budget — far exceeded most expectations. At the same time, the fact that it could have been prevented with just one line in `.npmignore` or a single artifact verification step in the CI pipeline reaffirms the importance of fundamentals.
+
+The emergence of OpenClaude shows that the fallout from this incident extends well beyond information disclosure. A full-stack coding agent for other models rebuilt from leaked harness code in a matter of days is, paradoxically, a testament to the quality of Claude Code's design. The fact that Anthropic, a company that bills itself as "the safety company," caused repeated incidents in the most basic parts of its software supply chain is a technical irony that could escalate into an enterprise trust issue. The lesson for developers from this incident is that no matter how sophisticated a security system you build (Undercover Mode), a single configuration line in the build pipeline can render it all useless. In the end, software security is determined not by the most glamorous features but by the most mundane checklists.
