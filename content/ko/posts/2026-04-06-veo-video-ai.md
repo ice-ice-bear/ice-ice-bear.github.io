@@ -2,7 +2,7 @@
 title: "Google Veo 3.1과 영상 AI 배경 제거 생태계"
 date: 2026-04-06
 description: Google Veo 3.1의 영상 생성 기능과 VideoBGRemover, n8n 자동화 워크플로우 등 영상 AI 배경 제거 도구 생태계 정리
-image: /images/posts/2026-04-06-veo-video-ai/cover-en.jpg
+image: /images/posts/2026-04-06-veo-video-ai/cover.jpg
 categories:
   - tech-log
 tags:
