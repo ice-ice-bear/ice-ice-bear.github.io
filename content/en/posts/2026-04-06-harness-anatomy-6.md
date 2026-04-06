@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-04-06-harness-anatomy-6/cover.jpg"
+image: "/images/posts/2026-04-06-harness-anatomy-6/cover-en.jpg"
 title: "Claude Code Harness Anatomy #6 — Beyond Claude Code: A Retrospective on Building an Independent 7-Crate Harness"
 description: A full retrospective on designing and building an independent agent harness in Rust that overcomes the 8 limitations discovered during Phase 1-2
 date: 2026-04-06

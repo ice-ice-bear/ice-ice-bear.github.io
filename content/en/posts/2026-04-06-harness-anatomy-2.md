@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-04-06-harness-anatomy-2/cover.jpg"
+image: "/images/posts/2026-04-06-harness-anatomy-2/cover-en.jpg"
 title: "Claude Code Harness Anatomy #2 — The Heart of the Conversation Loop: StreamingToolExecutor and 7 Continue Paths"
 description: A complete dissection of the 7 continue paths in query.ts while-true loop and StreamingToolExecutor 4-state machine with 3-tier concurrency model validated through a Rust prototype
 date: 2026-04-06

@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-04-06-harness-anatomy-4/cover.jpg"
+image: "/images/posts/2026-04-06-harness-anatomy-4/cover-en.jpg"
 title: "Claude Code Harness Anatomy #4 — Runtime Hooks: 26+ Events and CLAUDE.md 6-Stage Discovery"
 description: Analyzing the toolHooks.ts runtime hook pipeline and 85 React hooks classification system plus CLAUDE.md 6-stage discovery and token budget management
 date: 2026-04-06

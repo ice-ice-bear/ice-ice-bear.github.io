@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-04-06-harness-anatomy-1/cover.jpg"
+image: "/images/posts/2026-04-06-harness-anatomy-1/cover-en.jpg"
 title: "Claude Code Harness Anatomy #1 — From Entry Point to Response: The Journey of a Single Request"
 description: The full call stack from typing hello in Claude Code to receiving a response. Data flow and AsyncGenerator chain architecture analysis across 11 files from cli.tsx to toolExecution.ts
 date: 2026-04-06

@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-04-06-harness-anatomy-6/cover.jpg"
+image: "/images/posts/2026-04-06-harness-anatomy-6/cover-ko.jpg"
 title: "Claude Code 하네스 해부학 #6 — Claude Code를 넘어서, 7크레이트 독자 하네스 구축 회고"
 description: "Phase 1-2에서 발견한 8가지 한계점을 극복하는 독자 에이전트 하네스를 Rust로 설계하고 구축한 전체 여정의 회고"
 date: 2026-04-06

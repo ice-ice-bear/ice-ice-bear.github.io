@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-04-06-harness-anatomy-5/cover.jpg"
+image: "/images/posts/2026-04-06-harness-anatomy-5/cover-en.jpg"
 title: "Claude Code Harness Anatomy #5 — MCP Services and the Plugin-Skill Extension Ecosystem"
 description: Analyzing MCP client.ts 3348-line connection management and OAuth 2465-line authentication plus the plugin vs skill distinction and 5-layer skill discovery engine
 date: 2026-04-06

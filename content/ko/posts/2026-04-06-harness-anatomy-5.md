@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-04-06-harness-anatomy-5/cover.jpg"
+image: "/images/posts/2026-04-06-harness-anatomy-5/cover-ko.jpg"
 title: "Claude Code 하네스 해부학 #5 — MCP 서비스와 플러그인 스킬 확장 생태계"
 description: "MCP client.ts 3348줄의 연결 관리와 OAuth 2465줄의 인증 체계 그리고 플러그인 vs 스킬의 구분과 5-layer 스킬 디스커버리 엔진을 분석한다"
 date: 2026-04-06

@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-04-06-harness-anatomy-3/cover.jpg"
+image: "/images/posts/2026-04-06-harness-anatomy-3/cover-ko.jpg"
 title: "Claude Code 하네스 해부학 #3 — 42개 도구의 설계 철학, BashTool부터 AgentTool까지"
 description: "42개 도구 디렉토리를 8개 패밀리로 분류하고 BashTool의 6-layer 보안 체인과 AgentTool의 4가지 스폰 모드를 심층 분석한다"
 date: 2026-04-06

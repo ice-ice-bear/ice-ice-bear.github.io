@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-04-06-harness-anatomy-1/cover.jpg"
+image: "/images/posts/2026-04-06-harness-anatomy-1/cover-ko.jpg"
 title: "Claude Code 하네스 해부학 #1 — 진입점에서 응답까지, 요청 하나의 여정"
 description: "Claude Code에서 hello를 입력하면 응답이 나오기까지의 전체 콜스택을 추적한다. cli.tsx부터 toolExecution.ts까지 11개 파일의 데이터 흐름과 AsyncGenerator 체인 아키텍처 분석"
 date: 2026-04-06

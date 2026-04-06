@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-04-06-harness-anatomy-4/cover.jpg"
+image: "/images/posts/2026-04-06-harness-anatomy-4/cover-ko.jpg"
 title: "Claude Code 하네스 해부학 #4 — 런타임 훅 26+이벤트와 CLAUDE.md 6단계 디스커버리"
 description: "toolHooks.ts의 런타임 훅 파이프라인과 85개 React 훅의 분류 체계 그리고 CLAUDE.md 6단계 디스커버리와 토큰 버짓 관리를 분석한다"
 date: 2026-04-06

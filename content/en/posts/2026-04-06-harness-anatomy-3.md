@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-04-06-harness-anatomy-3/cover.jpg"
+image: "/images/posts/2026-04-06-harness-anatomy-3/cover-en.jpg"
 title: "Claude Code Harness Anatomy #3 — The Design Philosophy of 42 Tools, from BashTool to AgentTool"
 description: Classifying 42 tools into 8 families and deep-diving into BashTool 6-layer security chain and AgentTool 4 spawn modes
 date: 2026-04-06

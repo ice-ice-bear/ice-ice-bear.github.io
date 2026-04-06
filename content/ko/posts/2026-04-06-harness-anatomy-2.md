@@ -1,5 +1,5 @@
 ---
-image: "/images/posts/2026-04-06-harness-anatomy-2/cover.jpg"
+image: "/images/posts/2026-04-06-harness-anatomy-2/cover-ko.jpg"
 title: "Claude Code 하네스 해부학 #2 — 대화 루프의 심장, StreamingToolExecutor와 7개의 continue"
 description: "query.ts의 while true 루프가 가진 7개 continue 경로와 StreamingToolExecutor의 4-state 머신, 3-tier 동시성 모델을 완전 해부하고 Rust 프로토타입으로 검증한다"
 date: 2026-04-06
