@@ -2,7 +2,7 @@
 title: "FastAPI 애플리케이션에 Grafana Cloud 옵저버빌리티 구축하기"
 date: 2026-04-06
 description: OpenTelemetry와 Grafana Cloud를 활용해 FastAPI 서비스에 분산 추적을 적용한 과정과 디버깅 여정 정리
-image: /images/posts/2026-04-06-grafana-otel-fastapi/cover.jpg
+image: /images/posts/2026-04-06-grafana-otel-fastapi/cover-ko.jpg
 categories:
   - tech-log
 tags:
