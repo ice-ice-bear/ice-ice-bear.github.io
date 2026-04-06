@@ -2,7 +2,7 @@
 title: "Setting Up Grafana Cloud Observability for a FastAPI Application"
 date: 2026-04-06
 description: A practical guide to adding distributed tracing to a FastAPI service using OpenTelemetry and Grafana Cloud, including the debugging journey from broken traces to working observability
-image: /images/posts/2026-04-06-grafana-otel-fastapi/cover.jpg
+image: /images/posts/2026-04-06-grafana-otel-fastapi/cover-en.jpg
 categories:
   - tech-log
 tags:

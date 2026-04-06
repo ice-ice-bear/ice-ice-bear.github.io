@@ -2,7 +2,7 @@
 title: "Google Veo 3.1 and the Video AI Background Removal Ecosystem"
 date: 2026-04-06
 description: An overview of Google Veo 3.1 video generation capabilities and the growing ecosystem of video AI background removal tools including VideoBGRemover and n8n automation workflows
-image: /images/posts/2026-04-06-veo-video-ai/cover.jpg
+image: /images/posts/2026-04-06-veo-video-ai/cover-en.jpg
 categories:
   - tech-log
 tags:

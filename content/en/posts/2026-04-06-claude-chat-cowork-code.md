@@ -3,7 +3,7 @@ title: "The Claude Ecosystem Explained — Chat, Cowork, and Code"
 slug: "claude-chat-cowork-code"
 date: 2026-04-06
 description: A breakdown of Claudes three product tiers Chat Cowork and Code with practical tips for saving tokens in Claude Code
-image: /images/posts/2026-04-06-claude-chat-cowork-code/cover.jpg
+image: /images/posts/2026-04-06-claude-chat-cowork-code/cover-en.jpg
 categories:
   - tech-log
 tags:

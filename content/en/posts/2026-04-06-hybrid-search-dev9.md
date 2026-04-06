@@ -8,7 +8,7 @@ tags: ["python", "fastapi", "opentelemetry", "grafana", "grafana-alloy", "distri
 series: "hybrid-image-search-demo"
 series_num: 9
 last_commit: "990575d"
-image: "/images/posts/2026-04-06-hybrid-search-dev9/cover.jpg"
+image: "/images/posts/2026-04-06-hybrid-search-dev9/cover-en.jpg"
 toc: true
 math: false
 ---
