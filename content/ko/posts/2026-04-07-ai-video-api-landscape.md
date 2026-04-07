@@ -2,7 +2,7 @@
 title: "2026 AI 비디오·이미지 생성 API 지형도 — 가격, 모델, 플랫폼 비교"
 description: 2026년 초 AI 비디오 및 이미지 생성 API 시장 분석으로 fal.ai, Replicate, OpenAI, Google Veo 3, Wan 2.1, GPT Image 2의 가격 비교와 실전 비용 최적화 전략을 다룹니다
 date: 2026-04-07
-image: images/posts/2026-04-07-ai-video-api-landscape/cover.jpg
+image: /images/posts/2026-04-07-ai-video-api-landscape/cover-ko.jpg
 categories:
   - tech-log
 tags:

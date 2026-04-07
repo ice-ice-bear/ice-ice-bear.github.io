@@ -2,7 +2,7 @@
 title: "Hybrid Image Search 개발기 #10 — OTel 메트릭 대시보드와 파이프라인 성능 최적화"
 description: "OpenTelemetry 메트릭 수집으로 Grafana 리소스 대시보드를 구축하고, 트레이스 분석을 통해 발견한 CPU/RAM 스파이크를 thread executor와 타임아웃으로 해결한 과정"
 date: 2026-04-07
-image: images/posts/2026-04-07-hybrid-search-dev10/cover.jpg
+image: /images/posts/2026-04-07-hybrid-search-dev10/cover-ko.jpg
 series:
   - "hybrid-image-search-demo"
 series_num: 10

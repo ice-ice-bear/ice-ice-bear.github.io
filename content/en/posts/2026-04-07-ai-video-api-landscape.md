@@ -2,7 +2,7 @@
 title: "AI Video and Image Generation API Landscape 2026 — Pricing, Models, and Platform Comparison"
 description: A comprehensive look at the AI video and image generation API market in early 2026 covering pricing comparisons across fal.ai, Replicate, OpenAI, Google Veo 3, Wan 2.1, and GPT Image 2 with practical cost optimization strategies
 date: 2026-04-07
-image: images/posts/2026-04-07-ai-video-api-landscape/cover.jpg
+image: /images/posts/2026-04-07-ai-video-api-landscape/cover-en.jpg
 categories:
   - tech-log
 tags:

@@ -2,7 +2,7 @@
 title: "Hybrid Image Search Dev Log #10 — OTel Metrics Dashboard and Pipeline Performance Optimization"
 description: "Building a Grafana resource dashboard with OpenTelemetry metrics, then fixing CPU/RAM spikes discovered through trace analysis using thread executors and timeouts"
 date: 2026-04-07
-image: images/posts/2026-04-07-hybrid-search-dev10/cover.jpg
+image: /images/posts/2026-04-07-hybrid-search-dev10/cover-en.jpg
 series:
   - "hybrid-image-search-demo"
 series_num: 10

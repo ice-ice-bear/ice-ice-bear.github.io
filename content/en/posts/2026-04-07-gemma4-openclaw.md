@@ -2,7 +2,7 @@
 title: "Running a Free, Private AI Assistant — Gemma 4 + SearXNG + OpenClaw Setup Guide"
 description: A complete guide to building a fully self-hosted AI assistant using Google Gemma 4 open source models, SearXNG private search, and OpenClaw for agentic tool calling — all running locally with zero data leaving your machine.
 date: 2026-04-07
-image: images/posts/2026-04-07-gemma4-openclaw/cover.jpg
+image: /images/posts/2026-04-07-gemma4-openclaw/cover-en.jpg
 categories:
   - tech-log
 tags:

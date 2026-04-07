@@ -2,7 +2,7 @@
 title: "Claude Code 파워 유저 가이드 — 울트라 플래닝, Karpathy의 Obsidian RAG, 컨텍스트 최적화"
 description: Claude Code ultra plan mode, Karpathy의 Obsidian 기반 RAG 대안, 자기 진화형 에이전트 메모리, 컨텍스트 최적화 12가지 규칙 심층 분석
 date: 2026-04-07
-image: images/posts/2026-04-07-claude-code-power-user/cover.jpg
+image: /images/posts/2026-04-07-claude-code-power-user/cover-ko.jpg
 categories:
   - tech-log
 tags:

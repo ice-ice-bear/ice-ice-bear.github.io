@@ -2,7 +2,7 @@
 title: "Claude Code Power User Guide — Ultra Planning, Karpathy's Obsidian RAG, and Context Optimization"
 description: A deep dive into Claude Code ultra plan mode, Karpathy's Obsidian-based RAG alternative, self-evolving agent memory, and 12 rules for context optimization
 date: 2026-04-07
-image: images/posts/2026-04-07-claude-code-power-user/cover.jpg
+image: /images/posts/2026-04-07-claude-code-power-user/cover-en.jpg
 categories:
   - tech-log
 tags:

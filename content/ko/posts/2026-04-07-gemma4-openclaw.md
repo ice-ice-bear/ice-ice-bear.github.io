@@ -2,7 +2,7 @@
 title: "무료 프라이빗 AI 어시스턴트 구축 — Gemma 4 + SearXNG + OpenClaw 설정 가이드"
 description: Google Gemma 4 오픈소스 모델과 SearXNG 프라이빗 검색, OpenClaw 에이전트 프레임워크를 조합하여 완전히 로컬에서 동작하는 무료 AI 어시스턴트를 구축하는 방법을 다룹니다.
 date: 2026-04-07
-image: images/posts/2026-04-07-gemma4-openclaw/cover.jpg
+image: /images/posts/2026-04-07-gemma4-openclaw/cover-ko.jpg
 categories:
   - tech-log
 tags:
