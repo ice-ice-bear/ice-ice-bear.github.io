@@ -209,6 +209,7 @@ The setup takes about 15 minutes if you already have Docker and a package manage
 
 ## References
 
+- [Gemma 4 + SearXNG = 100% FREE & PRIVATE OpenClaw (Full Setup)](https://www.youtube.com/watch?v=T0CKsU0hQx4) — Cole Medin
 - [Gemma 4 Model Card — Google](https://ai.google.dev/gemma)
 - [SearXNG Documentation](https://docs.searxng.org/)
 - [OpenClaw GitHub Repository](https://github.com/openclaw)

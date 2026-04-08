@@ -150,7 +150,9 @@ For developers building AI-assisted workflows, the takeaway is clear: before rea
 
 ## References
 
-- [Planning In Claude Code Just Got a Huge Upgrade](https://www.youtube.com/watch?v=example1) — nate herk
-- [I Built Self-Evolving Claude Code Memory w/ Karpathy's LLM Knowledge Bases](https://www.youtube.com/watch?v=example2) — nate herk
-- [Karpathy Just Replaced RAG With Obsidian + Claude Code](https://www.youtube.com/watch?v=example3)
-- [How I Save Over 50% of My Claude Code Context (12 Rules)](https://www.youtube.com/watch?v=example4)
+- [Planning In Claude Code Just Got a Huge Upgrade](https://www.youtube.com/watch?v=T4fXb3sbJIo) — nate herk
+- [I Built Self-Evolving Claude Code Memory w/ Karpathy's LLM Knowledge Bases](https://www.youtube.com/watch?v=7huCP6RkcY4) — nate herk
+- [Karpathy Just Replaced RAG With Obsidian + Claude Code](https://www.youtube.com/watch?v=OSZdFnQmgRw)
+- [How I Save Over 50% of My Claude Code Context (12 Rules)](https://www.youtube.com/watch?v=7nP2wjGcIXs)
+- [드디어 생겼다! Claude Code 웹과 데스크탑 연동! Ultra Plan](https://www.youtube.com/watch?v=dfQxsDEIMS0) — 오후다섯씨
+- [Full Guide - Build Your Own AI Second Brain with Claude Code](https://www.youtube.com/watch?v=1FiER-40zng)
