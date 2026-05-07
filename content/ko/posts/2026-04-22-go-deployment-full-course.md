@@ -1,6 +1,6 @@
 ---
 title: "Go 프로덕션 배포 풀 코스 — AWS ECS vs Cloud Run vs Fly.io"
-description: '소설처럼 읽는 Go 언어' 5-챕터 배포 시리즈가 하나의 의사결정 프레임워크로 수렴한다. 얼마나 많은 플랫폼을 원하느냐로 고르고, 답은 거의 ECS가 아니다.
+description: "'소설처럼 읽는 Go 언어' 5-챕터 배포 시리즈가 하나의 의사결정 프레임워크로 수렴한다. 얼마나 많은 플랫폼을 원하느냐로 고르고, 답은 거의 ECS가 아니다."
 date: 2026-04-22
 image: "/images/posts/2026-04-22-go-deployment-full-course/cover-ko.jpg"
 categories: ["Technology"]
