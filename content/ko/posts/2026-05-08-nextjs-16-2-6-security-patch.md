@@ -11,7 +11,7 @@ math: false
 
 ## 개요
 
-[vercel/next.js](https://github.com/vercel/next.js)가 2026-05-07 [v16.2.6 릴리스](https://github.com/vercel/next.js/releases/tag/v16.2.6)에서 **13개 보안 권고를 한꺼번에** 닫았다. High 7건 / Moderate 4건 / Low 2건. 채팅방 한 줄 평이 가장 정확하다 — *"패치 내용 보니 안 하면 큰일 날 거 같습니다 / 엄청 크리티컬해요"*. 특히 [App Router](https://nextjs.org/docs/app)와 [Middleware/Proxy](https://nextjs.org/docs/app/building-your-application/routing/middleware)가 얽힌 **인증·인가 우회 권고가 3건**, [WebSocket SSRF](https://github.com/vercel/next.js/security/advisories/GHSA-c4j6-fc7j-m34r) 1건, **캐시 오염 권고가 3건** — 표면이 다양해서 단일 버그가 아니라 **공통 패턴**이 드러난다.
+[vercel/next.js](https://github.com/vercel/next.js)가 2026-05-07 [v16.2.6 릴리스](https://github.com/vercel/next.js/releases/tag/v16.2.6)에서 **13개 보안 권고를 한꺼번에** 닫았다. High 7건 / Moderate 4건 / Low 2건. 현장 한 줄 평이 가장 정확하다 — *"패치 내용 보니 안 하면 큰일 날 거 같습니다 / 엄청 크리티컬해요"*. 특히 [App Router](https://nextjs.org/docs/app)와 [Middleware/Proxy](https://nextjs.org/docs/app/building-your-application/routing/middleware)가 얽힌 **인증·인가 우회 권고가 3건**, [WebSocket SSRF](https://github.com/vercel/next.js/security/advisories/GHSA-c4j6-fc7j-m34r) 1건, **캐시 오염 권고가 3건** — 표면이 다양해서 단일 버그가 아니라 **공통 패턴**이 드러난다.
 
 <!--more-->
 
@@ -97,7 +97,7 @@ bun add next@16.2.6
 
 ## 인사이트
 
-Triage 우선순위는 명확하다 — **Bypass 3건 + SSRF 1건 + Cache poisoning 3건**이 같은 릴리스에 묶였다는 사실 자체가 가장 큰 시그널이다. Middleware 우회가 세 다른 표면에서 동시 발견된 건 단일 버그가 아니라 **App Router의 라우팅 모델과 Middleware 매칭 로직이 같은 경로를 다르게 해석하는 클래스의 결함**이라는 뜻이다. Next.js 16이 비교적 신버전이라는 점을 감안해도, 한 릴리스에 13건이 묶이는 건 흔치 않다. Vercel 팀이 incomplete-fix follow-up을 같은 릴리스로 묶어 외부 노출 시간을 최소화한 점은 책임감 있는 disclosure의 좋은 사례. 채팅방 반응 *"엄청 크리티컬해요"* 가 정확하고, **upgrade triage에서 highest priority**로 다뤄야 한다. 더 큰 그림으로 보면, 이번 릴리스는 **App Router의 라우팅 모델 자체에 대한 fuzz/감사가 더 필요했다**는 신호다 — 미들웨어 매칭 로직과 라우팅이 분리돼 있는 한 같은 클래스의 결함은 또 나올 가능성이 높다.
+Triage 우선순위는 명확하다 — **Bypass 3건 + SSRF 1건 + Cache poisoning 3건**이 같은 릴리스에 묶였다는 사실 자체가 가장 큰 시그널이다. Middleware 우회가 세 다른 표면에서 동시 발견된 건 단일 버그가 아니라 **App Router의 라우팅 모델과 Middleware 매칭 로직이 같은 경로를 다르게 해석하는 클래스의 결함**이라는 뜻이다. Next.js 16이 비교적 신버전이라는 점을 감안해도, 한 릴리스에 13건이 묶이는 건 흔치 않다. Vercel 팀이 incomplete-fix follow-up을 같은 릴리스로 묶어 외부 노출 시간을 최소화한 점은 책임감 있는 disclosure의 좋은 사례. 현장 반응 *"엄청 크리티컬해요"* 가 정확하고, **upgrade triage에서 highest priority**로 다뤄야 한다. 더 큰 그림으로 보면, 이번 릴리스는 **App Router의 라우팅 모델 자체에 대한 fuzz/감사가 더 필요했다**는 신호다 — 미들웨어 매칭 로직과 라우팅이 분리돼 있는 한 같은 클래스의 결함은 또 나올 가능성이 높다.
 
 ## 참고
 

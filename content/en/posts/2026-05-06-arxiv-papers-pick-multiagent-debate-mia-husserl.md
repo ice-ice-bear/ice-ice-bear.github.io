@@ -1,6 +1,6 @@
 ---
 title: "Three arxiv Papers That Drifted Through the Chat — Multiagent Debate, MIA, Husserlian Phenomenology"
-description: A digest of three arxiv papers shared in the same chat within days read along three axes — cooperation persistence and structure
+description: A digest of three arxiv papers surfacing within days of each other read along three axes — cooperation persistence and structure
 date: 2026-05-06
 image: "/images/posts/2026-05-06-arxiv-papers-pick-multiagent-debate-mia-husserl/cover-en.jpg"
 categories: ["research"]
@@ -11,7 +11,7 @@ math: false
 
 ## Overview
 
-Three [arxiv](https://arxiv.org/) papers landed in the same [open chat room](https://open.kakao.com/) within a few days. Different eras, different topics, different methods — but read together they answer one question, **"where do further gains in AI agent reasoning come from?"**, from three angles: cooperation, persistence, and structure. Right at the moment when single-model reasoning gains are visibly plateauing, this is a useful tour of where the next round's keywords are coming from.
+Three [arxiv](https://arxiv.org/) papers landed within a few days of each other. Different eras, different topics, different methods — but read together they answer one question, **"where do further gains in AI agent reasoning come from?"**, from three angles: cooperation, persistence, and structure. Right at the moment when single-model reasoning gains are visibly plateauing, this is a useful tour of where the next round's keywords are coming from.
 
 <!--more-->
 
@@ -72,7 +72,7 @@ flowchart LR
 - Strong results across eleven benchmarks
 
 ### Why now
-This is the academic background for tools like [agentmemory](https://github.com/elder-plinius/agentmemory). The fact that agentmemory and this paper landed in the same chat within days reflects the industry consensus that **memory is the key differentiator for the next round of agents.** The Manager-Planner-Executor split looks like a strong candidate for a de facto standard pattern in future multi-agent frameworks. It should be read alongside the rise of standard tool interfaces like [MCP](https://modelcontextprotocol.io/).
+This is the academic background for tools like [agentmemory](https://github.com/elder-plinius/agentmemory). The fact that agentmemory and this paper landed within days of each other reflects the industry consensus that **memory is the key differentiator for the next round of agents.** The Manager-Planner-Executor split looks like a strong candidate for a de facto standard pattern in future multi-agent frameworks. It should be read alongside the rise of standard tool interfaces like [MCP](https://modelcontextprotocol.io/).
 
 ## 3. Husserlian Phenomenology + Active Inference — 2208.09058
 
@@ -109,7 +109,7 @@ The chat's pick of the week accidentally forms a clean three-layer stack. Set al
 
 ## Insights
 
-The three papers come from different years and different topics, but read together they point at the same consensus — the way past the single-LLM reasoning plateau is not one more size class of model, but **inter-instance cooperation, evolving memory, and explicit modeling of the structure of experience.** Multiagent Debate is the first clean answer to "how do we get instances to cooperate"; MIA answers "how do we accumulate that cooperation across time"; the Husserl + Active Inference mapping throws a longer-range coordinate for "what structure that accumulation should ultimately resemble." The fact that practical tools like [agentmemory](https://github.com/elder-plinius/agentmemory) and agent-skills land in the same chat as these three papers within days is itself a signal — **research, tooling, and practice are converging in the same direction.** The differentiator in the next round is much more likely to be cooperation topology, memory evolution policy, and experience-structure modeling than raw model size.
+The three papers come from different years and different topics, but read together they point at the same consensus — the way past the single-LLM reasoning plateau is not one more size class of model, but **inter-instance cooperation, evolving memory, and explicit modeling of the structure of experience.** Multiagent Debate is the first clean answer to "how do we get instances to cooperate"; MIA answers "how do we accumulate that cooperation across time"; the Husserl + Active Inference mapping throws a longer-range coordinate for "what structure that accumulation should ultimately resemble." The fact that practical tools like [agentmemory](https://github.com/elder-plinius/agentmemory) and agent-skills surface alongside these three papers within days is itself a signal — **research, tooling, and practice are converging in the same direction.** The differentiator in the next round is much more likely to be cooperation topology, memory evolution policy, and experience-structure modeling than raw model size.
 
 ## References
 

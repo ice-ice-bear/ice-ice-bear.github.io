@@ -1,6 +1,6 @@
 ---
 title: "AI 코딩 에이전트의 OS 레이어 — agentmemory와 agent-skills 같은 날 동시 등장"
-description: 같은 채팅방에서 30초 간격으로 공유된 두 GitHub 도구 agentmemory와 agent-skills를 메모리 인프라와 워크플로 강제력이라는 두 레이어로 비교 정리한 분석
+description: 같은 시각 30초 간격으로 등장한 두 GitHub 도구 agentmemory와 agent-skills를 메모리 인프라와 워크플로 강제력이라는 두 레이어로 비교 정리한 분석
 date: 2026-05-08
 image: "/images/posts/2026-05-08-agent-os-layer-memory-skills/cover-ko.jpg"
 categories: ["ai"]
@@ -11,7 +11,7 @@ math: false
 
 ## 개요
 
-같은 오픈 채팅방에서 30초 간격으로 던져진 두 GitHub 링크. 둘 다 "AI 코딩 에이전트의 ergonomic 결함"을 풀려는 도구지만, **노리는 결함이 다르다.** [rohitg00/agentmemory](https://github.com/rohitg00/agentmemory)는 세션 간 메모리 인프라를, [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)는 시니어 엔지니어의 워크플로 강제력을 푼다. 묶어서 보면 에이전트 시대의 OS 레이어가 모양을 갖추고 있다.
+같은 시각 30초 간격으로 등장한 두 GitHub 링크. 둘 다 "AI 코딩 에이전트의 ergonomic 결함"을 풀려는 도구지만, **노리는 결함이 다르다.** [rohitg00/agentmemory](https://github.com/rohitg00/agentmemory)는 세션 간 메모리 인프라를, [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)는 시니어 엔지니어의 워크플로 강제력을 푼다. 묶어서 보면 에이전트 시대의 OS 레이어가 모양을 갖추고 있다.
 
 <!--more-->
 
@@ -155,7 +155,7 @@ flowchart LR
 
 ## 인사이트
 
-같은 채팅방, 같은 사람, 30초 간격으로 던져진 두 링크가 정확히 에이전트 OS 레이어의 다른 두 슬롯을 메우고 있다는 점이 이 디지스트의 핵심이다. agentmemory는 **상태**를, agent-skills는 **프로세스**를 인프라 레이어로 끌어내려 모델 위에 올라가는 공통 부품으로 만들었다. 두 도구가 모델 종속성을 의도적으로 끊는 방식 — MCP 서버 하나, Markdown 한 더미 — 도 같은 방향이다. 모델은 갈아치워도 메모리와 스킬은 누적된다는 베팅. 33K vs 2.4K stars 차이는 시점 차가 아니라 워크플로 표준 후보가 메모리 인프라보다 한발 앞서 모이고 있다는 신호로 읽힌다. **다음 분기 흥미로운 질문은 두 가지** — 메모리 표준이 MCP 위에서 단일화될지, 그리고 agent-skills 같은 스킬 번들이 IDE 마켓플레이스의 새로운 SaaS 카테고리가 될지. 결정 포인트가 IDE 선택에서 메모리·스킬 셋업으로 옮겨가는 흐름은 이미 시작됐다.
+같은 시각 같은 사람이 30초 간격으로 등장시킨 두 링크가 정확히 에이전트 OS 레이어의 다른 두 슬롯을 메우고 있다는 점이 이 디지스트의 핵심이다. agentmemory는 **상태**를, agent-skills는 **프로세스**를 인프라 레이어로 끌어내려 모델 위에 올라가는 공통 부품으로 만들었다. 두 도구가 모델 종속성을 의도적으로 끊는 방식 — MCP 서버 하나, Markdown 한 더미 — 도 같은 방향이다. 모델은 갈아치워도 메모리와 스킬은 누적된다는 베팅. 33K vs 2.4K stars 차이는 시점 차가 아니라 워크플로 표준 후보가 메모리 인프라보다 한발 앞서 모이고 있다는 신호로 읽힌다. **다음 분기 흥미로운 질문은 두 가지** — 메모리 표준이 MCP 위에서 단일화될지, 그리고 agent-skills 같은 스킬 번들이 IDE 마켓플레이스의 새로운 SaaS 카테고리가 될지. 결정 포인트가 IDE 선택에서 메모리·스킬 셋업으로 옮겨가는 흐름은 이미 시작됐다.
 
 ## 참고
 

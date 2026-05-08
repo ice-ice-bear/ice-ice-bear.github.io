@@ -35,7 +35,7 @@ Each entry includes `Auth` (None / API key / OAuth), `HTTPS`, and `CORS` columns
 
 ## Why now — the message right before
 
-In the same chat, the previous message was:
+An adjacent thread mentioned:
 
 > "Hey, [tilnote](https://tilnote.io) MCP just got an update. You can now create books and add pages in tilnote from Claude Code or Codex."
 

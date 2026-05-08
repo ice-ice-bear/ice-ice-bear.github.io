@@ -11,7 +11,7 @@ math: false
 
 ## 개요
 
-[public-apis/public-apis](https://github.com/public-apis/public-apis)는 2016-03-20에 시작해 지금까지 **별 433,177개**, MIT 라이선스로 유지되는 무료 공개 API 큐레이션 리포지토리다. 운영 주체는 [APILayer](https://apilayer.com/), 어제(2026-05-07)에도 push가 있을 만큼 살아있다. 클래식 리소스가 채팅방에 다시 뜬 맥락이 묘하다 — 직전 메시지가 [tilnote](https://tilnote.io) MCP 서버 업데이트 발표였기 때문. **awesome list 1세대 큐레이션이 MCP 카탈로그 시대에 어떻게 재해석되는지** 의 단면이다.
+[public-apis/public-apis](https://github.com/public-apis/public-apis)는 2016-03-20에 시작해 지금까지 **별 433,177개**, MIT 라이선스로 유지되는 무료 공개 API 큐레이션 리포지토리다. 운영 주체는 [APILayer](https://apilayer.com/), 어제(2026-05-07)에도 push가 있을 만큼 살아있다. 클래식 리소스가 다시 회자되는 맥락이 묘하다 — 인접 화제가 [tilnote](https://tilnote.io) MCP 서버 업데이트였기 때문. **awesome list 1세대 큐레이션이 MCP 카탈로그 시대에 어떻게 재해석되는지** 의 단면이다.
 
 <!--more-->
 
@@ -35,7 +35,7 @@ graph LR
 
 ## 왜 지금 다시 — 직전 메시지 흐름
 
-같은 채팅방의 직전 발언:
+직전에 등장한 인접 화제:
 
 > "여러분 [tilnote](https://tilnote.io) MCP가 업데이트됐습니다. 이제 클로드 코드나 코덱스에서 tilnote에 책을 만들고 페이지를 넣을 수 있습니다."
 
@@ -76,4 +76,4 @@ awesome list가 죽었다는 말이 한때 돌았지만, MCP 시대가 오히려
 - [Model Context Protocol 공식 사이트](https://modelcontextprotocol.io/) (Anthropic)
 - [MCP 아키텍처 문서](https://modelcontextprotocol.io/docs/learn/architecture)
 - [github.com/modelcontextprotocol](https://github.com/modelcontextprotocol) — 공식 SDK 및 reference servers
-- [tilnote MCP](https://tilnote.io) — 같은 채팅방의 직전 맥락, 도메인 특화 MCP 사례
+- [tilnote MCP](https://tilnote.io) — 인접 맥락의 도메인 특화 MCP 사례

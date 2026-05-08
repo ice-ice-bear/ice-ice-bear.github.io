@@ -11,7 +11,7 @@ math: false
 
 ## 개요
 
-OpenAI Engineering이 [Delivering Low-Latency Voice AI at Scale](https://openai.com/index/delivering-low-latency-voice-ai-at-scale/)에서 Realtime 음성 모델 뒤에 깔린 네트워크 인프라를 공개했다. 핵심은 [WebRTC](https://webrtc.org/) 트래픽을 Kubernetes 위에서 돌리기 위해 stateless **Global Relay**와 stateful **Transceiver**를 분리하고, [ICE](https://webrtc.org/getting-started/peer-connections) ufrag에 라우팅 메타데이터를 인코딩해 핫 패스 lookup을 지운 디자인이다. 같은 채팅방에서 따라 읽고 있던 MRC, Realtime API 발표와 합쳐 보면 OpenAI 인프라 스택의 윤곽이 또렷해진다.
+OpenAI Engineering이 [Delivering Low-Latency Voice AI at Scale](https://openai.com/index/delivering-low-latency-voice-ai-at-scale/)에서 Realtime 음성 모델 뒤에 깔린 네트워크 인프라를 공개했다. 핵심은 [WebRTC](https://webrtc.org/) 트래픽을 Kubernetes 위에서 돌리기 위해 stateless **Global Relay**와 stateful **Transceiver**를 분리하고, [ICE](https://webrtc.org/getting-started/peer-connections) ufrag에 라우팅 메타데이터를 인코딩해 핫 패스 lookup을 지운 디자인이다. 같은 시기에 발표된 MRC, Realtime API 와 합쳐 보면 OpenAI 인프라 스택의 윤곽이 또렷해진다.
 
 <!--more-->
 
@@ -124,7 +124,7 @@ OpenAI는 의도적으로 **userspace Go**를 골랐다. DPDK 같은 kernel-bypa
 
 ## 인사이트
 
-진짜 보틀넥이 어디인지를 보여주는 사례다. 모델 자체보다 **모델로 가는 경로**가 더 어렵다. WebRTC를 production-grade로 Kubernetes에서 굴리는 패턴은 음성 AI를 진지하게 만드는 모든 회사가 풀어야 하는 문제이고, 이 글은 그중 하나의 답안지다. 동시에 Justin Uberti와 Sean DuBois가 OpenAI 합류라는 사실은 인재 영입 이상의 의미를 가진다 — Pion 기반 Go 스택이 OpenAI 음성 인프라의 근간이 된다는 신호이고, 결과적으로 [Pion 생태계 전체](https://github.com/pion/webrtc) 의 무게중심이 이동한다. 같은 채팅방에서 같은 시기에 따라 읽고 있던 [MRC](https://openai.com/index/mrc-supercomputer-networking) (GPU 네트워크) 와 [Realtime API](https://platform.openai.com/audio/realtime) 발표와 묶어 보면 OpenAI 인프라 스택의 그림이 더 선명해진다 — **MRC (GPU 네트워크) + Relay+Transceiver (사용자 네트워크) + Realtime API (모델 인터페이스)** 세 레이어가 동시에 자기 표준을 박는 중이다. SFU가 정답인 다자간 워크로드와 달리 1:1 추론에는 transceiver 모델이 답이라는 점은, 같은 음성 인프라라도 워크로드 형태에 따라 디자인이 갈라진다는 사실의 방증이다. 마지막으로 kernel-bypass를 의도적으로 안 쓴 선택은 "common case를 먼저 최적화하라"는 원칙의 모범 사례 — 이미 충분한 곳에 더 손대지 않는 절제는 인프라 팀의 신호다.
+진짜 보틀넥이 어디인지를 보여주는 사례다. 모델 자체보다 **모델로 가는 경로**가 더 어렵다. WebRTC를 production-grade로 Kubernetes에서 굴리는 패턴은 음성 AI를 진지하게 만드는 모든 회사가 풀어야 하는 문제이고, 이 글은 그중 하나의 답안지다. 동시에 Justin Uberti와 Sean DuBois가 OpenAI 합류라는 사실은 인재 영입 이상의 의미를 가진다 — Pion 기반 Go 스택이 OpenAI 음성 인프라의 근간이 된다는 신호이고, 결과적으로 [Pion 생태계 전체](https://github.com/pion/webrtc) 의 무게중심이 이동한다. 같은 시기에 발표된 [MRC](https://openai.com/index/mrc-supercomputer-networking) (GPU 네트워크) 와 [Realtime API](https://platform.openai.com/audio/realtime) 와 묶어 보면 OpenAI 인프라 스택의 그림이 더 선명해진다 — **MRC (GPU 네트워크) + Relay+Transceiver (사용자 네트워크) + Realtime API (모델 인터페이스)** 세 레이어가 동시에 자기 표준을 박는 중이다. SFU가 정답인 다자간 워크로드와 달리 1:1 추론에는 transceiver 모델이 답이라는 점은, 같은 음성 인프라라도 워크로드 형태에 따라 디자인이 갈라진다는 사실의 방증이다. 마지막으로 kernel-bypass를 의도적으로 안 쓴 선택은 "common case를 먼저 최적화하라"는 원칙의 모범 사례 — 이미 충분한 곳에 더 손대지 않는 절제는 인프라 팀의 신호다.
 
 ## 참고
 

@@ -1,6 +1,6 @@
 ---
 title: "Polaris MCFG — A License-Safe Metric-Compatible Font Generator, Plus the LLM Eval Rubric Thread Next to It"
-description: How Polaris Office's metric-compatible font generator dodges font licensing pain and what the same chatroom's LLM-as-Judge rubric thread reveals about production AI evaluation
+description: How Polaris Office's metric-compatible font generator dodges font licensing pain and what an adjacent LLM-as-Judge rubric thread reveals about production AI evaluation
 date: 2026-05-06
 image: "/images/posts/2026-05-06-polaris-mcfg-and-llm-eval-rubric/cover-en.jpg"
 categories: ["devtools"]
@@ -68,7 +68,7 @@ M1 (metric extractor + JSON schema) through M7 (packaging and docs) are all comp
 
 ## The LLM Eval Rubric Thread Next to It
 
-What was being discussed in the same chatroom right before this link was an unexpectedly pointed take on LLM evaluation:
+Around the same time, an unexpectedly pointed take on LLM evaluation surfaced:
 
 > "Vector similarity and RAGAS metrics aren't really suitable for grading. Free-form grading inevitably has to go through an LLM, and the standard practice is to write the evaluation rubric first and base everything on that."
 
@@ -78,7 +78,7 @@ This matches exactly where every modern LLM eval framework — [DeepEval](https:
 
 ## Insights
 
-That a font metric extractor and an LLM evaluation rubric thread coexist in the same chatroom on the same day signals something about the room: **the people there are actually shipping product**. The two topics look unrelated but the underlying move is identical — both are about reducing intuition-dependent territory to explicit, verifiable rules. The font tool reduces "are these metrics compatible" to a HarfBuzz rendering regression. LLM-as-Judge reduces "is this answer good" to a rubric. Both topics demand an automated verification step before they're production-ready, and that verification step ends up defining the tool's identity. The fact that polaris_mcfg has a `validate` subcommand at all, and that LLM eval frameworks treat rubrics as first-class objects, are expressions of the same engineering instinct. In production "it just works" is not a finishing line — **explicit criteria + automated verification + regression tracking** is the new bar, and these two topics point to the same place from very different starting points.
+That a font metric extractor and an LLM evaluation rubric thread emerge at the same moment signals something about the audience: **these are people who are actually shipping product**. The two topics look unrelated but the underlying move is identical — both are about reducing intuition-dependent territory to explicit, verifiable rules. The font tool reduces "are these metrics compatible" to a HarfBuzz rendering regression. LLM-as-Judge reduces "is this answer good" to a rubric. Both topics demand an automated verification step before they're production-ready, and that verification step ends up defining the tool's identity. The fact that polaris_mcfg has a `validate` subcommand at all, and that LLM eval frameworks treat rubrics as first-class objects, are expressions of the same engineering instinct. In production "it just works" is not a finishing line — **explicit criteria + automated verification + regression tracking** is the new bar, and these two topics point to the same place from very different starting points.
 
 ## References
 

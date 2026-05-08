@@ -100,7 +100,7 @@ No installer script. One symlink and a skill invocation, and you are done.
 
 - A clean example of **users wrapping an official feature in an ergonomic shell**. The 0.128.0 import RPC was already there; the surface was missing; a user wrote a 30-line thin wrapper to expose it.
 - The Markdown-only-skill shape is the real story. It is a signal that Codex has adopted the [Anthropic agent-skills](https://github.com/anthropics/skills) pattern, and that compatibility lets a single person ship a working tool in a day.
-- Three stars is small, but the pattern is big — **agent session portability is becoming load-bearing.** The same chat thread that surfaced this also shared [agentmemory](https://github.com/AutonomousResearchGroup/agentmemory), another user-led standardization attempt for agent memory.
+- Three stars is small, but the pattern is big — **agent session portability is becoming load-bearing.** The same week that surfaced this also brought [agentmemory](https://github.com/AutonomousResearchGroup/agentmemory), another user-led standardization attempt for agent memory.
 - The agent infrastructure layer is standardizing fast, and users are gluing it together before model vendors do.
 
 ## Insights

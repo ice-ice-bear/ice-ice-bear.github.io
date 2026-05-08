@@ -11,7 +11,7 @@ math: false
 
 ## Overview
 
-Two GitHub links, dropped 30 seconds apart in the same open chat. Both target ergonomic gaps in AI coding agents, but **they target different gaps.** [rohitg00/agentmemory](https://github.com/rohitg00/agentmemory) tackles cross-session memory infrastructure; [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) tackles senior-engineer workflow enforcement. Read together, they sketch out an emerging OS layer for the agent era.
+Two GitHub links, dropped 30 seconds apart at the same minute. Both target ergonomic gaps in AI coding agents, but **they target different gaps.** [rohitg00/agentmemory](https://github.com/rohitg00/agentmemory) tackles cross-session memory infrastructure; [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) tackles senior-engineer workflow enforcement. Read together, they sketch out an emerging OS layer for the agent era.
 
 <!--more-->
 
