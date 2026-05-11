@@ -4,7 +4,7 @@ description: A side-by-side read of two GitHub tools shared 30 seconds apart —
 date: 2026-05-08
 image: "/images/posts/2026-05-08-agent-os-layer-memory-skills/cover-en.jpg"
 categories: ["devtools"]
-tags: ["ai-agents", "claude-code", "mcp", "agent-memory", "agent-skills", "llm-infrastructure", "longmemeval"]
+tags: ["ai-agents", "claude-code", "mcp", "agent-memory", "agent-skills", "llm-infrastructure", "longmemeval", "super-claude"]
 toc: true
 math: false
 ---
@@ -12,6 +12,8 @@ math: false
 ## Overview
 
 Two GitHub links, dropped 30 seconds apart at the same minute. Both target ergonomic gaps in AI coding agents, but **they target different gaps.** [rohitg00/agentmemory](https://github.com/rohitg00/agentmemory) tackles cross-session memory infrastructure; [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) tackles senior-engineer workflow enforcement. Read together, they sketch out an emerging OS layer for the agent era.
+
+Update 2026-05-10: Four new skills repos surfaced shortly after this post and reinforce the argument — covered in a new section below.
 
 <!--more-->
 
@@ -153,6 +155,12 @@ flowchart LR
 
 Three or four years ago "which IDE do you use?" was the deciding question. Now it's becoming **"what's your memory and skills setup?"** Both projects deliberately decouple from any one model — [MCP](https://modelcontextprotocol.io/) for one, plain Markdown for the other — designed so that **models can be swapped, but the memory and skills accumulate.**
 
+## 5. The Skills Ecosystem Is Crystallizing — Four More Repos in the Same Direction
+
+Two days after the original post, four more repositories that surfaced shortly after make the same point from different angles. First, [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) (~43K stars, created 2025-04, an [awesome-list](https://github.com/sindresorhus/awesome)) curates skills, hooks, slash-commands, agent orchestrators, and plugins in one place — the fact that "Claude Code ecosystem" now stands on its own as an awesome-list category is itself a maturity signal. Second, well-known TypeScript educator Matt Pocock has open-sourced his actual `.claude/` directory as [mattpocock/skills](https://github.com/mattpocock/skills) (~69K stars, "Skills for Real Engineers, straight from my .claude directory"); he explicitly rejects heavy process frameworks like GSD, BMAD, and Spec-Kit because they "take away your control," and instead picks small composable skills — `/grill-me`, `/tdd`, `/diagnose` — that exactly match the "Markdown standard" bet this post described.
+
+Third, [SuperClaude-Org/SuperClaude_Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) (~22.7K stars, MIT, [project site](https://superclaude.netlify.app/)) bundles 30 slash commands, 20 specialized agents, 7 behavioral modes, and 8 [MCP](https://modelcontextprotocol.io/) servers to "transform Claude Code into a structured development platform" — essentially a more opinionated extension of addyosmani's six-stage lifecycle. Fourth, [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) (~123K stars) distills [Andrej Karpathy's tweet](https://x.com/karpathy/status/2015883857489522876) on LLM coding pitfalls into a single `CLAUDE.md` with four principles (Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution) — a direct descendant of the "Karpathy LLM Wiki pattern" cited in the original post. **An awesome-list that stands on its own as a category, an individual senior open-sourcing his skills directory verbatim, a heavy framework wrapping 30 slash commands, and a 100K-star repo condensing one coding luminary's principles into a single file — that all four arrive within three days is direct evidence that the argument this blog made on 2026-05-08 — workflow belongs in the infrastructure layer — is calcifying into consensus.** It is no longer one 33K-star agent-skills, but five repositories stacked on the same bet, converging at the same time.
+
 ## Insights
 
 The headline of this digest isn't either tool individually — it's that two links shared 30 seconds apart fill exactly two distinct slots in the agent OS layer. agentmemory pulls **state** down into the infrastructure; agent-skills pulls **process** down into the infrastructure. The fact that both decouple from models in similar ways — one MCP server, one Markdown bundle — is the same bet from two angles: models are interchangeable but memory and skills must compound. The 33K vs 2.4K stars gap probably isn't about timing; it's a signal that the workflow-standard candidate is consolidating faster than the memory-infrastructure candidate. **Two open questions for next quarter** — does memory standardize on MCP, and do skill bundles like agent-skills become a new SaaS category inside IDE marketplaces? The decision point has already started shifting from IDE choice to memory and skill setup.
@@ -163,6 +171,13 @@ The headline of this digest isn't either tool individually — it's that two lin
 
 - [rohitg00/agentmemory](https://github.com/rohitg00/agentmemory) · home: [agent-memory.dev](https://agent-memory.dev)
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
+
+**Skills collections (2026-05-10 update)**
+
+- [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) — awesome-list for Claude Code resources (~43K stars)
+- [mattpocock/skills](https://github.com/mattpocock/skills) — Matt Pocock's `.claude/` directory, "Skills for Real Engineers" (~69K stars)
+- [SuperClaude-Org/SuperClaude_Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) — 30 commands + 20 agents + 8 MCP servers (~22.7K stars)
+- [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) — Karpathy's four principles in one `CLAUDE.md` (~123K stars)
 
 **Related agents and clients**
 
