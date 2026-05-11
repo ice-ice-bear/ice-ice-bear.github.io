@@ -4,7 +4,7 @@ description: 같은 시각 30초 간격으로 등장한 두 GitHub 도구 agentm
 date: 2026-05-08
 image: "/images/posts/2026-05-08-agent-os-layer-memory-skills/cover-ko.jpg"
 categories: ["ai"]
-tags: ["ai-agents", "claude-code", "mcp", "agent-memory", "agent-skills", "devtools", "longmemeval"]
+tags: ["ai-agents", "claude-code", "mcp", "agent-memory", "agent-skills", "devtools", "longmemeval", "super-claude"]
 toc: true
 math: false
 ---
@@ -12,6 +12,8 @@ math: false
 ## 개요
 
 같은 시각 30초 간격으로 등장한 두 GitHub 링크. 둘 다 "AI 코딩 에이전트의 ergonomic 결함"을 풀려는 도구지만, **노리는 결함이 다르다.** [rohitg00/agentmemory](https://github.com/rohitg00/agentmemory)는 세션 간 메모리 인프라를, [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)는 시니어 엔지니어의 워크플로 강제력을 푼다. 묶어서 보면 에이전트 시대의 OS 레이어가 모양을 갖추고 있다.
+
+Update 2026-05-10: 같은 시기에 등장한 4개의 스킬 레포가 이 주장을 강화한다 — 본문 후반부에서 다룬다.
 
 <!--more-->
 
@@ -153,6 +155,12 @@ flowchart LR
 
 3-4년 전 "어떤 IDE 쓰지?" 가 결정 포인트였다면, 이제는 **"어떤 메모리 + 스킬 셋업?"** 이 결정 포인트가 되고 있다. 둘 다 모델 종속성을 의도적으로 끊어두고 ([MCP](https://modelcontextprotocol.io/)와 Markdown), **모델은 갈아치울 수 있어도 메모리/스킬은 누적되도록** 설계한 게 공통점이다.
 
+## 5. 스킬 생태계의 확장 — 2026-05-10 이후 같은 방향의 레포 4개
+
+원 글을 쓴 지 이틀, 같은 시기에 등장한 네 개의 레포가 동일한 주장을 다른 각도에서 한번 더 못 박는다. 첫째, [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) (~43K stars, 2025-04 생성, [awesome-list](https://github.com/sindresorhus/awesome) 포맷) — skills, hooks, slash-commands, agent orchestrators, plugins를 한 곳에 큐레이팅하면서 "Claude Code 생태계"라는 항목 자체가 awesome-list 카테고리로 자립할 정도로 성숙했다는 신호를 보낸다. 둘째, TypeScript 커뮤니티에서 잘 알려진 Matt Pocock이 자신의 `.claude/` 디렉터리를 그대로 공개한 [mattpocock/skills](https://github.com/mattpocock/skills) (~69K stars, "Skills for Real Engineers, straight from my .claude directory")는 그가 GSD·BMAD·Spec-Kit 같은 무거운 프로세스 프레임워크가 "통제를 빼앗아 간다"는 이유로 거부하고, 대신 작고 조합 가능한 스킬 — `/grill-me`, `/tdd`, `/diagnose` — 을 골라 쓰는 쪽을 택했다는 점에서 본문이 말한 "Markdown 표준" 베팅과 정확히 일치한다.
+
+셋째, [SuperClaude-Org/SuperClaude_Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) (~22.7K stars, MIT, [홈페이지](https://superclaude.netlify.app/))는 30개 슬래시 커맨드 + 20개 전문 에이전트 + 7개 행동 모드 + 8개 [MCP](https://modelcontextprotocol.io/) 서버를 묶어 "Claude Code를 구조화된 개발 플랫폼으로 변환"한다 — addyosmani의 6단계 라이프사이클을 한층 더 의견 있게 (opinionated) 확장한 버전이다. 넷째, [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) (~123K stars)는 [Andrej Karpathy의 트윗](https://x.com/karpathy/status/2015883857489522876)에서 추출한 네 개 원칙(Think Before Coding · Simplicity First · Surgical Changes · Goal-Driven Execution)을 단일 `CLAUDE.md` 한 파일로 정제했다 — 본문이 인용한 "Karpathy의 LLM Wiki 패턴"의 직계 후손이다. **awesome-list가 카테고리로 자립하고, 개별 시니어가 자신의 스킬 디렉터리를 그대로 공개하고, 슬래시 커맨드 30개짜리 헤비 프레임워크가 등장하고, 코딩 거장 한 명의 원칙을 단일 파일로 응축한 레포가 100K stars를 넘기는 — 이 네 가지가 사흘 안에 동시에 모인다는 사실이 본 블로그가 2026-05-08에 선언한 "워크플로는 인프라 레이어로 내려가야 한다"는 프레임이 컨센서스로 굳어지고 있다는 증거다.** 33K 스타 짜리 agent-skills 하나가 아니라, 같은 베팅 위에 올라간 레포 다섯 개가 동시에 모이고 있다.
+
 ## 인사이트
 
 같은 시각 같은 사람이 30초 간격으로 등장시킨 두 링크가 정확히 에이전트 OS 레이어의 다른 두 슬롯을 메우고 있다는 점이 이 디지스트의 핵심이다. agentmemory는 **상태**를, agent-skills는 **프로세스**를 인프라 레이어로 끌어내려 모델 위에 올라가는 공통 부품으로 만들었다. 두 도구가 모델 종속성을 의도적으로 끊는 방식 — MCP 서버 하나, Markdown 한 더미 — 도 같은 방향이다. 모델은 갈아치워도 메모리와 스킬은 누적된다는 베팅. 33K vs 2.4K stars 차이는 시점 차가 아니라 워크플로 표준 후보가 메모리 인프라보다 한발 앞서 모이고 있다는 신호로 읽힌다. **다음 분기 흥미로운 질문은 두 가지** — 메모리 표준이 MCP 위에서 단일화될지, 그리고 agent-skills 같은 스킬 번들이 IDE 마켓플레이스의 새로운 SaaS 카테고리가 될지. 결정 포인트가 IDE 선택에서 메모리·스킬 셋업으로 옮겨가는 흐름은 이미 시작됐다.
@@ -163,6 +171,13 @@ flowchart LR
 
 - [rohitg00/agentmemory](https://github.com/rohitg00/agentmemory) · 홈페이지 [agent-memory.dev](https://agent-memory.dev)
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
+
+**스킬 컬렉션 (2026-05-10 업데이트)**
+
+- [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) — Claude Code 리소스 awesome-list (~43K stars)
+- [mattpocock/skills](https://github.com/mattpocock/skills) — Matt Pocock의 `.claude/` 디렉터리, "Skills for Real Engineers" (~69K stars)
+- [SuperClaude-Org/SuperClaude_Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) — 30 commands + 20 agents + 8 MCP 서버 묶음 (~22.7K stars)
+- [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) — Karpathy 4원칙을 단일 `CLAUDE.md`로 (~123K stars)
 
 **관련 에이전트 / 클라이언트**
 
