@@ -4,7 +4,7 @@ description: A look at codex-r a Markdown only skill that ports the claude -r wo
 date: 2026-05-07
 image: "/images/posts/2026-05-07-codex-r-claude-code-bridge/cover-en.jpg"
 categories: ["devtools"]
-tags: ["codex-cli", "claude-code", "agent-skills", "session-migration", "mcp", "terminal-tools"]
+tags: ["codex-cli", "claude-code", "agent-skills", "session-migration", "mcp", "terminal-tools", "codex-sdk"]
 toc: true
 math: false
 ---
@@ -12,6 +12,8 @@ math: false
 ## Overview
 
 [`thedalbee/codex-r`](https://github.com/thedalbee/codex-r) is a three-star, MIT-licensed micro tool created on 2026-05-01. In one line: it is a **Markdown-only skill that ports the `claude -r` workflow into [OpenAI Codex CLI](https://openai.com/codex/), so a single `codex -r` command opens a picker over your [Claude Code](https://www.anthropic.com/claude-code) sessions and imports the one you choose.** There is almost no code — the artifact is a single SKILL.md following the [agent-skills](https://github.com/anthropics/skills) pattern. The interesting question is not the star count; it is **why someone built this and what it signals.**
+
+> **Update (around 2026-05-04):** in the same week, [Codex landed inside ChatGPT](https://help.openai.com/en/articles/11369540-codex-in-chatgpt) and the [Codex Python SDK](https://github.com/openai/codex/tree/main/sdk/python) showed up in the monorepo. The analysis below still holds, but the "Codex Surface Expansion" section near the end reframes what these shifts mean for a bridge like this.
 
 <!--more-->
 
@@ -103,6 +105,12 @@ No installer script. One symlink and a skill invocation, and you are done.
 - Three stars is small, but the pattern is big — **agent session portability is becoming load-bearing.** The same week that surfaced this also brought [agentmemory](https://github.com/AutonomousResearchGroup/agentmemory), another user-led standardization attempt for agent memory.
 - The agent infrastructure layer is standardizing fast, and users are gluing it together before model vendors do.
 
+## Codex Surface Expansion
+
+When this post was first written, Codex effectively meant the CLI. A few days later that picture has widened. OpenAI [pulled Codex inside ChatGPT itself](https://help.openai.com/en/articles/11369540-codex-in-chatgpt) — Codex usage is now bundled with ChatGPT Plus, Pro, Business, Enterprise, and Edu plans, and temporarily extended to Free and Go. The entry points fan out into four surfaces — **[Codex app](http://developers.openai.com/codex/app), [Codex CLI](https://developers.openai.com/codex/cli), [Codex IDE extension](http://developers.openai.com/codex/ide), and [Codex web at chatgpt.com/codex](https://chatgpt.com/codex)** — all sharing one ChatGPT login. Almost at the same moment, a [Codex Python SDK](https://github.com/openai/codex/tree/main/sdk/python) landed at `sdk/python` in the `openai/codex` monorepo: an experimental Pydantic SDK wrapping `app-server` JSON-RPC v2 over stdio, where `with Codex() as codex: codex.thread_start(model="gpt-5")` is enough to manage a thread's lifecycle. The packaging splits into `openai-codex-app-server-sdk` plus a platform-wheel runtime `openai-codex-cli-bin`, with **the SDK version pinned to the underlying Codex runtime version.**
+
+These two shifts cut both ways for a bridge like codex-r. On one side, **there is more surface to bridge from** — Codex threads can be opened from CLI, IDE extension, web UI, or any Python process, and once app-server RPCs like [`externalAgentConfig/import`](https://github.com/openai/codex) become first-class SDK calls, the picker can be rewritten as a Python script. On the other side, **the bridge's location is wobbling** — inside ChatGPT, Codex now ships with [Memories](https://developers.openai.com/codex/memories), [Automations](https://developers.openai.com/codex/app/automations), an [in-app browser](https://developers.openai.com/codex/app/browser), and [Computer Use](https://developers.openai.com/codex/app/computer-use), which together feel closer to "Claude Code, but inside ChatGPT" than a CLI session importer. The open question is whether a thin wrapper that imports CLI sessions is still the right primitive, or whether spawning and resuming threads directly at the SDK level is the more natural shape — codex-r's single SKILL.md is a useful tell for where that next round absorbs.
+
 ## Insights
 
 The meaning of this tool is not in the 30 lines of wrapper; it is in **the fact that the wrapper exists at all.** Within days of Codex shipping its import RPC, a user had built a picker on top of it and packaged the recipe as a SKILL.md. That timing tells you the agent tool market is no longer locked to a single vendor: Claude Code session JSONL is effectively a portable format, and Codex now exposes a stable RPC to import it. The same pattern is playing out for memory, skills, and MCP servers — and agent-skills as a standard means a single person can ship a compatibility layer in a day. Micro tools like this do not need to grow stars to be valuable; if the model vendor ships an official command, the wrapper steps aside, and that is fine. **The real asset here is the pattern, not the tool.** When users define ergonomics before the official feature does, the official feature ends up following them.
@@ -118,6 +126,12 @@ The meaning of this tool is not in the 30 lines of wrapper; it is in **the fact 
 - [Claude Code](https://www.anthropic.com/claude-code) — source of the `~/.claude/projects/**/*.jsonl` files used for import
 - [Anthropic agent-skills](https://github.com/anthropics/skills) — the Markdown-only-skill pattern this project follows
 - [MCP (Model Context Protocol)](https://modelcontextprotocol.io/) — the broader agent standards layer
+
+**Codex Surface Expansion (around 2026-05-04)**
+- [Codex in ChatGPT — OpenAI Help Center](https://help.openai.com/en/articles/11369540-codex-in-chatgpt) — Codex usage bundled with ChatGPT plans across four entry points (app, CLI, IDE, web)
+- [Codex Python SDK — `openai/codex/sdk/python`](https://github.com/openai/codex/tree/main/sdk/python) — experimental Pydantic SDK over `app-server` JSON-RPC v2 (`openai-codex-app-server-sdk` + `openai-codex-cli-bin`)
+- [Codex web (chatgpt.com/codex)](https://chatgpt.com/codex) — cloud Codex entry point that connects to your GitHub account
+- [Codex developer docs hub](https://developers.openai.com/codex/) — models, memories, automations, computer use — the ChatGPT-integrated surface
 
 **Background**
 - [agentmemory](https://github.com/AutonomousResearchGroup/agentmemory) — a same-period user-led memory standardization attempt (covered in a related post)
